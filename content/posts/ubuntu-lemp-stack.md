@@ -6,6 +6,7 @@ date: 2021-05-27
 draft: false
 linktitle: Instal LEMP Stack pada Ubuntu 20.04
 title: Instalasi LEMP Stack (Linux, Nginx, MariaDB, PHP) pada Ubuntu 20.04
+slug: 'lemp-stack-ubuntu20-04-focal'
 tags: 
 - webserver
 - ubuntu-focal

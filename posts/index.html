@@ -71,6 +71,20 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Extend VM Disk untuk LVM
+</h2>
+</header>
+<section class=entry-content>
+<p>Saya akan menjelaskan cara mudah untuk resize disk suatu VM dengan konfigurasi LVM. Asumsinya, disk sudah diextend dari sisi HVnya (PVE, ESXi, dll).
+Pastikan penambahan space sudah terdeteksi dari VM melalui dmesg dan Anda akan mendapati informasi seperti ini:
+[262733.527587] sd 0:0:2:0: [abc] 4096-byte physical blocks [262733.528263] abc: detected capacity change from 214748364800 to 429496729600 Kalau ternyata belum terdeteksi, bisa dicoba untuk menjalankan perintah ini
+echo 1 > /sys/class/block/&lt;disk>/device/rescan Lalu coba cek kembali di dmesg....</p>
+</section>
+<footer class=entry-footer><span class=post-date date-time="2021-11-02 18:58:41 +0000 UTC">2 November 2021</span>&nbsp;·&nbsp;1 menit&nbsp;·&nbsp;Saya</footer>
+<a class=entry-link aria-label="post link to Cara Extend VM Disk untuk LVM" href=https://blog.annahri.com/posts/cara-extend-vm-disk-lvm/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Instalasi LEMP Stack (Linux, Nginx, MariaDB, PHP) pada Ubuntu 20.04
 </h2>
 </header>

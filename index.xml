@@ -6,7 +6,19 @@
     <description>Recent content on An-Nahri | Linux Blogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Thu, 27 May 2021 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 18:58:41 +0000</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Extend VM Disk untuk LVM</title>
+      <link>https://blog.annahri.com/posts/cara-extend-vm-disk-lvm/</link>
+      <pubDate>Tue, 02 Nov 2021 18:58:41 +0000</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/cara-extend-vm-disk-lvm/</guid>
+      <description>Saya akan menjelaskan cara mudah untuk resize disk suatu VM dengan konfigurasi LVM. Asumsinya, disk sudah diextend dari sisi HVnya (PVE, ESXi, dll).
+Pastikan penambahan space sudah terdeteksi dari VM melalui dmesg dan Anda akan mendapati informasi seperti ini:
+[262733.527587] sd 0:0:2:0: [abc] 4096-byte physical blocks [262733.528263] abc: detected capacity change from 214748364800 to 429496729600 Kalau ternyata belum terdeteksi, bisa dicoba untuk menjalankan perintah ini
+echo 1 &amp;gt; /sys/class/block/&amp;lt;disk&amp;gt;/device/rescan Lalu coba cek kembali di dmesg.</description>
+    </item>
+    
     <item>
       <title>Instalasi LEMP Stack (Linux, Nginx, MariaDB, PHP) pada Ubuntu 20.04</title>
       <link>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</link>

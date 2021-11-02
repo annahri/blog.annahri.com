@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>An-Nahri | Linux Blogger</title>
+    <link>https://blog.annahri.com/</link>
+    <description>Recent content on An-Nahri | Linux Blogger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id-id</language>
+    <lastBuildDate>Thu, 27 May 2021 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalasi LEMP Stack (Linux, Nginx, MariaDB, PHP) pada Ubuntu 20.04</title>
+      <link>https://blog.annahri.com/posts/ubuntu-lemp-stack/</link>
+      <pubDate>Thu, 27 May 2021 00:00:00 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/ubuntu-lemp-stack/</guid>
+      <description>LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx, (M)ysql atau Mariadb, dan (P)HP.
+Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04. Untuk OS berbasis RPM menyusul.
+Konfigurasi Awal Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.
+$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka. Kalau anda menggunakan ufw maka perintahnya adalah:</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>

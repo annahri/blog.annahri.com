@@ -20,7 +20,7 @@ minify:
   minifyOutput: true
 
 params:
-  env: development # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: An-Nahri | Linux Blogger
   description: "Annahri Blog"
   keywords: [Blog, Portfolio]

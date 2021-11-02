@@ -2,6 +2,12 @@
 title: "Cara Extend VM Disk untuk LVM"
 date: 2021-11-02T18:58:41Z
 draft: false
+categories:
+- Sysadmin
+tags:
+- lvm
+- extend
+- disk
 ---
 
 ![Bismillah](https://s3-jak01.storageraya.com/ahf-testcdn/img/bismillah_300x60.png#center)

@@ -1,0 +1,141 @@
+baseURL: "https://blog.annahri.com/"
+title: An-Nahri | Linux Blogger
+paginate: 5
+
+languageCode: 'id-id'
+defaultContentLanguage: 'id'
+timeZone: 'Asia/Jakarta'
+
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: development # to enable google analytics, opengraph, twitter-cards and schema.
+  title: An-Nahri | Linux Blogger
+  description: "Annahri Blog"
+  keywords: [Blog, Portfolio]
+  author: Saya
+  # author: ["Me", "You"] # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "2 January 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    bismillah: "https://s3-jak01.storageraya.com/ahf-testcdn/img/bismillah_300x60.png"
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "https://s3-jak01.storageraya.com/ahf-testcdn/favicon.ico"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: blog.annahri.com
+    subtitle: "Blog tentang Linux milik Abu Akmal Muhammad An-Nahri"
+    imageUrl: "https://s3-jak01.storageraya.com/ahf-testcdn/img/annahri_logo.svg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: Logo Saya
+    buttons:
+      - name: Artikel
+        url: posts
+      - name: Tag
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Assalamualaikum.."
+    Content: 
+
+  socialIcons:
+    - name: stackoverflow
+      url: "https://unix.stackexchange.com/users/245871/annahri"
+    - name: github
+      url: "https://github.com/annahri"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/annahri/annahri.com/content"
+    Text: "Sarankan Perubahan" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: archives
+      name: Arsip
+      url: /arsip/
+      weight: 5
+    - identifier: categories
+      name: Kategori
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tag-tag
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: Pencarian
+      url: /cari/
+      weight: 30
+
+pygmentsUseClasses: true
+markup:
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: false
+        style: monokai
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary

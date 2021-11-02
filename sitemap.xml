@@ -8,11 +8,26 @@
     <loc>https://blog.annahri.com/posts/cara-extend-vm-disk-lvm/</loc>
     <lastmod>2021-11-02T18:58:41+00:00</lastmod>
   </url><url>
+    <loc>https://blog.annahri.com/categories/</loc>
+    <lastmod>2021-11-02T18:58:41+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/disk/</loc>
+    <lastmod>2021-11-02T18:58:41+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/extend/</loc>
+    <lastmod>2021-11-02T18:58:41+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/lvm/</loc>
+    <lastmod>2021-11-02T18:58:41+00:00</lastmod>
+  </url><url>
     <loc>https://blog.annahri.com/posts/</loc>
     <lastmod>2021-11-02T18:58:41+00:00</lastmod>
   </url><url>
-    <loc>https://blog.annahri.com/categories/</loc>
-    <lastmod>2021-05-27T00:00:00+07:00</lastmod>
+    <loc>https://blog.annahri.com/categories/sysadmin/</loc>
+    <lastmod>2021-11-02T18:58:41+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/</loc>
+    <lastmod>2021-11-02T18:58:41+00:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/categories/infrastructure/</loc>
     <lastmod>2021-05-27T00:00:00+07:00</lastmod>
@@ -27,12 +42,6 @@
     <lastmod>2021-05-27T00:00:00+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/stack/</loc>
-    <lastmod>2021-05-27T00:00:00+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/categories/sysadmin/</loc>
-    <lastmod>2021-05-27T00:00:00+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/tags/</loc>
     <lastmod>2021-05-27T00:00:00+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/ubuntu-focal/</loc>

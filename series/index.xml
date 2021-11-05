@@ -5,6 +5,16 @@
     <link>https://blog.annahri.com/series/</link>
     <description>Recent content in Series on An-Nahri | Linux Blogger</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>id-id</language><atom:link href="https://blog.annahri.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>id-id</language>
+    <lastBuildDate>Thu, 04 Nov 2021 23:28:21 +0000</lastBuildDate><atom:link href="https://blog.annahri.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash Shell Tricks</title>
+      <link>https://blog.annahri.com/series/bash-shell-tricks/</link>
+      <pubDate>Thu, 04 Nov 2021 23:28:21 +0000</pubDate>
+      
+      <guid>https://blog.annahri.com/series/bash-shell-tricks/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

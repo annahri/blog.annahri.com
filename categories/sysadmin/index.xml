@@ -6,7 +6,19 @@
     <description>Recent content in Sysadmin on An-Nahri | Linux Blogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 02 Nov 2021 18:58:41 +0000</lastBuildDate><atom:link href="https://blog.annahri.com/categories/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Nov 2021 22:09:50 +0000</lastBuildDate><atom:link href="https://blog.annahri.com/categories/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membenahi Kendala mixed-content pada Nginx yang berperan sebagai Reverse-Proxy</title>
+      <link>https://blog.annahri.com/posts/nginx-reverse-proxy-mixed-content/</link>
+      <pubDate>Sat, 13 Nov 2021 22:09:50 +0000</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/nginx-reverse-proxy-mixed-content/</guid>
+      <description>Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam source code-nya masih ter-hardcoded beberapa resource eksternal menggunakan protokol HTTP.
+Hal ini membuat kebanyakan web browser mengeluh dan enggan untuk memuat resource yang dipanggil dari protokol HTTP tadi.
+Maka solusinya ada 2:
+ Edit source code-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS. Dari sisi Reverse-Proxy, tinggal tambahkan header berikut:  add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx</description>
+    </item>
+    
     <item>
       <title>Cara Extend VM Disk untuk LVM</title>
       <link>https://blog.annahri.com/posts/cara-extend-vm-disk-lvm/</link>

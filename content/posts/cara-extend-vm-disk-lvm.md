@@ -10,7 +10,7 @@ tags:
 - disk
 ---
 
-![Bismillah](https://s3-jak01.storageraya.com/ahf-testcdn/img/bismillah_300x60.png#center)
+![Bismillah](https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center)
 
 Saya akan menjelaskan cara mudah untuk resize disk suatu VM dengan konfigurasi LVM. Asumsinya, disk sudah diextend dari sisi HVnya (PVE, ESXi, dll).
 

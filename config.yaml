@@ -45,7 +45,7 @@ params:
   tocopen: false
 
   assets:
-    bismillah: "https://s3-jak01.storageraya.com/ahf-testcdn/img/bismillah_300x60.png"
+    bismillah: "17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT"
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "https://s3-jak01.storageraya.com/ahf-testcdn/favicon.ico"

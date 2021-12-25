@@ -9,5 +9,5 @@ categories:
 - kategori
 ---
 
-![Bismillah]({{ .Site.Params.assets.bismillah }}#center)
+![Bismillah](https://drive.google.com/uc?export=download&id={{ .Site.Params.assets.bismillah }}#center)
 

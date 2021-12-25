@@ -12,7 +12,7 @@ categories:
 - Bash
 ---
 
-![Bismillah](https://s3-jak01.storageraya.com/ahf-testcdn/img/bismillah_300x60.png#center)
+![Bismillah](https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center)
 
 Saya akan menjelaskan beberapa tips dan trik dalam menggunakan _shell_ **bash** yang biasa saya gunakan sehari-hari. 
 

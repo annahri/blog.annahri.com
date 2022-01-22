@@ -1,5 +1,5 @@
 baseURL: "https://blog.annahri.com/"
-title: An-Nahri | Linux Blogger
+title: Annahri Blog
 paginate: 5
 
 languageCode: 'id-id'
@@ -58,9 +58,9 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: false # needs to be explicitly set
     title: blog.annahri.com
-    subtitle: "Blog tentang Linux milik Abu Akmal Muhammad An-Nahri"
+    subtitle: "InsyaAllah, blog ini berisi artikel-artikel tentang linux berbahasa Indonesia."
     imageUrl: "https://s3-jak01.storageraya.com/ahf-testcdn/img/annahri_logo.svg"
     imageWidth: 120
     imageHeight: 120
@@ -74,7 +74,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Assalamualaikum.."
-    Content: 
+    Content: "_InsyaAllah_, blog ini berisi arcategorie://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center tikel-artikel tentang linux (dan lain-lain) dalam bahasa Indonesia 🇮🇩"
 
   socialIcons:
     - name: stackoverflow

@@ -1,7 +1,7 @@
 ---
 categories:
 - Sysadmin
-- Infrastructure
+- Infrastruktur
 date: 2021-05-27
 draft: false
 linktitle: Instal LEMP Stack pada Ubuntu 20.04

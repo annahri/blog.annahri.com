@@ -74,7 +74,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Assalamualaikum.."
-    Content: "_InsyaAllah_, blog ini berisi arcategorie://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center tikel-artikel tentang linux (dan lain-lain) dalam bahasa Indonesia 🇮🇩"
+    Content: "_InsyaAllah_, blog ini berisi artikel-artikel tentang linux (dan lain-lain) dalam bahasa Indonesia 🇮🇩"
 
   socialIcons:
     - name: stackoverflow

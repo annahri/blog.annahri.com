@@ -1,7 +1,7 @@
 ---
 title: "Belajar Bash Scripting: Conditional"
 date: 2022-02-27T20:41:25+07:00
-draft: true
+draft: false
 tags:
 - bash
 - scripting

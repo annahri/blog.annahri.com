@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Annahri Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sat, 13 Nov 2021 22:09:50 +0000</lastBuildDate><atom:link href="https://blog.annahri.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Feb 2022 20:41:25 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belajar</title>
+      <link>https://blog.annahri.com/categories/belajar/</link>
+      <pubDate>Sun, 27 Feb 2022 20:41:25 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/categories/belajar/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Sysadmin</title>
       <link>https://blog.annahri.com/categories/sysadmin/</link>

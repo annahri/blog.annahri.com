@@ -3,10 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.annahri.com/</loc>
-    <lastmod>2021-11-13T22:09:50+00:00</lastmod>
+    <lastmod>2022-02-27T20:41:25+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/bash/</loc>
+    <lastmod>2022-02-27T20:41:25+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/categories/belajar/</loc>
+    <lastmod>2022-02-27T20:41:25+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/posts/belajar-bash-scripting-conditional/</loc>
+    <lastmod>2022-02-27T20:41:25+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/categories/</loc>
-    <lastmod>2021-11-13T22:09:50+00:00</lastmod>
+    <lastmod>2022-02-27T20:41:25+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/posts/</loc>
+    <lastmod>2022-02-27T20:41:25+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/scripting/</loc>
+    <lastmod>2022-02-27T20:41:25+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/</loc>
+    <lastmod>2022-02-27T20:41:25+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/jurnal/</loc>
     <lastmod>2021-11-13T22:09:50+00:00</lastmod>
@@ -17,22 +35,13 @@
     <loc>https://blog.annahri.com/tags/nginx/</loc>
     <lastmod>2021-11-13T22:09:50+00:00</lastmod>
   </url><url>
-    <loc>https://blog.annahri.com/posts/</loc>
-    <lastmod>2021-11-13T22:09:50+00:00</lastmod>
-  </url><url>
     <loc>https://blog.annahri.com/tags/reverse-proxy/</loc>
     <lastmod>2021-11-13T22:09:50+00:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/categories/sysadmin/</loc>
     <lastmod>2021-11-13T22:09:50+00:00</lastmod>
   </url><url>
-    <loc>https://blog.annahri.com/tags/</loc>
-    <lastmod>2021-11-13T22:09:50+00:00</lastmod>
-  </url><url>
     <loc>https://blog.annahri.com/categories/bash/</loc>
-    <lastmod>2021-11-04T23:28:21+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/tags/bash/</loc>
     <lastmod>2021-11-04T23:28:21+00:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/series/bash-shell-tricks/</loc>

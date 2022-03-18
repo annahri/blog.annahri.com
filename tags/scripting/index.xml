@@ -6,7 +6,19 @@
     <description>Recent content in scripting on Annahri Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sun, 27 Feb 2022 20:41:25 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 13:21:57 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belajar Bash Scripting: Variabel</title>
+      <link>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</link>
+      <pubDate>Mon, 28 Feb 2022 13:21:57 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</guid>
+      <description>Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.
+Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya Bashism.
+Aturan penamaan Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:
+ Tidak diawali dengan angka. Tidak diawali atau mengandung tanda pentung, tanda @, tanda pagar #.</description>
+    </item>
+    
     <item>
       <title>Belajar Bash Scripting: Conditional</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-conditional/</link>

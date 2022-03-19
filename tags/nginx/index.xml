@@ -8,11 +8,11 @@
     <language>id-id</language>
     <lastBuildDate>Sat, 13 Nov 2021 22:09:50 +0000</lastBuildDate><atom:link href="https://blog.annahri.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Membenahi Kendala mixed-content pada Nginx yang berperan sebagai Reverse-Proxy</title>
-      <link>https://blog.annahri.com/posts/nginx-reverse-proxy-mixed-content/</link>
+      <title>Jurnal: Membenahi kendala mixed-content pada Nginx Reverse-Proxy</title>
+      <link>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</link>
       <pubDate>Sat, 13 Nov 2021 22:09:50 +0000</pubDate>
       
-      <guid>https://blog.annahri.com/posts/nginx-reverse-proxy-mixed-content/</guid>
+      <guid>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</guid>
       <description>Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam source code-nya masih ter-hardcoded beberapa resource eksternal menggunakan protokol HTTP.
 Hal ini membuat kebanyakan web browser mengeluh dan enggan untuk memuat resource yang dipanggil dari protokol HTTP tadi.
 Maka solusinya ada 2:

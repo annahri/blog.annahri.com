@@ -20,8 +20,7 @@ Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahw
 Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:
 
 1. Tidak diawali dengan angka.
-1. Tidak diawali atau mengandung tanda pentung, tanda @, tanda pagar #.
-1. Tidak mengandung asterisk (\*).
+1. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (\*).
 1. Variabel dengan huruf kapital seluruhnya, dikhususkan untuk variabel internal shell dan varibel _environment_.
 
 Contoh:
@@ -36,7 +35,9 @@ vari#abel # salah
 vari!abel # salah
 vari@abel # salah
 
-SHELL     # sudah digunakan sebagai internal variabel
+SHELL     # sudah digunakan sebagai environment variable
+HOSTNAME  # sudah digunakan sebagai environment variable
+REPLY     # sudah digunakan dalam BASH internal variable
 
 variabel  # benar
 Variabel  # benar

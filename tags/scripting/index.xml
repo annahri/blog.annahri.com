@@ -16,7 +16,7 @@
       <description>Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.
 Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya Bashism.
 Aturan penamaan Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:
- Tidak diawali dengan angka. Tidak diawali atau mengandung tanda pentung, tanda @, tanda pagar #.</description>
+ Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
     </item>
     
     <item>

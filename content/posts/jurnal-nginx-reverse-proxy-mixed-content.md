@@ -1,5 +1,5 @@
 ---
-title: "Membenahi Kendala mixed-content pada Nginx yang berperan sebagai Reverse-Proxy"
+title: "Jurnal: Membenahi kendala mixed-content pada Nginx Reverse-Proxy"
 date: 2021-11-13T22:09:50Z
 draft: false
 tags:

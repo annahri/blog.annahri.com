@@ -1,5 +1,5 @@
 ---
-title: "Cara Extend VM Disk untuk LVM"
+title: "Jurnal: Cara Extend VM Disk untuk LVM"
 date: 2021-11-02T18:58:41Z
 draft: false
 categories:

@@ -6,7 +6,17 @@
     <description>Recent content in scripting on Annahri Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Mon, 28 Feb 2022 13:21:57 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Apr 2022 09:25:02 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jurnal: Script Rincian Mail Queue Postfix</title>
+      <link>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</link>
+      <pubDate>Fri, 08 Apr 2022 09:25:02 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</guid>
+      <description>Pada artikel ini saya akan memberikan contoh script Bash dan Python yang berfungsi untuk menampilkan jumlah antrian email (mail queue) keluar pada Postfix. Ini berguna sebagai metrics yang bisa digunakan untuk alerting. Baik alerting manual maupun terintegrasi seperti ServerDensity, dan sebagainya.
+Dasar Script Komponen utama utama untuk mengetahui mail queue adalah folder dimana queue tersebut singgah untuk sementara waktu. Untuk mengetahuinya, kita bisa memanggil command postconf -h queue_directory yang outputnya akan menunjukkan dimana direktori tersebut.</description>
+    </item>
+    
     <item>
       <title>Belajar Bash Scripting: Variabel</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</link>

@@ -76,7 +76,9 @@ grep -w -c 'active' input
 
 Dan selesai, intinya hanya itu saja.
 
-### Versi Bash
+### Versi Bash #1
+
+Idenya adalah dengan menyimpan daftar _queue_ pada suatu file temporer, kemudian untuk setiap _state_, kita panggil grep count untuk menemukan ada berapa kali keyword _state_ tersebut ditemukan pada file temporer tersebut.
 
 ```bash
 #!/usr/bin/env bash
@@ -106,18 +108,117 @@ main
 ```
 
 Contoh output jika dijalankan:
-```
-root@postfix-relay-new:~/script# bash mqueue.sh
-all: 41
+```sh
+root@postfix-relay-new:~/script# time bash script.sh 
+all: 43
 active: 0
 corrupt: 0
-defer: 27
-deferred: 14
+defer: 28
+deferred: 15
 hold: 0
 incoming: 0
+
+real	0m0.098s
+user	0m0.026s
+sys	0m0.015s
+```
+
+### Versi Bash #2
+
+Melakukan loop untuk setiap entri _queue_ yang ditemukan kemudian langsung menghitungnya dan menyimpannya pada array asosiatif. Tetapi ini memerlukan 2 kali loop. Yang pertama untuk menghitung jumlah, yang kedua untuk mengeluarkan output.
+
+```bash
+#!/usr/bin/env bash
+
+readonly queue_dir=$(postconf -h queue_directory)
+declare -A count=([active]=0 [corrupt]=0 [defer]=0 [deferred]=0 [hold]=0 [incoming]=0)
+total=0
+
+while read line; do
+    state=$(cut -d'/' -f5 <<< "$line")
+    (( ++count[$state] ))
+    (( ++total ))    
+done < <(find "$queue_dir" -type f -regextype egrep -regex '.*/[0-9A-F]+$')
+
+echo "all: $total"
+for i in ${!count[@]}; do
+    printf '%s: %d\n' $i ${count[$i]}
+done | sort
+```
+
+Output:
+
+```sh
+root@postfix-relay-new:~/script# time bash script3.sh 
+all: 43
+active: 0
+corrupt: 0
+defer: 28
+deferred: 15
+hold: 0
+incoming: 0
+
+real	0m0.133s
+user	0m0.084s
+sys	0m0.052s
+```
+
+### Versi Bash #3 (dengan AWK)
+
+Versi AWK ini merupakan versi paling cepat diantara versi script Bash sebelumnya. Karena shell tidak melakukan loop sama sekali, dan seluruh proses dilakukan oleh awk dalam sekali eksekusi. Sedangkan pada script sebelumnya (#2), setiap iterasi ada eksekusi eksternal tool `cut` yang berdampak pada durasi eksekusi (meskipun tidak terlalu signifikan).
+
+Ide yang digunakan, sama dengan pada script bash versi kedua.
+
+```bash
+#!/usr/bin/env bash
+
+find `postconf -h queue_dir` -type f -regextype egrep -regex '.*/[0-9A-F]{5,}$' \
+    | awk -F'/' 'BEGIN { count["active"]=0; count["corrupt"]=0; count["defer"]=0; count["deferred"]=0; count["hold"]=0; count["incoming"]=0 }
+    { count[$5]++; total++ }
+    END { print "all:", total; for (n in count) print n":", count[n] | "sort" }'
+```
+
+Agar mempermudah memahami sintaks awk panjang tersebut, berikut ini versi baris per baris:
+
+```awk
+BEGIN {
+    count["active"]=0
+    count["corrupt"]=0
+    count["defer"]=0
+    count["deferred"]=0
+    count["hold"]=0
+    count["incoming"]=0
+}
+{
+    count[$5]++
+    total++
+}
+END {
+    print "all:", total
+    for (n in count) print n":", count[n] | "sort"
+}
+```
+
+Output:
+
+```sh
+root@postfix-relay-new:~/script# time bash wawk.sh 
+all: 43
+active: 0
+corrupt: 0
+defer: 28
+deferred: 15
+hold: 0
+incoming: 0
+
+real	0m0.083s
+user	0m0.011s
+sys	0m0.011s
 ```
 
 ### Versi Python
+
+Script versi Python ini menggunakan ide yang sama pada script bash pertama.
 
 ```python
 import os
@@ -142,15 +243,19 @@ if __name__ == '__main__':
 ```
 
 Contoh output jika dijalankan:
-```
-root@postfix-relay-new:~/script# python3 mqueue.py 
-all: 41
+```sh
+root@postfix-relay-new:~/script# time python3 mqueue.py 
+all: 43
 active: 0
-corrupt: 0
-defer: 27
-deferred: 14
+corrupted: 0
+defer: 28
+deferred: 15
 hold: 0
 incoming: 0
+
+real	0m0.076s
+user	0m0.055s
+sys	0m0.011s
 ```
 
 ---

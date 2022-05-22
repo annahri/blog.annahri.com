@@ -6,7 +6,19 @@
     <description>Recent content on Annahri Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sun, 08 May 2022 14:21:00 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 May 2022 21:39:00 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun</title>
+      <link>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</link>
+      <pubDate>Sun, 22 May 2022 21:39:00 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</guid>
+      <description>Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.
+Pada dasarnya, perintah yang digunakan adalah:
+zmprov -l ga &amp;lt;nama akun&amp;gt; zimbraMailSieveScript Contoh output:
+# name user1@example.com zimbraMailSieveScript: require [&amp;#34;fileinto&amp;#34;, &amp;#34;copy&amp;#34;, &amp;#34;reject&amp;#34;, &amp;#34;tag&amp;#34;, &amp;#34;flag&amp;#34;, &amp;#34;variables&amp;#34;, &amp;#34;log&amp;#34;, &amp;#34;enotify&amp;#34;, &amp;#34;envelope&amp;#34;, &amp;#34;body&amp;#34;, &amp;#34;ereject&amp;#34;, &amp;#34;reject&amp;#34;, &amp;#34;relational&amp;#34;, &amp;#34;comparator-i;ascii- numeric&amp;#34;]; # forward if anyof (address :all :contains :comparator &amp;#34;i;ascii-casemap&amp;#34; [&amp;#34;to&amp;#34;] &amp;#34;user1@example.com&amp;#34;) { redirect &amp;#34;user2@example.com&amp;#34;; stop; } Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:</description>
+    </item>
+    
     <item>
       <title>Belajar Bash Scripting: Loop</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</link>

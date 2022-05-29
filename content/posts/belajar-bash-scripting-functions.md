@@ -147,6 +147,19 @@ fungsi() {
 
 Nilai yang didefinisikan setelah sintaks `return` tersebut, adalah nilai exit. Ketentuannya adalah, jika nilai tersebut lebih dari nol, maka error terjadi.
 
+Ini bisa dimanfaatkan untuk meniru nilai return boolean, seperti contoh berikut ini:
+
+```bash
+file_exists() {
+    test -f "$1" || return 1
+    return
+}
+
+if file_exists "file.jpg"; then
+    ...
+fi
+```
+
 Tambahan, jika melihat penjelasan sintaks `return` dari `help return`, maka dijelaskan bahwa sintaks tersebut hanya bisa dieksekusi dari dalam suatu fungsi. Sehingga, ketika sintaks tersebut dijalankan diluar fungsi, maka akan ekluar eror:
 
 ```terminal

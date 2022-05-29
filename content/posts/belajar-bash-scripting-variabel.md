@@ -1,5 +1,5 @@
 ---
-title: "Belajar Bash Scripting: Variabel"
+title: "Belajar Bash Scripting: Variabel (Update)"
 date: 2022-02-28T13:21:57+07:00
 draft: false
 tags:
@@ -303,6 +303,21 @@ $ declare -a array <<< $var
 ```
 
 Penjelasan mengenai `<<<` ada pada artikel mendatang, _insyaAllah_.
+
+### Menkonversi file yang berisi list menjadi array
+
+Jika ada suatu file yang berisi suatu list (bisa berupa daftar _string_, dsb) dan hendak dikonversi menjadi array, maka bisa menggunakan `mapfile`:
+
+```bash
+$ cat file
+aaaa
+bbbb
+cccc
+dddd
+$ mapfile list < file
+$ echo ${list[3]}
+dddd
+```
 
 ### Kasus penggunaan array
 

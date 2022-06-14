@@ -19,6 +19,18 @@ nama_fungsi() { ... command1 command2 ... } # atau function nama_fungsi() { ... 
     </item>
     
     <item>
+      <title>Belajar Bash Scripting: Menulis Script</title>
+      <link>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</link>
+      <pubDate>Sat, 28 May 2022 16:25:00 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</guid>
+      <description>Setelah mempelajari mengenai elemen-elemen dasar pada suatu script, kali ini saya akan menjelaskan bagaimana membuat file script.
+Jika Anda ingin mempelajari ulang mengenai elemen-elemen yang dimaksud, bisa Anda pelajari melalui tautan-tautan dibawah ini:
+Konsep dasar Shell Variables Konsep dasar Shell Conditionals Konsep dasar Shell Loops Konsep dasar Shell Functions Pada dasarnya, shell script merupakan file yang berisi serangkaian instruksi shell yang disusun sedemikian rupa untuk tujuan tertentu.
+Diantara tujuan tersebut dapat berupa instruksi otomasi proses, CLI (command line interface) tool, program wrapper sebagai ekstensi suatu program lain yang sudah ada, dan semisalnya.</description>
+    </item>
+    
+    <item>
       <title>Belajar Bash Scripting: Loop</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</link>
       <pubDate>Sun, 08 May 2022 14:21:00 +0700</pubDate>
@@ -38,7 +50,7 @@ Namun dengan pengecualian jika FOR loop tersebut dideklarasikan menggunakan inde
       <description>Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.
 Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya Bashism.
 Aturan penamaan Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:
- Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
+Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
     </item>
     
     <item>

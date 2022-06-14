@@ -16,7 +16,7 @@
       <description>Saya akan menjelaskan beberapa tips dan trik dalam menggunakan shell bash yang biasa saya gunakan sehari-hari.
 Reverse Search Sebagian orang biasa menggunakan history untuk melihat/mencari command-command sebelumnya yang sudah pernah diinputkan. Atau bahkan menggunakan arrow key atas untuk mencari command yang diinginkan.
 Sebenarnya hampir kebanyakan shell memiliki fitur reverse search. Sesuai namanya, fitur ini bisa melakukan pencarian terhadap command yang sebelumya pernah diinputkan.
-Bagaimana caranya? Cukup menekan CTRL+Rpada terminal. Dan ketikkan kata kunci untuk command yang sedang dicari.</description>
+Bagaimana caranya? Cukup menekan CTRL+R pada terminal.</description>
     </item>
     
   </channel>

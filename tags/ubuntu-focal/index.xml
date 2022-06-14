@@ -16,7 +16,7 @@
       <description>LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx, (M)ysql atau Mariadb, dan (P)HP.
 Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04. Untuk OS berbasis RPM menyusul.
 Konfigurasi Awal Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.
-$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka. Kalau anda menggunakan ufw maka perintahnya adalah:</description>
+$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.</description>
     </item>
     
   </channel>

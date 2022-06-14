@@ -19,6 +19,18 @@ nama_fungsi() { ... command1 command2 ... } # atau function nama_fungsi() { ... 
     </item>
     
     <item>
+      <title>Belajar Bash Scripting: Menulis Script</title>
+      <link>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</link>
+      <pubDate>Sat, 28 May 2022 16:25:00 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</guid>
+      <description>Setelah mempelajari mengenai elemen-elemen dasar pada suatu script, kali ini saya akan menjelaskan bagaimana membuat file script.
+Jika Anda ingin mempelajari ulang mengenai elemen-elemen yang dimaksud, bisa Anda pelajari melalui tautan-tautan dibawah ini:
+Konsep dasar Shell Variables Konsep dasar Shell Conditionals Konsep dasar Shell Loops Konsep dasar Shell Functions Pada dasarnya, shell script merupakan file yang berisi serangkaian instruksi shell yang disusun sedemikian rupa untuk tujuan tertentu.
+Diantara tujuan tersebut dapat berupa instruksi otomasi proses, CLI (command line interface) tool, program wrapper sebagai ekstensi suatu program lain yang sudah ada, dan semisalnya.</description>
+    </item>
+    
+    <item>
       <title>Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun</title>
       <link>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</link>
       <pubDate>Sun, 22 May 2022 21:39:00 +0700</pubDate>
@@ -60,7 +72,7 @@ Dasar Script Komponen utama utama untuk mengetahui mail queue adalah folder dima
       <description>Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.
 Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya Bashism.
 Aturan penamaan Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:
- Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
+Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
     </item>
     
     <item>
@@ -83,7 +95,7 @@ if kondisi; then command command ... fi # atau if kondisi then command command .
       <description>Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam source code-nya masih ter-hardcoded beberapa resource eksternal menggunakan protokol HTTP.
 Hal ini membuat kebanyakan web browser mengeluh dan enggan untuk memuat resource yang dipanggil dari protokol HTTP tadi.
 Maka solusinya ada 2:
- Edit source code-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS. Dari sisi Reverse-Proxy, tinggal tambahkan header berikut:  add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx</description>
+Edit source code-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS. Dari sisi Reverse-Proxy, tinggal tambahkan header berikut: add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx</description>
     </item>
     
     <item>
@@ -95,7 +107,7 @@ Maka solusinya ada 2:
       <description>Saya akan menjelaskan beberapa tips dan trik dalam menggunakan shell bash yang biasa saya gunakan sehari-hari.
 Reverse Search Sebagian orang biasa menggunakan history untuk melihat/mencari command-command sebelumnya yang sudah pernah diinputkan. Atau bahkan menggunakan arrow key atas untuk mencari command yang diinginkan.
 Sebenarnya hampir kebanyakan shell memiliki fitur reverse search. Sesuai namanya, fitur ini bisa melakukan pencarian terhadap command yang sebelumya pernah diinputkan.
-Bagaimana caranya? Cukup menekan CTRL+Rpada terminal. Dan ketikkan kata kunci untuk command yang sedang dicari.</description>
+Bagaimana caranya? Cukup menekan CTRL+R pada terminal.</description>
     </item>
     
     <item>
@@ -119,7 +131,7 @@ echo 1 &amp;gt; /sys/class/block/&amp;lt;disk&amp;gt;/device/rescan Lalu coba ce
       <description>LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx, (M)ysql atau Mariadb, dan (P)HP.
 Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04. Untuk OS berbasis RPM menyusul.
 Konfigurasi Awal Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.
-$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka. Kalau anda menggunakan ufw maka perintahnya adalah:</description>
+$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.</description>
     </item>
     
     

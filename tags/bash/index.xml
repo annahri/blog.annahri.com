@@ -19,6 +19,18 @@ nama_fungsi() { ... command1 command2 ... } # atau function nama_fungsi() { ... 
     </item>
     
     <item>
+      <title>Belajar Bash Scripting: Menulis Script</title>
+      <link>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</link>
+      <pubDate>Sat, 28 May 2022 16:25:00 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</guid>
+      <description>Setelah mempelajari mengenai elemen-elemen dasar pada suatu script, kali ini saya akan menjelaskan bagaimana membuat file script.
+Jika Anda ingin mempelajari ulang mengenai elemen-elemen yang dimaksud, bisa Anda pelajari melalui tautan-tautan dibawah ini:
+Konsep dasar Shell Variables Konsep dasar Shell Conditionals Konsep dasar Shell Loops Konsep dasar Shell Functions Pada dasarnya, shell script merupakan file yang berisi serangkaian instruksi shell yang disusun sedemikian rupa untuk tujuan tertentu.
+Diantara tujuan tersebut dapat berupa instruksi otomasi proses, CLI (command line interface) tool, program wrapper sebagai ekstensi suatu program lain yang sudah ada, dan semisalnya.</description>
+    </item>
+    
+    <item>
       <title>Belajar Bash Scripting: Loop</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</link>
       <pubDate>Sun, 08 May 2022 14:21:00 +0700</pubDate>
@@ -48,7 +60,7 @@ Dasar Script Komponen utama utama untuk mengetahui mail queue adalah folder dima
       <description>Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.
 Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya Bashism.
 Aturan penamaan Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:
- Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
+Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
     </item>
     
     <item>
@@ -71,7 +83,7 @@ if kondisi; then command command ... fi # atau if kondisi then command command .
       <description>Saya akan menjelaskan beberapa tips dan trik dalam menggunakan shell bash yang biasa saya gunakan sehari-hari.
 Reverse Search Sebagian orang biasa menggunakan history untuk melihat/mencari command-command sebelumnya yang sudah pernah diinputkan. Atau bahkan menggunakan arrow key atas untuk mencari command yang diinginkan.
 Sebenarnya hampir kebanyakan shell memiliki fitur reverse search. Sesuai namanya, fitur ini bisa melakukan pencarian terhadap command yang sebelumya pernah diinputkan.
-Bagaimana caranya? Cukup menekan CTRL+Rpada terminal. Dan ketikkan kata kunci untuk command yang sedang dicari.</description>
+Bagaimana caranya? Cukup menekan CTRL+R pada terminal.</description>
     </item>
     
   </channel>

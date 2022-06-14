@@ -28,7 +28,7 @@ zmprov -l ga &amp;lt;nama akun&amp;gt; zimbraMailSieveScript Contoh output:
       <description>Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam source code-nya masih ter-hardcoded beberapa resource eksternal menggunakan protokol HTTP.
 Hal ini membuat kebanyakan web browser mengeluh dan enggan untuk memuat resource yang dipanggil dari protokol HTTP tadi.
 Maka solusinya ada 2:
- Edit source code-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS. Dari sisi Reverse-Proxy, tinggal tambahkan header berikut:  add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx</description>
+Edit source code-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS. Dari sisi Reverse-Proxy, tinggal tambahkan header berikut: add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@ echo 1 &amp;gt; /sys/class/block/&amp;lt;disk&amp;gt;/device/rescan Lalu coba ce
       <description>LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx, (M)ysql atau Mariadb, dan (P)HP.
 Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04. Untuk OS berbasis RPM menyusul.
 Konfigurasi Awal Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.
-$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka. Kalau anda menggunakan ufw maka perintahnya adalah:</description>
+$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.</description>
     </item>
     
   </channel>

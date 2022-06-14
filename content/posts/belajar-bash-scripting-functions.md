@@ -8,9 +8,6 @@ tags:
 categories:
 - Belajar
 ---
-![Featured Image](/images/bss-functions.jpg#center)
-
----
 
 ![Bismillah](/images/bismillah.png#center)
 

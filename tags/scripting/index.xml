@@ -6,7 +6,19 @@
     <description>Recent content in scripting on Annahri Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sun, 29 May 2022 08:09:00 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jul 2022 21:38:09 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belajar Bash Scripting: Arguments</title>
+      <link>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</link>
+      <pubDate>Sat, 30 Jul 2022 21:38:09 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</guid>
+      <description>Pada artikel kali ini, saya akan membahas mengenai shell argumens, yaitu bagaimana agar kita dapat memasukkan parameter tertentu saat memanggil script yang telah kita tulis atau saat memanggul fungsi yang telah kita definisikan.
+Parameter/argumen Mari kita lihat pada command cp berikut ini:
+cp -f file1 file2 Command diatas bisa diartikan dengan &amp;ldquo;menyalin secara paksa file1 sebagai file2&amp;rdquo;.
+Paksaan yang dimaksud adalah jika file2 sebelumnya telah ada, maka langsung menimpa file2 tersebut dengan file1tanpa memberitahu user terlebih dahulu.</description>
+    </item>
+    
     <item>
       <title>Belajar Bash Scripting: Functions</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-functions/</link>

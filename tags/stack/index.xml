@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>stack on Annahri Blog</title>
+    <title>stack on Annahri Ngelinux</title>
     <link>https://blog.annahri.com/tags/stack/</link>
-    <description>Recent content in stack on Annahri Blog</description>
+    <description>Recent content in stack on Annahri Ngelinux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
     <lastBuildDate>Thu, 27 May 2021 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/stack/index.xml" rel="self" type="application/rss+xml" />

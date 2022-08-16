@@ -8,7 +8,7 @@ categories:
 - Belajar
 ---
 
-![Bismillah](/images/bismillah.png#center)
+![Bismillah](/images/bismillah-2.png#center)
 
 Pada artikel kali ini, saya akan membahas mengenai shell argumens, yaitu bagaimana agar kita dapat memasukkan parameter tertentu saat memanggil script yang telah kita tulis atau saat memanggul fungsi yang telah kita definisikan.
 
@@ -85,8 +85,9 @@ $1 = uji
 $2 = coba
 ```
 
-💡 Disini perbedaannya adalah, `$0` akan selalu merujuk pada program/shell script yang dijalankan, bukan fungsi yang dipanggil.
-
+{{< callout >}}
+Disini perbedaannya adalah, <code>$0</code> akan selalu merujuk pada program/shell script yang dijalankan, bukan fungsi yang dipanggil.
+{{< /callout >}}
 
 # Contoh script
 

@@ -9,7 +9,7 @@ categories:
 - Belajar
 ---
 
-![Bismillah](https://drive.google.com/uc?export=download&id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center)
+![Bismillah](/images/bismillah-2.png#center)
 
 Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.
 

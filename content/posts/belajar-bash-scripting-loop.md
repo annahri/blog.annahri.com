@@ -11,7 +11,7 @@ categories:
 
 ![Cover](/images/bss-loop.jpg)
 
-![Bismillah](https://drive.google.com/uc?export=download&id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center)
+![Bismillah](/images/bismillah-2.png#center)
 
 Artikel ini akan menjelaskan mengenai bagaimana cara untuk melakukan LOOP alias menjalankan sekumpulan _command_ secara berulang-ulang dengan kondisi tertentu.
 

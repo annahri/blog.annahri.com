@@ -4,5 +4,17 @@ date: 2021-11-01T23:52:05Z
 draft: true
 ---
 
-![Bismillah](https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center)
+![Bismillah](/images/bismillah-2.png#center)
 
+Test static image
+
+![Img](/images/img.png)
+
+{{< gist spf13 7896402 >}}
+
+## Shortcode Test
+
+{{< callout >}}
+    This is the text that will show up in the callout.
+    It can be as long as you like, but only one paragraph.
+{{< /callout >}}

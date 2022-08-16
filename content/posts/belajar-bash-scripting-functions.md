@@ -9,7 +9,7 @@ categories:
 - Belajar
 ---
 
-![Bismillah](/images/bismillah.png#center)
+![Bismillah](/images/bismillah-2.png#center)
 
 Pada artikel ini saya akan menjelaskan seputar _shell functions_, bagaimana cara mendefinisikan suatu fungsi pada Bash _shell_ yang itu merupakan seperangkat perintah yang disusun sedemikian rupa agar bisa digunakan kembali pada bagian lain suatu _script_.
 

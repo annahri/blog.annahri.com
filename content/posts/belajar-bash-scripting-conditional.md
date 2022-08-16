@@ -9,7 +9,7 @@ categories:
 - Belajar
 ---
 
-![Bismillah](/images/bismillah.png#center)
+![Bismillah](/images/bismillah-2.png#center)
 
 Pada artikel ini saya akan menjelaskan mengenai bagaimana cara melakukan macam-macam kondisional pada Bash _scripting_. Dan karena ini adalah seri khusus _shell_ Bash, maka tentunya tidak _POSIX-compliant_.
 

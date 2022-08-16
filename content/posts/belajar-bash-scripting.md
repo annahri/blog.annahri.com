@@ -9,7 +9,7 @@ categories:
 - Belajar
 ---
 
-![Bismillah](https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center)
+![Bismillah](/images/bismillah-2.png#center)
 
 Pada artikel ini saya akan menjelaskan bagaimana cara melakukan kondisional if pada _shell_ bash. Perlu diketahui, sebagian besar tutorial pembelajaran mengenai _Bash Scripting_ tidak akan POSIX-compliant alias tidak portabel. Artinya, belum tentu script bash untuk versi A bisa berjalan pada sistem yang memiliki bash versi C. Dan tentunya script bash tersebut tidak akan berjalan pada sistem-sistem yang tidak memiliki shell bash.
 

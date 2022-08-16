@@ -1,0 +1,35 @@
+<style>
+    #callout {
+        color: #f7f4ef;
+        background: {{ .Get "bg" | default "#3e3e4f" }};
+        padding: 1.0em 1.25em;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: row;
+        margin: 20px auto;
+    }
+
+    #callout code {
+        background-color: transparent;
+    }
+    
+    #callout-inner {
+        margin-left: 1em;
+    }
+    
+    @media (max-width: 767px) {
+        #callout {
+            padding: 1.5em 0.75em 1.5em 0.6em;
+        }
+        
+        #callout-inner {
+            margin-left: 0.5em;
+        }
+    }
+</style>
+<div id="callout" style="">
+    <div>{{ .Get "emoji" | default "💡" }}</div>
+    <div id="callout-inner">
+        {{- .Inner -}}
+    </div>
+</div>

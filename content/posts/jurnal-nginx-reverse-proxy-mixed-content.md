@@ -10,7 +10,7 @@ categories:
 - Sysadmin
 ---
 
-![Bismillah](https://drive.google.com/uc?id=17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT#center)
+![Bismillah](/images/bismillah-2.png#center)
 
 Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam _source code_-nya masih ter-_hardcoded_ beberapa _resource_ eksternal menggunakan protokol HTTP.
 

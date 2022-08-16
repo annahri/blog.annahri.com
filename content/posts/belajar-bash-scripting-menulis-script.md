@@ -8,7 +8,7 @@ categories:
 - Belajar
 ---
 
-![Bismillah](/images/bismillah.png#center)
+![Bismillah](/images/bismillah-2.png#center)
 
 Setelah mempelajari mengenai elemen-elemen dasar pada suatu _script_, kali ini saya akan menjelaskan bagaimana membuat file _script_.
 

@@ -14,7 +14,18 @@ Test static image
 
 ## Shortcode Test
 
+### Callout with <>
+
 {{< callout >}}
-    This is the text that will show up in the callout.
-    It can be as long as you like, but only one paragraph.
+This is the text that will show up in the callout.
+It can be as long as you like, but only *one paragraph*
 {{< /callout >}}
+
+### Callout with %
+
+{{% callout %}}
+This is the text that will show up in the callout.
+It can be as long as you like, but only *one paragraph* (?).
+
+Not really though, this content is inside the callout.
+{{% /callout %}}

@@ -1,5 +1,6 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
 <style>
-    #callout {
+    .callout {
         color: #f7f4ef;
         background: {{ .Get "bg" | default "#3e3e4f" }};
         padding: 1.0em 1.25em;
@@ -9,27 +10,29 @@
         margin: 20px auto;
     }
 
-    #callout code {
+    .callout code {
         background-color: transparent;
     }
     
-    #callout-inner {
+    .callout-inner {
         margin-left: 1em;
     }
     
     @media (max-width: 767px) {
-        #callout {
+        .callout {
             padding: 1.5em 0.75em 1.5em 0.6em;
         }
         
-        #callout-inner {
+        .callout-inner {
             margin-left: 0.5em;
         }
     }
 </style>
-<div id="callout" style="">
-    <div>{{ .Get "emoji" | default "💡" }}</div>
-    <div id="callout-inner">
-        {{- .Inner -}}
-    </div>
-</div>
+{{ printf "<div class=\"callout\">" | htmlUnescape | safeHTML }}
+{{ printf "<div>" | htmlUnescape | safeHTML }}
+    {{ .Get "emoji" | default "💡" }}
+{{ printf "</div>" | htmlUnescape | safeHTML }}
+{{ printf "<div class=\"callout-inner\">" | htmlUnescape | safeHTML }}
+        {{ .Inner }}
+{{ printf "</div>" | htmlUnescape | safeHTML }}
+{{ printf "</div>" | htmlUnescape | safeHTML }}

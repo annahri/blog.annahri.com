@@ -8,7 +8,5 @@ categories:
 - kategori
 ---
 
-![Cover](/images/cover.jpg#center)
-
-![Bismillah](/images/bismillah.png#center)
+![Bismillah](/images/bismillah-2.png#center)
 

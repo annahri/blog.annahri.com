@@ -23,7 +23,7 @@
   </h2>
   {{- range .Pages.GroupByDate "01" }}
   <div class="archive-month">
-    <h3 class="archive-month-header">{{- index $.Site.Data.bulan (string (int .Key)) }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
+    <h3 class="archive-month-header">{{- index $.Site.Data.bulan (string (int (.Key | replaceRE "^0+" ""))) }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
     <div class="archive-posts">
       {{- range .Pages }}
       {{- if eq .Kind "page" }}

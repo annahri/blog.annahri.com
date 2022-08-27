@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=JetBrains+Mono:ital@0;1&display=swap');
 
+:root {
+    --radius: 2px;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
 }
@@ -32,11 +36,6 @@ body p {
 
 .post-content ol {
     margin: 10px auto 12px auto;
-}
-
-.post-content pre {
-    border-radius: 0;
-    padding-left: 0.5em;
 }
 
 .post-content code {

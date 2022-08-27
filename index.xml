@@ -6,7 +6,18 @@
     <description>Recent content on Annahri Ngelinux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sat, 30 Jul 2022 21:38:09 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Aug 2022 14:39:03 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belajar Bash Scripting: Argument Parsing</title>
+      <link>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</link>
+      <pubDate>Wed, 24 Aug 2022 14:39:03 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</guid>
+      <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai Argument Parsing. Yakni adalah bagaimana cara agar setiap argumen yang diberikan pada suatu fungsi/script, bisa diinterpretasi sesuai posisinya (positional argument), atau sesuai ketentuan yang ditentukan nantinya.
+Ini akan sangat bermanfaat jika Anda hendak membuat CLI tool dari bash script. Misalnya membuat tool seperti berikut:
+./script.sh -u username -h host # or ./script.sh --username user --host hostname Telah dibahas pada artikel yang telah lalu (Belajar Bash Scripting: Arguments) bahwa bash akan menginterpretasi setiap argumen yang diberikan dengan variabel $1, $2 dan seterusnya.</description>
+    </item>
+    
     <item>
       <title>Belajar Bash Scripting: Arguments</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</link>

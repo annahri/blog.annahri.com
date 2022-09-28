@@ -1,7 +1,7 @@
 ---
 title: "Jurnal: Menyelamatkan Partisi LVM Yang Metadatanya Tertimpa"
 date: 2022-09-22T21:59:32+07:00
-draft: true
+draft: false
 tags:
 - LVM
 categories:

@@ -6,7 +6,18 @@
     <description>Recent content in lvm on Annahri Ngelinux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 02 Nov 2021 18:58:41 +0000</lastBuildDate><atom:link href="https://blog.annahri.com/tags/lvm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Sep 2022 21:59:32 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/lvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jurnal: Menyelamatkan Partisi LVM Yang Metadatanya Tertimpa</title>
+      <link>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</link>
+      <pubDate>Thu, 22 Sep 2022 21:59:32 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</guid>
+      <description>Mukadimah Pada artikel ini, saya akan menceritakan bagaimana saya berhasil menyelamankan dan mengembalikan paritisi LVM yang hilang metadatanya karena tertimpa oleh metadata SWAP.
+Hal ini terjadi diduga karena sang &amp;ldquo;user&amp;rdquo; nampaknya ingin membesar kapasitas RAM dengan menambah ukuran SWAP. Alih-alih membuatnya pada suatu file atau partisi baru, si &amp;ldquo;user&amp;rdquo; tersebut membuatnya di partisi dimana root disk berada.
+Sejurus kemudian, muncullah permintaan reboot VM yang dimaksud. Tanpa pikir panjang, rekan saya melakukan reboot.</description>
+    </item>
+    
     <item>
       <title>Jurnal: Cara Extend VM Disk untuk LVM</title>
       <link>https://blog.annahri.com/posts/jurnal-cara-extend-vm-disk-lvm/</link>

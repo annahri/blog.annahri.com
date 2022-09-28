@@ -6,16 +6,16 @@
     <description>Recent content in Posts on Annahri Ngelinux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Wed, 24 Aug 2022 14:39:03 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Sep 2022 21:59:32 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Belajar Bash Scripting: Argument Parsing</title>
-      <link>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</link>
-      <pubDate>Wed, 24 Aug 2022 14:39:03 +0700</pubDate>
+      <title>Jurnal: Menyelamatkan Partisi LVM Yang Metadatanya Tertimpa</title>
+      <link>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</link>
+      <pubDate>Thu, 22 Sep 2022 21:59:32 +0700</pubDate>
       
-      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</guid>
-      <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai Argument Parsing. Yakni adalah bagaimana cara agar setiap argumen yang diberikan pada suatu fungsi/script, bisa diinterpretasi sesuai posisinya (positional argument), atau sesuai ketentuan yang ditentukan nantinya.
-Ini akan sangat bermanfaat jika Anda hendak membuat CLI tool dari bash script. Misalnya membuat tool seperti berikut:
-./script.sh -u username -h host # or ./script.sh --username user --host hostname Telah dibahas pada artikel yang telah lalu (Belajar Bash Scripting: Arguments) bahwa bash akan menginterpretasi setiap argumen yang diberikan dengan variabel $1, $2 dan seterusnya.</description>
+      <guid>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</guid>
+      <description>Mukadimah Pada artikel ini, saya akan menceritakan bagaimana saya berhasil menyelamankan dan mengembalikan paritisi LVM yang hilang metadatanya karena tertimpa oleh metadata SWAP.
+Hal ini terjadi diduga karena sang &amp;ldquo;user&amp;rdquo; nampaknya ingin membesar kapasitas RAM dengan menambah ukuran SWAP. Alih-alih membuatnya pada suatu file atau partisi baru, si &amp;ldquo;user&amp;rdquo; tersebut membuatnya di partisi dimana root disk berada.
+Sejurus kemudian, muncullah permintaan reboot VM yang dimaksud. Tanpa pikir panjang, rekan saya melakukan reboot.</description>
     </item>
     
     <item>

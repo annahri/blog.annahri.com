@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Annahri Ngelinux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Thu, 22 Sep 2022 21:59:32 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Nov 2022 05:22:39 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belajar Bash Scripting: Signal Trapping</title>
+      <link>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</link>
+      <pubDate>Tue, 22 Nov 2022 05:22:39 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</guid>
+      <description>Mukadimah Dalam menulis shell script, ada salah satu script yang dimana sebelum memulai fungsi utamanya, script tersebut menyiapkan/membuat file-file atau folder temporer yang nantinya akan dimanfaatkan. Setelah fungsi utama dijalankan, pada akhirnya nanti file-file temporer tersebut akan dihapus agar tidak &amp;ldquo;nyampah&amp;rdquo;.
+Bagaimana jika script terhenti ditengah jalan (atau terjadi suatu kondisi tertentu), sehingga eksekusi script belum sampai kepada baris yang mengisyaratkan untuk menghapus file-file temporer tadi?
+Hal yang semacam ini bisa diatasi dengan mengatur signal trapping menggunakan perintah trap.</description>
+    </item>
+    
     <item>
       <title>Jurnal: Menyelamatkan Partisi LVM Yang Metadatanya Tertimpa</title>
       <link>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</link>

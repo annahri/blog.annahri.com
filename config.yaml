@@ -1,3 +1,4 @@
+---
 baseURL: "https://blog.annahri.com/"
 title: Annahri Ngelinux
 paginate: 8
@@ -13,21 +14,18 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# googleAnalytics: UA-123-45
-
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: An-Nahri | Linux Blogger
   description: "Annahri Blog"
   keywords: [Blog, Portfolio]
-  author: [ "Muhammad Ahfas An Nahri" ]
-  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  author: ["Muhammad Ahfas An Nahri"]
   DateFormat: "2 January 2006"
-  defaultTheme: dark # dark, light
+  defaultTheme: dark
   disableThemeToggle: true
 
   ShowReadingTime: true
@@ -43,38 +41,29 @@ params:
   showtoc: true
   tocopen: true
 
+  mainSections:
+    - posts
+
   assets:
     bismillah: "17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT"
-    disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
+    disableHLJS: true     # to disable highlight.js
     favicon: "https://s3-jak01.storageraya.com/ahf-testcdn/favicon.ico"
     # favicon16x16: "<link / abs url>"
     # favicon32x32: "<link / abs url>"
-    # apple_touch_icon: "<link / abs url>"
-    # safari_pinned_tab: "<link / abs url>"
-    custom_css: [ "css/custom_papermod.css" ]
+    custom_css: ["css/custom_papermod.css"]
 
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: blog.annahri.com
-    subtitle: "InsyaAllah, blog ini berisi artikel-artikel tentang linux berbahasa Indonesia."
-    imageUrl: "https://s3-jak01.storageraya.com/ahf-testcdn/img/annahri_logo.svg"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: Logo Saya
-    buttons:
-      - name: Artikel
-        url: posts
-      - name: Tag
-        url: tags
-
-  # home-info mode
   homeInfoParams:
     Title: "Assalamualaikum.."
-    Content: >
-      _InsyaAllah_, blog ini berisi dan akan berisikan artikel-artikel yang mayoritasnya membahas seputar Linux dan mungkin yang lainnya, dalam bahasa Indonesia 🇮🇩.
+    Content: |
+      _InsyaAllah_, blog ini berisi dan akan berisikan artikel-artikel yang
+      mayoritasnya membahas seputar Linux dan mungkin yang lainnya,
+      dalam bahasa Indonesia 🇮🇩.
       Semoga bermanfaat, _barakallahufiikum_.
+
+      &nbsp;
+
+      _Mohon untuk tidak menyalin isi blog tanpa seizin pengelola,
+      jika tidak silakan dipertanggungjawabkan sendiri di Akhirat_
 
   socialIcons:
     - name: linkedin
@@ -85,17 +74,15 @@ params:
       url: "https://github.com/annahri"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: true          # hide everywhere but not in structured data
+    hiddenInList: true    # hide on list pages and home
+    hiddenInSingle: true  # hide on single page
 
   editPost:
     URL: "https://github.com/annahri/blog.annahri.com/tree/main/content"
-    Text: "Sarankan Perubahan" # edit text
-    appendFilePath: true # to append file path to Edit link
+    Text: "Sarankan Pengubahan"   # edit text
+    appendFilePath: true          # to append file path to Edit link
 
-  # for search
-  # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -123,16 +110,20 @@ menu:
       name: Pencarian
       url: /cari/
       weight: 30
+      # - identifier: tentang
+      #  name: Tentang
+      #  url: /tentang
+      #  weight: 40
 
 markup:
-    highlight:
-        #anchorLineNos: true
-        codeFences: true
-        guessSyntax: true
-        #noClasses: false
-        pygmentsUseClasses: true
-        #lineNos: true
-        style: dracula
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    # noClasses: false
+    pygmentsUseClasses: true
+    # lineNos: true
+    style: dracula
 
 taxonomies:
   category: categories
@@ -140,7 +131,7 @@ taxonomies:
   series: series
 
 outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON # is necessary
+  home:
+    - HTML
+    - RSS
+    - JSON   # is necessary

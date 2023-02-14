@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Muhammad Ahfas An Nahri</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 22 Nov 2022 05:22:39 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Feb 2023 08:08:21 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sysadmin</title>
+      <link>https://blog.annahri.com/categories/sysadmin/</link>
+      <pubDate>Tue, 14 Feb 2023 08:08:21 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/categories/sysadmin/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Belajar</title>
       <link>https://blog.annahri.com/categories/belajar/</link>
@@ -22,15 +31,6 @@
       <pubDate>Thu, 22 Sep 2022 21:59:32 +0700</pubDate>
       
       <guid>https://blog.annahri.com/categories/jurnal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sysadmin</title>
-      <link>https://blog.annahri.com/categories/sysadmin/</link>
-      <pubDate>Thu, 22 Sep 2022 21:59:32 +0700</pubDate>
-      
-      <guid>https://blog.annahri.com/categories/sysadmin/</guid>
       <description></description>
     </item>
     

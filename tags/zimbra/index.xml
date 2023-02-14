@@ -6,7 +6,19 @@
     <description>Recent content in zimbra on Muhammad Ahfas An Nahri</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sun, 22 May 2022 21:39:00 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/zimbra/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Feb 2023 08:08:21 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/zimbra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zimbra: Menggunakan SSL Certificate dari LetsEncrypt</title>
+      <link>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</link>
+      <pubDate>Tue, 14 Feb 2023 08:08:21 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</guid>
+      <description>Mukadimah LetsEncrypt merupakan salah satu penyedia sertifikat SSL gratis yang banyak sekali digunakan.
+Pemanfaatan sertifikat SSL dari LetsEncrypt pada Zimbra bisa dilakukan tetapi caranya tidak out-of-the-box. Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan LetsEncrypt sebagai penyedia sertifikat SSL untuk instance zimbra Anda.
+Saya menulis artikel ini dengan asumsi bahwa Anda sudah bisa dan terbiasa menggunakan certbot untuk merequest sertifikat SSL.
+Garis besar Secara garis besar, cara untuk menggunakan LE (LetsEncrypt) pada Zimbra adalah sebagai berikut:</description>
+    </item>
+    
     <item>
       <title>Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun</title>
       <link>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</link>

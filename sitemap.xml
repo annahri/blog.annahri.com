@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.annahri.com/categories/</loc>
+    <lastmod>2023-02-14T08:08:21+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/</loc>
+    <lastmod>2023-02-14T08:08:21+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/posts/</loc>
+    <lastmod>2023-02-14T08:08:21+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/categories/sysadmin/</loc>
+    <lastmod>2023-02-14T08:08:21+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/</loc>
+    <lastmod>2023-02-14T08:08:21+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/zimbra/</loc>
+    <lastmod>2023-02-14T08:08:21+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</loc>
+    <lastmod>2023-02-14T08:08:21+07:00</lastmod>
+  </url><url>
     <loc>https://blog.annahri.com/tags/bash/</loc>
     <lastmod>2022-11-22T05:22:39+07:00</lastmod>
   </url><url>
@@ -11,19 +32,7 @@
     <loc>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</loc>
     <lastmod>2022-11-22T05:22:39+07:00</lastmod>
   </url><url>
-    <loc>https://blog.annahri.com/categories/</loc>
-    <lastmod>2022-11-22T05:22:39+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/</loc>
-    <lastmod>2022-11-22T05:22:39+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/posts/</loc>
-    <lastmod>2022-11-22T05:22:39+07:00</lastmod>
-  </url><url>
     <loc>https://blog.annahri.com/tags/scripting/</loc>
-    <lastmod>2022-11-22T05:22:39+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/tags/</loc>
     <lastmod>2022-11-22T05:22:39+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/categories/jurnal/</loc>
@@ -33,9 +42,6 @@
     <lastmod>2022-09-22T21:59:32+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/lvm/</loc>
-    <lastmod>2022-09-22T21:59:32+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/categories/sysadmin/</loc>
     <lastmod>2022-09-22T21:59:32+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</loc>
@@ -51,9 +57,6 @@
     <lastmod>2022-05-28T16:25:00+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</loc>
-    <lastmod>2022-05-22T21:39:00+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/tags/zimbra/</loc>
     <lastmod>2022-05-22T21:39:00+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</loc>

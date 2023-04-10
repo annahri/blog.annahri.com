@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>df on Linux &amp; Cloud | blog.annahri.com</title>
+    <link>https://blog.annahri.com/tags/df/</link>
+    <description>Recent content in df on Linux &amp; Cloud | blog.annahri.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id-id</language>
+    <lastBuildDate>Mon, 10 Apr 2023 19:08:37 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/df/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jurnal: Solusi jika Hasil df Berbeda dengan du</title>
+      <link>https://blog.annahri.com/posts/solusi-jika-hasil-df-berbeda-dengan-du/</link>
+      <pubDate>Mon, 10 Apr 2023 19:08:37 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/solusi-jika-hasil-df-berbeda-dengan-du/</guid>
+      <description>Mukadimah Pada artikel kali ini saya akan membahas mengenai fenomena dimana hasil output dari df berbeda dari du.
+Contohnya adalah berikut ini:
+root@host:~# df -h / Filesystem Size Used Avail Use% Mounted on /dev/mapper/ubuntu--vg-ubuntu--lv 19G 18G 0 100% / root@host:~# du -shx / 5.2G / Bisa diperhatikan bahwa keduanya menunjukkan hasil yang sangat berbeda sama sekali. Kok bisa begitu? Jawabannya disini
+Solusi Pada contoh diatas, df melaporkan size yang tersedia adalah 0.</description>
+    </item>
+    
+  </channel>
+</rss>

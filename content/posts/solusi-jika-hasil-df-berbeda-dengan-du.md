@@ -105,3 +105,6 @@ Lebih lengkapnya bisa dibaca disini:
 - [Why DU And DF Display Different Values On Linux And Unix](https://linuxshellaccount.blogspot.com/2008/12/why-du-and-df-display-different-values.html)
 - [Serverfault - du vs. df difference](https://serverfault.com/questions/57098/du-vs-df-difference)
 
+---
+
+Semoga bermanfaat, _barakallahufiikum_

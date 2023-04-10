@@ -1,7 +1,7 @@
 ---
 baseURL: "https://blog.annahri.com/"
-title: Muhammad Ahfas An Nahri
-paginate: 8
+title: Linux & Cloud | blog.annahri.com
+paginate: 10
 
 languageCode: 'id-id'
 defaultContentLanguage: 'id'
@@ -20,8 +20,8 @@ minify:
 
 params:
   env: production
-  title: An-Nahri | Linux Blogger
-  description: "Annahri Blog"
+  title: Linux & Cloud | blog.annahri.com
+  description: "Berbagi seputar Linux dan Cloud"
   keywords: [Blog, Portfolio]
   author: ["Muhammad Ahfas An Nahri"]
   DateFormat: "2 January 2006"
@@ -56,14 +56,12 @@ params:
     Title: "Assalamualaikum.."
     Content: |
       _InsyaAllah_, blog ini berisi dan akan berisikan artikel-artikel yang
-      mayoritasnya membahas seputar Linux dan mungkin yang lainnya,
+      mayoritasnya membahas seputar Linux, Cloud dan lain-lain _InsyaAllah_,
       dalam bahasa Indonesia 🇮🇩.
-      Semoga bermanfaat, _barakallahufiikum_.
 
       &nbsp;
 
-      _Mohon untuk tidak menyalin isi blog tanpa seizin pengelola,
-      jika tidak silakan dipertanggungjawabkan sendiri di Akhirat_
+      Semoga bermanfaat, _barakallahufiikum_.
 
   socialIcons:
     - name: linkedin

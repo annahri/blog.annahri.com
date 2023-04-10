@@ -55,9 +55,9 @@ install --user zimbra --group zimbra \
 ```
 7. Setelah itu, jalankan perintah `zmcertmgr` sebagai user `zimbra` berikut:
 ```shell
-zmcertmgr comm <certificate> <ca-bundle>
+zmcertmgr deploycrt comm <certificate> <ca-bundle>
 # misal
-zmcertmgr comm /opt/zimbra/ssl/mycerts/fullchain.pem /opt/zimbra/ssl/mycerts/chain.pem
+zmcertmgr deploycrt comm /opt/zimbra/ssl/mycerts/fullchain.pem /opt/zimbra/ssl/mycerts/chain.pem
 ```
 8. Begitu selesai, restart zimbra services:
 ```

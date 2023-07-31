@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.annahri.com/tags/bash/</loc>
+    <lastmod>2023-07-28T19:40:22+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/categories/belajar/</loc>
+    <lastmod>2023-07-28T19:40:22+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</loc>
+    <lastmod>2023-07-28T19:40:22+07:00</lastmod>
+  </url><url>
     <loc>https://blog.annahri.com/categories/</loc>
-    <lastmod>2023-07-11T11:12:38+07:00</lastmod>
+    <lastmod>2023-07-28T19:40:22+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/</loc>
+    <lastmod>2023-07-28T19:40:22+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/posts/</loc>
+    <lastmod>2023-07-28T19:40:22+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/scripting/</loc>
+    <lastmod>2023-07-28T19:40:22+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/</loc>
+    <lastmod>2023-07-28T19:40:22+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/docker/</loc>
     <lastmod>2023-07-11T11:12:38+07:00</lastmod>
@@ -11,16 +32,7 @@
     <loc>https://blog.annahri.com/posts/docker-mengupdate-restart-policy-container/</loc>
     <lastmod>2023-07-11T11:12:38+07:00</lastmod>
   </url><url>
-    <loc>https://blog.annahri.com/</loc>
-    <lastmod>2023-07-11T11:12:38+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/posts/</loc>
-    <lastmod>2023-07-11T11:12:38+07:00</lastmod>
-  </url><url>
     <loc>https://blog.annahri.com/categories/sysadmin/</loc>
-    <lastmod>2023-07-11T11:12:38+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/tags/</loc>
     <lastmod>2023-07-11T11:12:38+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/df/</loc>
@@ -44,16 +56,7 @@
     <loc>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</loc>
     <lastmod>2023-02-14T08:08:21+07:00</lastmod>
   </url><url>
-    <loc>https://blog.annahri.com/tags/bash/</loc>
-    <lastmod>2022-11-22T05:22:39+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/categories/belajar/</loc>
-    <lastmod>2022-11-22T05:22:39+07:00</lastmod>
-  </url><url>
     <loc>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</loc>
-    <lastmod>2022-11-22T05:22:39+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/tags/scripting/</loc>
     <lastmod>2022-11-22T05:22:39+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/categories/jurnal/</loc>

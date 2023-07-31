@@ -6,7 +6,18 @@
     <description>Recent content in scripting on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 22 Nov 2022 05:22:39 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jul 2023 19:40:22 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belajar Bash Scripting: Membaca File dan Membaca Tiap Barisnya</title>
+      <link>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</link>
+      <pubDate>Fri, 28 Jul 2023 19:40:22 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</guid>
+      <description>Mukadimah Dalam menulis script, terkadang kita ingin menjalankan sekumpulan perintah berdasarkan data yang ada pada suatu file (baik raw file, csv, dsb). Kemudian juga terkadang, kita ingin menuliskan suatu script yang menghasilkan suatu file berupa log, atau data terstruktur seperti csv, dan sebagainya.
+Maka, pada seri tulisan &amp;ldquo;Belajar Bash Scripting&amp;rdquo; kali ini, saya akan membahas mengenai bagaimana cara membaca dan menghasilkan suatu file pada bash.
+Membaca File Secara umum, suatu file teks bisa dibaca menggunakan perintah cat:</description>
+    </item>
+    
     <item>
       <title>Belajar Bash Scripting: Signal Trapping</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</link>

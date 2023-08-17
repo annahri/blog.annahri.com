@@ -28,7 +28,7 @@ Mengenai apa yang dieksekusi, hal tersebut harus diatur menggunakan Systemd unit
 
 Kedua file konfigurasi tersebut, bisa diletakkan di `/etc/systemd/system/` untuk lingkup global, atau `/home/$USER/.config/systemd/user/` untuk lingkup user tertentu.
 
-## Contoh
+## Membuat unit Path
 
 Misal, kita ingin memonitor apakah suatu file (anggap saja `/var/www/index.php`) mengalami perubahan isi, dan ketika hal itu terjadi akan mengirimkan alert berupa email.
 
@@ -71,6 +71,8 @@ systemctl daemon-reload
 Setiap kali ada pengubahan unit apapun pada `systemd` maka perlu melakukan `systemctl daemon-reload`
 {{% /callout %}}
 
+## Mengaktifkan unit Path
+
 Kemudian meng-_enable_ unit path `monitor-index.path` tersebut dengan:
 
 ```
@@ -88,6 +90,14 @@ Aug 12 05:32:42 localhost systemd[532]: Started "Monitor file /var/www/index.php
 ```
 
 Bisa diperhatikan dari output diatas, bahwa unit `Path` tersebut akan men-_trigger_ unit `monitor-index.service` jika kondisi pada unit `Path` ini terpenuhi.
+
+## Menonaktifkan unit Path
+
+Untuk menonaktifkan unit `Path`, jalankan perintah berikut ini:
+
+```
+systemctl disable --now monitor-index.path
+```
 
 ## Penutup
 

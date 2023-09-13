@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sat, 12 Aug 2023 17:00:37 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Sep 2023 17:07:35 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membenahi Kendala Boot Macet Pada Ubuntu</title>
+      <link>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</link>
+      <pubDate>Wed, 13 Sep 2023 17:07:35 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</guid>
+      <description>Mukadimah Pada artikel kali ini, saya akan membagikan mengenai bagaimana cara membenahi VM Ubuntu yang macet pada saat booting. Salah satu diantara penyebab gagalnya booting ini adalah PARTUUID yang berbeda antara PARTUUID pada partisi terkait (root) dan PARTUUID yang dikenali oleh grub.
+Tampilan boot yang macet tersebut adalah seperti dibawah ini:
+Sistem tidak mampu meneruskan proses boot karena PARTUUID yang hendak di-boot tidak ditemukan.
+Pemecahan Masalah Boot sistem tersebut menggunakan media recovery apapun seperti SysrescCd, Ubuntu Live, dan lain-lain, yang terpenting bisa melakukan chroot kedalam sistem.</description>
+    </item>
+    
     <item>
       <title>Alternatif Cronjob Menggunakan Systemd Timer Unit</title>
       <link>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</link>

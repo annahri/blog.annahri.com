@@ -6,7 +6,19 @@
     <description>Recent content on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Wed, 13 Sep 2023 17:07:35 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Feb 2024 20:09:11 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zimbra: Delegated Admin untuk Manajemen Quota</title>
+      <link>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</link>
+      <pubDate>Tue, 13 Feb 2024 20:09:11 +0700</pubDate>
+      
+      <guid>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</guid>
+      <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai cara membuat Delegate Admin dengan permission yang sangat terbatas. Dalam kasus ini, hanya sebagai manajemen quota saja. Seperti menambah atau mengurangi mailbox quota user.
+Solusi ini bisa diterapkan jika ingin membuat satu akun yang didelegasikan untuk orang tertentu namun tidak ingin memberikan akses admin zimbra standar.
+Sintaks Sebagai user zimbra:
+# Jika user belum dibuat zmprov ca user@domain.tld &amp;lt;password&amp;gt; zimbraIsAdminAccount TRUE # Jika user sudah dibuat zmprov ma user@domain.</description>
+    </item>
+    
     <item>
       <title>Membenahi Kendala Boot Macet Pada Ubuntu</title>
       <link>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</link>

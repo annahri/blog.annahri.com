@@ -3,21 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.annahri.com/categories/</loc>
-    <lastmod>2023-09-13T17:07:35+07:00</lastmod>
+    <lastmod>2024-02-13T20:09:11+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/</loc>
-    <lastmod>2023-09-13T17:07:35+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</loc>
-    <lastmod>2023-09-13T17:07:35+07:00</lastmod>
+    <lastmod>2024-02-13T20:09:11+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/posts/</loc>
-    <lastmod>2023-09-13T17:07:35+07:00</lastmod>
+    <lastmod>2024-02-13T20:09:11+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/categories/sysadmin/</loc>
-    <lastmod>2023-09-13T17:07:35+07:00</lastmod>
+    <lastmod>2024-02-13T20:09:11+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/</loc>
+    <lastmod>2024-02-13T20:09:11+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/tags/zimbra/</loc>
+    <lastmod>2024-02-13T20:09:11+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</loc>
+    <lastmod>2024-02-13T20:09:11+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</loc>
     <lastmod>2023-09-13T17:07:35+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/troubleshooting/</loc>
@@ -73,9 +79,6 @@
   </url><url>
     <loc>https://blog.annahri.com/tags/lsof/</loc>
     <lastmod>2023-04-10T19:08:37+07:00</lastmod>
-  </url><url>
-    <loc>https://blog.annahri.com/tags/zimbra/</loc>
-    <lastmod>2023-02-14T08:08:21+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</loc>
     <lastmod>2023-02-14T08:08:21+07:00</lastmod>

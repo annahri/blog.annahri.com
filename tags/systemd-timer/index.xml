@@ -6,16 +6,15 @@
     <description>Recent content in systemd-timer on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sat, 12 Aug 2023 17:00:37 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/systemd-timer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Aug 2023 17:00:37 +0700</lastBuildDate>
+    <atom:link href="https://blog.annahri.com/tags/systemd-timer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alternatif Cronjob Menggunakan Systemd Timer Unit</title>
       <link>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</link>
       <pubDate>Sat, 12 Aug 2023 17:00:37 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</guid>
       <description>Mukadimah Systemd tidaklah sebatas software yang berfungsi sebagai init system saja tetapi memiliki sejumlah tool-set lain yang bermanfaat. Salah satunya adalah Systemd unit Timer.
 Unit Timer berfungsi untuk memicu (trigger) suatu unit systemd lain berdasarkan fungsi waktu. Secara sederhana bisa dipahami sebagai alternatif dari cron. Fungsi waktu yang dimaksud bisa berupa, namun tidak terbatas pada, interval waktu (tiap menit, tiap jam atau tiap sekian waktu), penjadwalan eksekusi, dan sebagainya.</description>
     </item>
-    
   </channel>
 </rss>

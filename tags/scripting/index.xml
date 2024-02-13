@@ -6,118 +6,99 @@
     <description>Recent content in scripting on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Fri, 28 Jul 2023 19:40:22 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jul 2023 19:40:22 +0700</lastBuildDate>
+    <atom:link href="https://blog.annahri.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Belajar Bash Scripting: Membaca File dan Membaca Tiap Barisnya</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</link>
       <pubDate>Fri, 28 Jul 2023 19:40:22 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</guid>
       <description>Mukadimah Dalam menulis script, terkadang kita ingin menjalankan sekumpulan perintah berdasarkan data yang ada pada suatu file (baik raw file, csv, dsb). Kemudian juga terkadang, kita ingin menuliskan suatu script yang menghasilkan suatu file berupa log, atau data terstruktur seperti csv, dan sebagainya.
 Maka, pada seri tulisan &amp;ldquo;Belajar Bash Scripting&amp;rdquo; kali ini, saya akan membahas mengenai bagaimana cara membaca dan menghasilkan suatu file pada bash.
 Membaca File Secara umum, suatu file teks bisa dibaca menggunakan perintah cat:</description>
     </item>
-    
     <item>
       <title>Belajar Bash Scripting: Signal Trapping</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</link>
       <pubDate>Tue, 22 Nov 2022 05:22:39 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</guid>
       <description>Mukadimah Dalam menulis shell script, ada salah satu script yang dimana sebelum memulai fungsi utamanya, script tersebut menyiapkan/membuat file-file atau folder temporer yang nantinya akan dimanfaatkan. Setelah fungsi utama dijalankan, pada akhirnya nanti file-file temporer tersebut akan dihapus agar tidak &amp;ldquo;nyampah&amp;rdquo;.
 Bagaimana jika script terhenti ditengah jalan (atau terjadi suatu kondisi tertentu), sehingga eksekusi script belum sampai kepada baris yang mengisyaratkan untuk menghapus file-file temporer tadi?
 Hal yang semacam ini bisa diatasi dengan mengatur signal trapping menggunakan perintah trap.</description>
     </item>
-    
     <item>
       <title>Belajar Bash Scripting: Argument Parsing</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</link>
       <pubDate>Wed, 24 Aug 2022 14:39:03 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</guid>
       <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai Argument Parsing. Yakni adalah bagaimana cara agar setiap argumen yang diberikan pada suatu fungsi/script, bisa diinterpretasi sesuai posisinya (positional argument), atau sesuai ketentuan yang ditentukan nantinya.
 Ini akan sangat bermanfaat jika Anda hendak membuat CLI tool dari bash script. Misalnya membuat tool seperti berikut:
 ./script.sh -u username -h host # or ./script.sh --username user --host hostname Telah dibahas pada artikel yang telah lalu (Belajar Bash Scripting: Arguments) bahwa bash akan menginterpretasi setiap argumen yang diberikan dengan variabel $1, $2 dan seterusnya.</description>
     </item>
-    
     <item>
       <title>Belajar Bash Scripting: Arguments</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</link>
       <pubDate>Sat, 30 Jul 2022 21:38:09 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</guid>
       <description>Pada artikel kali ini, saya akan membahas mengenai shell argumens, yaitu bagaimana agar kita dapat memasukkan parameter tertentu saat memanggil script yang telah kita tulis atau saat memanggul fungsi yang telah kita definisikan.
 Parameter/argumen Mari kita lihat pada command cp berikut ini:
 cp -f file1 file2 Command diatas bisa diartikan dengan &amp;ldquo;menyalin secara paksa file1 sebagai file2&amp;rdquo;.
 Paksaan yang dimaksud adalah jika file2 sebelumnya telah ada, maka langsung menimpa file2 tersebut dengan file1tanpa memberitahu user terlebih dahulu.</description>
     </item>
-    
     <item>
       <title>Belajar Bash Scripting: Functions</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-functions/</link>
       <pubDate>Sun, 29 May 2022 08:09:00 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-functions/</guid>
       <description>Pada artikel ini saya akan menjelaskan seputar shell functions, bagaimana cara mendefinisikan suatu fungsi pada Bash shell yang itu merupakan seperangkat perintah yang disusun sedemikian rupa agar bisa digunakan kembali pada bagian lain suatu script.
 Struktur dasar Sebuah fungsi dapat didefinisikan dengan susunan sebagai berikut:
 nama_fungsi() { ... command1 command2 ... } # atau function nama_fungsi() { ... } Kedua bentuk diatas tidak memiliki perbedaan, namun sebagian ahli mengatakan bahwa bentuk kedua tidaklah portabel.</description>
     </item>
-    
     <item>
       <title>Belajar Bash Scripting: Menulis Script</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</link>
       <pubDate>Sat, 28 May 2022 16:25:00 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</guid>
       <description>Setelah mempelajari mengenai elemen-elemen dasar pada suatu script, kali ini saya akan menjelaskan bagaimana membuat file script.
 Jika Anda ingin mempelajari ulang mengenai elemen-elemen yang dimaksud, bisa Anda pelajari melalui tautan-tautan dibawah ini:
 Konsep dasar Shell Variables Konsep dasar Shell Conditionals Konsep dasar Shell Loops Konsep dasar Shell Functions Pada dasarnya, shell script merupakan file yang berisi serangkaian instruksi shell yang disusun sedemikian rupa untuk tujuan tertentu.
 Diantara tujuan tersebut dapat berupa instruksi otomasi proses, CLI (command line interface) tool, program wrapper sebagai ekstensi suatu program lain yang sudah ada, dan semisalnya.</description>
     </item>
-    
     <item>
       <title>Belajar Bash Scripting: Loop</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</link>
       <pubDate>Sun, 08 May 2022 14:21:00 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</guid>
       <description>Artikel ini akan menjelaskan mengenai bagaimana cara untuk melakukan LOOP alias menjalankan sekumpulan command secara berulang-ulang dengan kondisi tertentu.
 FOR loop FOR loop pada shell Bash sifatnya sama seperti foreach pada keumuman bahasa pemrograman. Yaitu melakukan perulangan tanpa adanya counter, alias suatu perulangan tidaklah diketahui ke-berapa perulangan tersebut sedang terjadi. Atau sederhananya tidak ada indeks pada setiap perulangan.
 Namun dengan pengecualian jika FOR loop tersebut dideklarasikan menggunakan indeks. Akan tiba contohnya pada penjelasan di bawah.</description>
     </item>
-    
     <item>
       <title>Jurnal: Script Rincian Mail Queue Postfix</title>
       <link>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</link>
       <pubDate>Fri, 08 Apr 2022 09:25:02 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</guid>
       <description>Pada artikel ini saya akan memberikan contoh script Bash dan Python yang berfungsi untuk menampilkan jumlah antrian email (mail queue) keluar pada Postfix. Ini berguna sebagai metrics yang bisa digunakan untuk alerting. Baik alerting manual maupun terintegrasi seperti ServerDensity, dan sebagainya.
 Dasar Script Komponen utama utama untuk mengetahui mail queue adalah folder dimana queue tersebut singgah untuk sementara waktu. Untuk mengetahuinya, kita bisa memanggil command postconf -h queue_directory yang outputnya akan menunjukkan dimana direktori tersebut.</description>
     </item>
-    
     <item>
       <title>Belajar Bash Scripting: Variabel (Update)</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</link>
       <pubDate>Mon, 28 Feb 2022 13:21:57 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</guid>
       <description>Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.
 Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya Bashism.
 Aturan penamaan Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:
 Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
     </item>
-    
     <item>
       <title>Belajar Bash Scripting: Conditional</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-conditional/</link>
       <pubDate>Sun, 27 Feb 2022 20:41:25 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-conditional/</guid>
       <description>Pada artikel ini saya akan menjelaskan mengenai bagaimana cara melakukan macam-macam kondisional pada Bash scripting. Dan karena ini adalah seri khusus shell Bash, maka tentunya tidak POSIX-compliant.
 Kondisional IF Struktur dasar Struktur dasar kondisional if dalam Bash scripting hampir sama dengan keumuman bahasa pemrograman, yaitu seperti dibawah ini:
 if kondisi; then command command ... fi # atau if kondisi then command command ... fi Kondisi yang disebutkan diatas bisa berupa ekspresi perbandingan seperti contoh berikut:</description>
     </item>
-    
   </channel>
 </rss>

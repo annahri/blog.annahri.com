@@ -6,12 +6,12 @@
     <description>Recent content in docker on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 11 Jul 2023 11:12:38 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jul 2023 11:12:38 +0700</lastBuildDate>
+    <atom:link href="https://blog.annahri.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker: Mengupdate Restart Policy Container (tanpa recreate)</title>
       <link>https://blog.annahri.com/posts/docker-mengupdate-restart-policy-container/</link>
       <pubDate>Tue, 11 Jul 2023 11:12:38 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/docker-mengupdate-restart-policy-container/</guid>
       <description>Ketika kita membuat/menjalankan suatu container, terkadang kita lupa untuk mengatur restart policy terkait. Sehingga, ketika ada crash, container tersebut tidak langsung restart secara otomatis.
 Berikut ini cara melakukan update restart policy untuk container yang sudah dibuat (sedang berjalan/stop):
@@ -19,6 +19,5 @@ docker update --restart=&amp;lt;policy&amp;gt; &amp;lt;container-id&amp;gt; Cont
 docker update --restart=always abcdef123 Jika berhasil maka akan menghasilkan output ID dari container itu sendiri.
 Semoga bermanfaat, barakallahufiikum.</description>
     </item>
-    
   </channel>
 </rss>

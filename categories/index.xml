@@ -6,51 +6,42 @@
     <description>Recent content in Categories on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 13 Feb 2024 20:09:11 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Feb 2024 20:09:11 +0700</lastBuildDate>
+    <atom:link href="https://blog.annahri.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sysadmin</title>
       <link>https://blog.annahri.com/categories/sysadmin/</link>
       <pubDate>Tue, 13 Feb 2024 20:09:11 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/categories/sysadmin/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Belajar</title>
       <link>https://blog.annahri.com/categories/belajar/</link>
       <pubDate>Fri, 28 Jul 2023 19:40:22 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/categories/belajar/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Jurnal</title>
       <link>https://blog.annahri.com/categories/jurnal/</link>
       <pubDate>Thu, 22 Sep 2022 21:59:32 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/categories/jurnal/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Bash</title>
       <link>https://blog.annahri.com/categories/bash/</link>
       <pubDate>Thu, 04 Nov 2021 23:28:21 +0000</pubDate>
-      
       <guid>https://blog.annahri.com/categories/bash/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Infrastruktur</title>
       <link>https://blog.annahri.com/categories/infrastruktur/</link>
       <pubDate>Thu, 27 May 2021 00:00:00 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/categories/infrastruktur/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

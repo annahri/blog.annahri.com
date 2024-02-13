@@ -6,27 +6,24 @@
     <description>Recent content in systemd on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Sat, 12 Aug 2023 17:00:37 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Aug 2023 17:00:37 +0700</lastBuildDate>
+    <atom:link href="https://blog.annahri.com/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alternatif Cronjob Menggunakan Systemd Timer Unit</title>
       <link>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</link>
       <pubDate>Sat, 12 Aug 2023 17:00:37 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</guid>
       <description>Mukadimah Systemd tidaklah sebatas software yang berfungsi sebagai init system saja tetapi memiliki sejumlah tool-set lain yang bermanfaat. Salah satunya adalah Systemd unit Timer.
 Unit Timer berfungsi untuk memicu (trigger) suatu unit systemd lain berdasarkan fungsi waktu. Secara sederhana bisa dipahami sebagai alternatif dari cron. Fungsi waktu yang dimaksud bisa berupa, namun tidak terbatas pada, interval waktu (tiap menit, tiap jam atau tiap sekian waktu), penjadwalan eksekusi, dan sebagainya.</description>
     </item>
-    
     <item>
       <title>Memonitor File/Folder dengan Systemd Path Unit</title>
       <link>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</link>
       <pubDate>Sat, 12 Aug 2023 16:31:05 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</guid>
       <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai salah satu fitur Systemd yang memungkinkan user untuk menjalankan suatu command/script atau bahkan mengeksekusi Systemd Service berdasarkan aktifitas suatu file/folder yang dimonitor. Baik ketika file terkait telah dimodifikasi, folder terkait terdapat file baru yang dibuat, dan sebagainya.
 Komponen systemd yang dimaksud adalah Systemd Path unit.
 Ringkasan Systemd unit Path Unit Path pada systemd ini memiliki file dengan akhiran .path yang didalamnya berisikan instruksi terkait file/folder apa yang dipantau dan apa yang akan dieksekusi ketika kondisi pemantauan terpenuhi.</description>
     </item>
-    
   </channel>
 </rss>

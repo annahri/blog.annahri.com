@@ -6,18 +6,17 @@
     <description>Recent content in Bash on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Thu, 04 Nov 2021 23:28:21 +0000</lastBuildDate><atom:link href="https://blog.annahri.com/categories/bash/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Nov 2021 23:28:21 +0000</lastBuildDate>
+    <atom:link href="https://blog.annahri.com/categories/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Trik Bash Shell #1</title>
       <link>https://blog.annahri.com/posts/trik-bash-shell-1/</link>
       <pubDate>Thu, 04 Nov 2021 23:28:21 +0000</pubDate>
-      
       <guid>https://blog.annahri.com/posts/trik-bash-shell-1/</guid>
       <description>Saya akan menjelaskan beberapa tips dan trik dalam menggunakan shell bash yang biasa saya gunakan sehari-hari.
 Reverse Search Sebagian orang biasa menggunakan history untuk melihat/mencari command-command sebelumnya yang sudah pernah diinputkan. Atau bahkan menggunakan arrow key atas untuk mencari command yang diinginkan.
 Sebenarnya hampir kebanyakan shell memiliki fitur reverse search. Sesuai namanya, fitur ini bisa melakukan pencarian terhadap command yang sebelumya pernah diinputkan.
 Bagaimana caranya? Cukup menekan CTRL+R pada terminal.</description>
     </item>
-    
   </channel>
 </rss>

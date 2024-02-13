@@ -6,57 +6,49 @@
     <description>Recent content in Sysadmin on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 13 Feb 2024 20:09:11 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/categories/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Feb 2024 20:09:11 +0700</lastBuildDate>
+    <atom:link href="https://blog.annahri.com/categories/sysadmin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zimbra: Delegated Admin untuk Manajemen Quota</title>
       <link>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</link>
       <pubDate>Tue, 13 Feb 2024 20:09:11 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</guid>
       <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai cara membuat Delegate Admin dengan permission yang sangat terbatas. Dalam kasus ini, hanya sebagai manajemen quota saja. Seperti menambah atau mengurangi mailbox quota user.
 Solusi ini bisa diterapkan jika ingin membuat satu akun yang didelegasikan untuk orang tertentu namun tidak ingin memberikan akses admin zimbra standar.
 Sintaks Sebagai user zimbra:
 # Jika user belum dibuat zmprov ca user@domain.tld &amp;lt;password&amp;gt; zimbraIsAdminAccount TRUE # Jika user sudah dibuat zmprov ma user@domain.</description>
     </item>
-    
     <item>
       <title>Membenahi Kendala Boot Macet Pada Ubuntu</title>
       <link>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</link>
       <pubDate>Wed, 13 Sep 2023 17:07:35 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</guid>
       <description>Mukadimah Pada artikel kali ini, saya akan membagikan mengenai bagaimana cara membenahi VM Ubuntu yang macet pada saat booting. Salah satu diantara penyebab gagalnya booting ini adalah PARTUUID yang berbeda antara PARTUUID pada partisi terkait (root) dan PARTUUID yang dikenali oleh grub.
 Tampilan boot yang macet tersebut adalah seperti dibawah ini:
 Sistem tidak mampu meneruskan proses boot karena PARTUUID yang hendak di-boot tidak ditemukan.
 Pemecahan Masalah Boot sistem tersebut menggunakan media recovery apapun seperti SysrescCd, Ubuntu Live, dan lain-lain, yang terpenting bisa melakukan chroot kedalam sistem.</description>
     </item>
-    
     <item>
       <title>Alternatif Cronjob Menggunakan Systemd Timer Unit</title>
       <link>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</link>
       <pubDate>Sat, 12 Aug 2023 17:00:37 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</guid>
       <description>Mukadimah Systemd tidaklah sebatas software yang berfungsi sebagai init system saja tetapi memiliki sejumlah tool-set lain yang bermanfaat. Salah satunya adalah Systemd unit Timer.
 Unit Timer berfungsi untuk memicu (trigger) suatu unit systemd lain berdasarkan fungsi waktu. Secara sederhana bisa dipahami sebagai alternatif dari cron. Fungsi waktu yang dimaksud bisa berupa, namun tidak terbatas pada, interval waktu (tiap menit, tiap jam atau tiap sekian waktu), penjadwalan eksekusi, dan sebagainya.</description>
     </item>
-    
     <item>
       <title>Memonitor File/Folder dengan Systemd Path Unit</title>
       <link>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</link>
       <pubDate>Sat, 12 Aug 2023 16:31:05 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</guid>
       <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai salah satu fitur Systemd yang memungkinkan user untuk menjalankan suatu command/script atau bahkan mengeksekusi Systemd Service berdasarkan aktifitas suatu file/folder yang dimonitor. Baik ketika file terkait telah dimodifikasi, folder terkait terdapat file baru yang dibuat, dan sebagainya.
 Komponen systemd yang dimaksud adalah Systemd Path unit.
 Ringkasan Systemd unit Path Unit Path pada systemd ini memiliki file dengan akhiran .path yang didalamnya berisikan instruksi terkait file/folder apa yang dipantau dan apa yang akan dieksekusi ketika kondisi pemantauan terpenuhi.</description>
     </item>
-    
     <item>
       <title>Docker: Mengupdate Restart Policy Container (tanpa recreate)</title>
       <link>https://blog.annahri.com/posts/docker-mengupdate-restart-policy-container/</link>
       <pubDate>Tue, 11 Jul 2023 11:12:38 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/docker-mengupdate-restart-policy-container/</guid>
       <description>Ketika kita membuat/menjalankan suatu container, terkadang kita lupa untuk mengatur restart policy terkait. Sehingga, ketika ada crash, container tersebut tidak langsung restart secara otomatis.
 Berikut ini cara melakukan update restart policy untuk container yang sudah dibuat (sedang berjalan/stop):
@@ -64,89 +56,74 @@ docker update --restart=&amp;lt;policy&amp;gt; &amp;lt;container-id&amp;gt; Cont
 docker update --restart=always abcdef123 Jika berhasil maka akan menghasilkan output ID dari container itu sendiri.
 Semoga bermanfaat, barakallahufiikum.</description>
     </item>
-    
     <item>
       <title>Jurnal: Solusi jika Hasil df Berbeda dengan du</title>
       <link>https://blog.annahri.com/posts/solusi-jika-hasil-df-berbeda-dengan-du/</link>
       <pubDate>Mon, 10 Apr 2023 19:08:37 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/solusi-jika-hasil-df-berbeda-dengan-du/</guid>
       <description>Mukadimah Pada artikel kali ini saya akan membahas mengenai fenomena dimana hasil output dari df berbeda dari du.
 Contohnya adalah berikut ini:
 root@host:~# df -h / Filesystem Size Used Avail Use% Mounted on /dev/mapper/ubuntu--vg-ubuntu--lv 19G 18G 0 100% / root@host:~# du -shx / 5.2G / Bisa diperhatikan bahwa keduanya menunjukkan hasil yang sangat berbeda sama sekali. Kok bisa begitu? Jawabannya disini
 Solusi Pada contoh diatas, df melaporkan size yang tersedia adalah 0.</description>
     </item>
-    
     <item>
       <title>Zimbra: Menggunakan SSL Certificate dari LetsEncrypt</title>
       <link>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</link>
       <pubDate>Tue, 14 Feb 2023 08:08:21 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</guid>
       <description>Mukadimah LetsEncrypt merupakan salah satu penyedia sertifikat SSL gratis yang banyak sekali digunakan.
 Pemanfaatan sertifikat SSL dari LetsEncrypt pada Zimbra bisa dilakukan tetapi caranya tidak out-of-the-box. Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan LetsEncrypt sebagai penyedia sertifikat SSL untuk instance zimbra Anda.
 Saya menulis artikel ini dengan asumsi bahwa Anda sudah bisa dan terbiasa menggunakan certbot untuk merequest sertifikat SSL.
 Garis besar Secara garis besar, cara untuk menggunakan LE (LetsEncrypt) pada Zimbra adalah sebagai berikut:</description>
     </item>
-    
     <item>
       <title>Jurnal: Menyelamatkan Partisi LVM Yang Metadatanya Tertimpa</title>
       <link>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</link>
       <pubDate>Thu, 22 Sep 2022 21:59:32 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</guid>
       <description>Mukadimah Pada artikel ini, saya akan menceritakan bagaimana saya berhasil menyelamankan dan mengembalikan paritisi LVM yang hilang metadatanya karena tertimpa oleh metadata SWAP.
 Hal ini terjadi diduga karena sang &amp;ldquo;user&amp;rdquo; nampaknya ingin membesar kapasitas RAM dengan menambah ukuran SWAP. Alih-alih membuatnya pada suatu file atau partisi baru, si &amp;ldquo;user&amp;rdquo; tersebut membuatnya di partisi dimana root disk berada.
 Sejurus kemudian, muncullah permintaan reboot VM yang dimaksud. Tanpa pikir panjang, rekan saya melakukan reboot.</description>
     </item>
-    
     <item>
       <title>Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun</title>
       <link>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</link>
       <pubDate>Sun, 22 May 2022 21:39:00 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</guid>
       <description>Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.
 Pada dasarnya, perintah yang digunakan adalah:
 zmprov -l ga &amp;lt;nama akun&amp;gt; zimbraMailSieveScript Contoh output:
 # name user1@example.com zimbraMailSieveScript: require [&amp;#34;fileinto&amp;#34;, &amp;#34;copy&amp;#34;, &amp;#34;reject&amp;#34;, &amp;#34;tag&amp;#34;, &amp;#34;flag&amp;#34;, &amp;#34;variables&amp;#34;, &amp;#34;log&amp;#34;, &amp;#34;enotify&amp;#34;, &amp;#34;envelope&amp;#34;, &amp;#34;body&amp;#34;, &amp;#34;ereject&amp;#34;, &amp;#34;reject&amp;#34;, &amp;#34;relational&amp;#34;, &amp;#34;comparator-i;ascii- numeric&amp;#34;]; # forward if anyof (address :all :contains :comparator &amp;#34;i;ascii-casemap&amp;#34; [&amp;#34;to&amp;#34;] &amp;#34;user1@example.com&amp;#34;) { redirect &amp;#34;user2@example.com&amp;#34;; stop; } Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:</description>
     </item>
-    
     <item>
       <title>Jurnal: Membenahi kendala mixed-content pada Nginx Reverse-Proxy</title>
       <link>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</link>
       <pubDate>Sat, 13 Nov 2021 22:09:50 +0000</pubDate>
-      
       <guid>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</guid>
       <description>Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam source code-nya masih ter-hardcoded beberapa resource eksternal menggunakan protokol HTTP.
 Hal ini membuat kebanyakan web browser mengeluh dan enggan untuk memuat resource yang dipanggil dari protokol HTTP tadi.
 Maka solusinya ada 2:
 Edit source code-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS. Dari sisi Reverse-Proxy, tinggal tambahkan header berikut: add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx</description>
     </item>
-    
     <item>
       <title>Jurnal: Cara Extend VM Disk untuk LVM</title>
       <link>https://blog.annahri.com/posts/jurnal-cara-extend-vm-disk-lvm/</link>
       <pubDate>Tue, 02 Nov 2021 18:58:41 +0000</pubDate>
-      
       <guid>https://blog.annahri.com/posts/jurnal-cara-extend-vm-disk-lvm/</guid>
       <description>Saya akan menjelaskan cara mudah untuk resize disk suatu VM dengan konfigurasi LVM. Asumsinya, disk sudah diextend dari sisi HVnya (PVE, ESXi, dll).
 Pastikan penambahan space sudah terdeteksi dari VM melalui dmesg dan Anda akan mendapati informasi seperti ini:
 [262733.527587] sd 0:0:2:0: [abc] 4096-byte physical blocks [262733.528263] abc: detected capacity change from 214748364800 to 429496729600 Kalau ternyata belum terdeteksi, bisa dicoba untuk menjalankan perintah ini
 echo 1 &amp;gt; /sys/class/block/&amp;lt;disk&amp;gt;/device/rescan Lalu coba cek kembali di dmesg.</description>
     </item>
-    
     <item>
       <title>Instalasi LEMP Stack (Linux, Nginx, MariaDB, PHP) pada Ubuntu 20.04</title>
       <link>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</link>
       <pubDate>Thu, 27 May 2021 00:00:00 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</guid>
       <description>LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx, (M)ysql atau Mariadb, dan (P)HP.
 Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04. Untuk OS berbasis RPM menyusul.
 Konfigurasi Awal Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.
 $ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.</description>
     </item>
-    
   </channel>
 </rss>

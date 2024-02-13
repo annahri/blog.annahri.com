@@ -6,27 +6,24 @@
     <description>Recent content in Jurnal on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Thu, 22 Sep 2022 21:59:32 +0700</lastBuildDate><atom:link href="https://blog.annahri.com/categories/jurnal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Sep 2022 21:59:32 +0700</lastBuildDate>
+    <atom:link href="https://blog.annahri.com/categories/jurnal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jurnal: Menyelamatkan Partisi LVM Yang Metadatanya Tertimpa</title>
       <link>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</link>
       <pubDate>Thu, 22 Sep 2022 21:59:32 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</guid>
       <description>Mukadimah Pada artikel ini, saya akan menceritakan bagaimana saya berhasil menyelamankan dan mengembalikan paritisi LVM yang hilang metadatanya karena tertimpa oleh metadata SWAP.
 Hal ini terjadi diduga karena sang &amp;ldquo;user&amp;rdquo; nampaknya ingin membesar kapasitas RAM dengan menambah ukuran SWAP. Alih-alih membuatnya pada suatu file atau partisi baru, si &amp;ldquo;user&amp;rdquo; tersebut membuatnya di partisi dimana root disk berada.
 Sejurus kemudian, muncullah permintaan reboot VM yang dimaksud. Tanpa pikir panjang, rekan saya melakukan reboot.</description>
     </item>
-    
     <item>
       <title>Jurnal: Script Rincian Mail Queue Postfix</title>
       <link>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</link>
       <pubDate>Fri, 08 Apr 2022 09:25:02 +0700</pubDate>
-      
       <guid>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</guid>
       <description>Pada artikel ini saya akan memberikan contoh script Bash dan Python yang berfungsi untuk menampilkan jumlah antrian email (mail queue) keluar pada Postfix. Ini berguna sebagai metrics yang bisa digunakan untuk alerting. Baik alerting manual maupun terintegrasi seperti ServerDensity, dan sebagainya.
 Dasar Script Komponen utama utama untuk mengetahui mail queue adalah folder dimana queue tersebut singgah untuk sementara waktu. Untuk mengetahuinya, kita bisa memanggil command postconf -h queue_directory yang outputnya akan menunjukkan dimana direktori tersebut.</description>
     </item>
-    
   </channel>
 </rss>

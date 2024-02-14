@@ -18,6 +18,10 @@ minify:
   disableXML: true
   minifyOutput: true
 
+services:
+  disqus:
+    shortname: blog-annahri
+
 params:
   env: production
   title: Linux & Cloud | blog.annahri.com
@@ -29,17 +33,30 @@ params:
   disableThemeToggle: true
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
   hidemeta: false
   hideSummary: false
   showtoc: true
   tocopen: true
+
+  comments: true
+  giscus:
+    repo: "annahri/blog.annahri.com"
+    repoID: "423672062"
+    category: "Announcements"
+    categoryID: "DIC_kwDOGUC4_s4CdOMw"
+    mapping: "pathname"
+    reactionsEnabled: "0"
+    emitMetadata: "0"
+    inputPosition: "top"
+    theme: "dark_dimmed"
+    lang: "id"
+    loading: "lazy"
 
   mainSections:
     - posts
@@ -47,10 +64,9 @@ params:
   assets:
     bismillah: "17WTklzV4j4O0PMOeHtAqjXjXd9hrtfbT"
     disableHLJS: true     # to disable highlight.js
-    favicon: "https://s3-jak01.storageraya.com/ahf-testcdn/favicon.ico"
-    # favicon16x16: "<link / abs url>"
-    # favicon32x32: "<link / abs url>"
-    custom_css: ["css/custom_papermod.css"]
+    favicon: "/favicon.ico"
+    custom_css: 
+      - "css/custom_papermod.css"
 
   homeInfoParams:
     Title: "Assalamualaikum.."
@@ -108,10 +124,6 @@ menu:
       name: Pencarian
       url: /cari/
       weight: 30
-      # - identifier: tentang
-      #  name: Tentang
-      #  url: /tentang
-      #  weight: 40
 
 markup:
   highlight:

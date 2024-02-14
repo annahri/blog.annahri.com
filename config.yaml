@@ -101,7 +101,7 @@ menu:
       url: /categories/
       weight: 10
     - identifier: tags
-      name: Tagar-tagar
+      name: Tagar
       url: /tags/
       weight: 20
     - identifier: search
@@ -121,7 +121,7 @@ markup:
     # noClasses: false
     pygmentsUseClasses: true
     # lineNos: true
-    style: dracula
+    style: gruvbox
 
 taxonomies:
   category: categories

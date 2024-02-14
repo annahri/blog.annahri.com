@@ -1,4 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
+{{- $noemoji := .Get "noemoji" | default false }}
+{{- $emoji := .Get "emoji" | default "💡" }}
+
 <style>
     .callout {
         color: #f7f4ef;
@@ -15,9 +18,9 @@
     }
     
     .callout-inner {
-        margin-left: 1em;
+        {{ if eq $noemoji false }} margin-left: 1em; {{ end }}
     }
-    
+   r
     .callout div p {
         margin: 0;
     }
@@ -28,15 +31,17 @@
         }
         
         .callout-inner {
-            margin-left: 0.5em;
+          {{ if eq $noemoji false }} margin-left: 0.5em; {{ end }}
         }
     }
 </style>
-{{ printf "<div class=\"callout\">" | htmlUnescape | safeHTML }}
-{{ printf "<div>" | htmlUnescape | safeHTML }}
-    {{ .Get "emoji" | default "💡" }}
-{{ printf "</div>" | htmlUnescape | safeHTML }}
-{{ printf "<div class=\"callout-inner\">" | htmlUnescape | safeHTML }}
-        {{ .Inner }}
-{{ printf "</div>" | htmlUnescape | safeHTML }}
-{{ printf "</div>" | htmlUnescape | safeHTML }}
+<div class="callout">
+  {{ if eq $noemoji false }}
+  <div>
+    {{ $emoji }}
+  </div>
+  {{ end }}
+  <div class="callout-inner">
+    {{ .Inner }}
+  </div>
+</div>

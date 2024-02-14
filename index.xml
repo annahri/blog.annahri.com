@@ -6,8 +6,18 @@
     <description>Recent content on Linux &amp; Cloud | blog.annahri.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 13 Feb 2024 20:09:11 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 14 Feb 2024 20:53:21 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tentang</title>
+      <link>https://blog.annahri.com/tentang/</link>
+      <pubDate>Wed, 14 Feb 2024 20:53:21 +0700</pubDate>
+      <guid>https://blog.annahri.com/tentang/</guid>
+      <description>﷽
+Saya adalah seorang pegiat IT yang sehari-harinya menggunakan Linux. Manjaro pada laptop pribadi, dan untuk pekerjaan saya sering berkutat dengan distro-distro berbasis Debian, dan yang berbasis RHEL, seperti CentOS, Almalinux dan Rocky. Sedangkan untuk Lab personal, saya sering menggunakan Alpine Linux karena ukurannya yang sangat ramping.
+Selain itu, saya bermain-main pula pada public cloud seperti AWS, GCP dan beberapa penyedia lokal lainnya.
+Saya juga menyempatkan diri untuk belajar sedikit mengenai programming (Python) dan secuil web programming dengan teknologi yang sama (untuk mengejar ketertinggalan), yang mungkin saja, insyaAllah saya akan bagikan juga mengenai apa yang sudah saya pelajari.</description>
+    </item>
     <item>
       <title>Zimbra: Delegated Admin untuk Manajemen Quota</title>
       <link>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</link>

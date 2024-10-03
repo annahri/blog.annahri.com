@@ -12,8 +12,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-## Mukadimah
-
 Pada artikel kali ini saya akan membahas mengenai fenomena dimana hasil output dari `df` berbeda dari `du`.
 
 Contohnya adalah berikut ini:

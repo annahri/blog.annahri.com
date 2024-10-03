@@ -9,8 +9,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-## Mukadimah
-
 LetsEncrypt merupakan salah satu penyedia sertifikat SSL gratis yang banyak sekali digunakan. 
 
 Pemanfaatan sertifikat SSL dari LetsEncrypt pada Zimbra bisa dilakukan tetapi caranya tidak _out-of-the-box_. 

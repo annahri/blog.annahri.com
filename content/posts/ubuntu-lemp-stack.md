@@ -17,7 +17,6 @@ tags:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-
 LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx,
 (M)ysql atau Mariadb, dan (P)HP.
 

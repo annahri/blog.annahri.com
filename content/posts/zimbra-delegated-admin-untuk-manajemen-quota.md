@@ -9,8 +9,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-# Mukadimah
-
 Pada artikel kali ini, saya akan membahas mengenai cara membuat _Delegate Admin_ dengan _permission_ yang sangat terbatas. Dalam kasus ini, hanya sebagai manajemen quota saja. Seperti menambah atau mengurangi mailbox quota user.
 
 Solusi ini bisa diterapkan jika ingin membuat satu akun yang didelegasikan untuk orang tertentu namun tidak ingin memberikan akses admin zimbra standar.

@@ -11,8 +11,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-## Mukadimah
-
 Pada artikel kali ini, saya akan membagikan mengenai bagaimana cara membenahi VM Ubuntu yang macet pada saat booting. Salah satu diantara penyebab gagalnya booting ini adalah `PARTUUID` yang berbeda antara `PARTUUID` pada partisi terkait (root) dan `PARTUUID` yang dikenali oleh `grub`.
 
 Tampilan boot yang macet tersebut adalah seperti dibawah ini: 

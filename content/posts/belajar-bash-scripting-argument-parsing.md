@@ -11,8 +11,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-## Mukadimah
-
 Pada artikel kali ini, saya akan membahas mengenai _Argument Parsing_. Yakni adalah bagaimana cara agar setiap argumen yang diberikan pada suatu fungsi/script, bisa diinterpretasi sesuai posisinya (_positional argument_), atau sesuai ketentuan yang ditentukan nantinya.
 
 Ini akan sangat bermanfaat jika Anda hendak membuat CLI _tool_ dari bash script. Misalnya membuat tool seperti berikut:

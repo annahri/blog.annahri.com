@@ -11,8 +11,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-## Mukadimah
-
 Pada artikel kali ini, saya akan membahas mengenai salah satu fitur Systemd yang memungkinkan user untuk menjalankan suatu _command_/_script_ atau bahkan mengeksekusi Systemd Service berdasarkan aktifitas suatu file/folder yang dimonitor. Baik ketika file terkait telah dimodifikasi, folder terkait terdapat file baru yang dibuat, dan sebagainya.
 
 Komponen systemd yang dimaksud adalah _Systemd **Path** unit_.

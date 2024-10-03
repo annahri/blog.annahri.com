@@ -11,8 +11,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-## Mukadimah
-
 Systemd tidaklah sebatas software yang berfungsi sebagai init system saja tetapi memiliki sejumlah tool-set lain yang bermanfaat. Salah satunya adalah Systemd unit `Timer`.
 
 Unit `Timer` berfungsi untuk memicu (_trigger_) suatu unit systemd lain berdasarkan fungsi waktu. Secara sederhana bisa dipahami sebagai alternatif dari `cron`. Fungsi waktu yang dimaksud bisa berupa, namun tidak terbatas pada, interval waktu (tiap menit, tiap jam atau tiap sekian waktu), penjadwalan eksekusi, dan sebagainya.

@@ -11,8 +11,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-## Mukadimah
-
 Pada artikel ini, saya akan menceritakan bagaimana saya berhasil menyelamankan dan mengembalikan paritisi LVM yang hilang metadatanya karena tertimpa oleh metadata SWAP.
 
 Hal ini terjadi diduga karena sang "user" nampaknya ingin membesar kapasitas RAM dengan menambah ukuran SWAP. Alih-alih membuatnya pada suatu file atau partisi baru, si "user" tersebut membuatnya di partisi dimana _root disk_ berada. 

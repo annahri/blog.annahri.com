@@ -11,8 +11,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-## Mukadimah
-
 Dalam menulis _shell script_, ada salah satu _script_ yang dimana sebelum memulai fungsi utamanya, _script_ tersebut menyiapkan/membuat file-file atau folder temporer yang nantinya akan dimanfaatkan. Setelah fungsi utama dijalankan, pada akhirnya nanti file-file temporer tersebut akan dihapus agar tidak "nyampah".
 
 Bagaimana jika script terhenti ditengah jalan (atau terjadi suatu kondisi tertentu), sehingga eksekusi _script_ belum sampai kepada baris yang mengisyaratkan untuk menghapus file-file temporer tadi?

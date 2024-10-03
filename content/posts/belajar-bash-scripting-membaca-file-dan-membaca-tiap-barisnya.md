@@ -11,8 +11,6 @@ categories:
 
 ![Bismillah](/images/bismillah-2.png#center)
 
-# Mukadimah
-
 Dalam menulis script, terkadang kita ingin menjalankan sekumpulan perintah berdasarkan data yang ada pada suatu file (baik raw file, csv, dsb). Kemudian juga terkadang, kita ingin menuliskan suatu script yang menghasilkan suatu file berupa log, atau data terstruktur seperti csv, dan sebagainya.
 
 Maka, pada seri tulisan "Belajar Bash Scripting" kali ini, saya akan membahas mengenai bagaimana cara membaca dan menghasilkan suatu file pada `bash`.

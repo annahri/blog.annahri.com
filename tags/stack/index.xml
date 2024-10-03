@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>stack on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Stack on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/tags/stack/</link>
-    <description>Recent content in stack on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Stack on Linux &amp; Cloud | blog.annahri.com</description>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Thu, 27 May 2021 00:00:00 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/stack/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,17 @@
       <link>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</link>
       <pubDate>Thu, 27 May 2021 00:00:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</guid>
-      <description>LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx, (M)ysql atau Mariadb, dan (P)HP.
-Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04. Untuk OS berbasis RPM menyusul.
-Konfigurasi Awal Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.
-$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx,
+(M)ysql atau Mariadb, dan (P)HP.&lt;/p&gt;
+&lt;p&gt;Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04.
+Untuk OS berbasis RPM menyusul.&lt;/p&gt;
+&lt;h3 id=&#34;konfigurasi-awal&#34;&gt;Konfigurasi Awal&lt;/h3&gt;
+&lt;p&gt;Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt update &lt;span style=&#34;color:#fe8019&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.
+Kalau anda menggunakan &lt;code&gt;ufw&lt;/code&gt; maka perintahnya adalah:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>reverse-proxy on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Reverse-Proxy on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/tags/reverse-proxy/</link>
-    <description>Recent content in reverse-proxy on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Reverse-Proxy on Linux &amp; Cloud | blog.annahri.com</description>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Sat, 13 Nov 2021 22:09:50 +0000</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/reverse-proxy/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,17 @@
       <link>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</link>
       <pubDate>Sat, 13 Nov 2021 22:09:50 +0000</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</guid>
-      <description>Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam source code-nya masih ter-hardcoded beberapa resource eksternal menggunakan protokol HTTP.
-Hal ini membuat kebanyakan web browser mengeluh dan enggan untuk memuat resource yang dipanggil dari protokol HTTP tadi.
-Maka solusinya ada 2:
-Edit source code-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS. Dari sisi Reverse-Proxy, tinggal tambahkan header berikut: add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam &lt;em&gt;source code&lt;/em&gt;-nya masih ter-&lt;em&gt;hardcoded&lt;/em&gt; beberapa &lt;em&gt;resource&lt;/em&gt; eksternal menggunakan protokol HTTP.&lt;/p&gt;
+&lt;p&gt;Hal ini membuat kebanyakan &lt;em&gt;web browser&lt;/em&gt; mengeluh dan enggan untuk memuat &lt;em&gt;resource&lt;/em&gt; yang dipanggil dari protokol HTTP tadi.&lt;/p&gt;
+&lt;p&gt;Maka solusinya ada 2:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit &lt;em&gt;source code&lt;/em&gt;-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS.&lt;/li&gt;
+&lt;li&gt;Dari sisi Reverse-Proxy, tinggal tambahkan header berikut:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

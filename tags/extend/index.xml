@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>extend on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Extend on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/tags/extend/</link>
-    <description>Recent content in extend on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Extend on Linux &amp; Cloud | blog.annahri.com</description>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Tue, 02 Nov 2021 18:58:41 +0000</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/extend/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,15 @@
       <link>https://blog.annahri.com/posts/jurnal-cara-extend-vm-disk-lvm/</link>
       <pubDate>Tue, 02 Nov 2021 18:58:41 +0000</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-cara-extend-vm-disk-lvm/</guid>
-      <description>Saya akan menjelaskan cara mudah untuk resize disk suatu VM dengan konfigurasi LVM. Asumsinya, disk sudah diextend dari sisi HVnya (PVE, ESXi, dll).
-Pastikan penambahan space sudah terdeteksi dari VM melalui dmesg dan Anda akan mendapati informasi seperti ini:
-[262733.527587] sd 0:0:2:0: [abc] 4096-byte physical blocks [262733.528263] abc: detected capacity change from 214748364800 to 429496729600 Kalau ternyata belum terdeteksi, bisa dicoba untuk menjalankan perintah ini
-echo 1 &amp;gt; /sys/class/block/&amp;lt;disk&amp;gt;/device/rescan Lalu coba cek kembali di dmesg.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Saya akan menjelaskan cara mudah untuk resize disk suatu VM dengan konfigurasi LVM. Asumsinya, disk sudah diextend dari sisi HVnya (PVE, ESXi, dll).&lt;/p&gt;
+&lt;p&gt;Pastikan penambahan space sudah terdeteksi dari VM melalui &lt;code&gt;dmesg&lt;/code&gt; dan Anda akan mendapati informasi seperti ini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[262733.527587] sd 0:0:2:0: [abc] 4096-byte physical blocks
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[262733.528263] abc: detected capacity change from 214748364800 to 429496729600
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kalau ternyata belum terdeteksi, bisa dicoba untuk menjalankan perintah ini&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fabd2f&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#d3869b&#34;&gt;1&lt;/span&gt; &amp;gt; /sys/class/block/&amp;lt;disk&amp;gt;/device/rescan
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lalu coba cek kembali di &lt;code&gt;dmesg&lt;/code&gt;. Kalau sudah muncul bisa langsung jalankan perintah berikut:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

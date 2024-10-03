@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>zimbra on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Zimbra on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/tags/zimbra/</link>
-    <description>Recent content in zimbra on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Zimbra on Linux &amp; Cloud | blog.annahri.com</description>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Tue, 13 Feb 2024 20:09:11 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/zimbra/index.xml" rel="self" type="application/rss+xml" />
@@ -13,30 +13,90 @@
       <link>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</link>
       <pubDate>Tue, 13 Feb 2024 20:09:11 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</guid>
-      <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai cara membuat Delegate Admin dengan permission yang sangat terbatas. Dalam kasus ini, hanya sebagai manajemen quota saja. Seperti menambah atau mengurangi mailbox quota user.
-Solusi ini bisa diterapkan jika ingin membuat satu akun yang didelegasikan untuk orang tertentu namun tidak ingin memberikan akses admin zimbra standar.
-Sintaks Sebagai user zimbra:
-# Jika user belum dibuat zmprov ca user@domain.tld &amp;lt;password&amp;gt; zimbraIsAdminAccount TRUE # Jika user sudah dibuat zmprov ma user@domain.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai cara membuat &lt;em&gt;Delegate Admin&lt;/em&gt; dengan &lt;em&gt;permission&lt;/em&gt; yang sangat terbatas. Dalam kasus ini, hanya sebagai manajemen quota saja. Seperti menambah atau mengurangi mailbox quota user.&lt;/p&gt;
+&lt;p&gt;Solusi ini bisa diterapkan jika ingin membuat satu akun yang didelegasikan untuk orang tertentu namun tidak ingin memberikan akses admin zimbra standar.&lt;/p&gt;
+&lt;h1 id=&#34;sintaks&#34;&gt;Sintaks&lt;/h1&gt;
+&lt;p&gt;Sebagai user &lt;code&gt;zimbra&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Jika user belum dibuat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov ca user@domain.tld &amp;lt;password&amp;gt; zimbraIsAdminAccount TRUE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Jika user sudah dibuat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov ma user@domain.tld zimbraIsAdminAccount TRUE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Agar bisa melist akun&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov ma user@domain.tld zimbraAdminConsoleUIComponents accountListView
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Agar bisa mengganti quota mailbox&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov ma user@domain.tld zimbraDomainAdminMaxMailQuota &lt;span style=&#34;color:#d3869b&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Agar bisa melakukan Edit akun&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov grr domain domain.tld usr user@domain.tld getAccount
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov grr domain domain.tld usr user@domain.tld getAccountInfo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov grr domain domain.tld usr user@domain.tld getMailboxInfo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov grr domain domain.tld usr user@domain.tld listAccount
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Agar bisa memodifikasi quota mailbox&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov grr domain domain.tld usr user@domain.tld set.account.zimbraMailQuota
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;penutup&#34;&gt;Penutup&lt;/h1&gt;
+&lt;p&gt;Dengan demikian, user yang didelegasikan akan bisa login sebagai &amp;ldquo;admin&amp;rdquo; dengan akses yang sangat terbatas. Kolom-kolom yang muncul di dalam menu &lt;code&gt;Edit&lt;/code&gt; seluruhnya bersifat &lt;code&gt;read-only&lt;/code&gt; kecuali bagian &lt;em&gt;Quota Mailbox&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zimbra: Menggunakan SSL Certificate dari LetsEncrypt</title>
       <link>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</link>
       <pubDate>Tue, 14 Feb 2023 08:08:21 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</guid>
-      <description>Mukadimah LetsEncrypt merupakan salah satu penyedia sertifikat SSL gratis yang banyak sekali digunakan.
-Pemanfaatan sertifikat SSL dari LetsEncrypt pada Zimbra bisa dilakukan tetapi caranya tidak out-of-the-box. Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan LetsEncrypt sebagai penyedia sertifikat SSL untuk instance zimbra Anda.
-Saya menulis artikel ini dengan asumsi bahwa Anda sudah bisa dan terbiasa menggunakan certbot untuk merequest sertifikat SSL.
-Garis besar Secara garis besar, cara untuk menggunakan LE (LetsEncrypt) pada Zimbra adalah sebagai berikut:</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;LetsEncrypt merupakan salah satu penyedia sertifikat SSL gratis yang banyak sekali digunakan.&lt;/p&gt;
+&lt;p&gt;Pemanfaatan sertifikat SSL dari LetsEncrypt pada Zimbra bisa dilakukan tetapi caranya tidak &lt;em&gt;out-of-the-box&lt;/em&gt;.
+Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan LetsEncrypt sebagai penyedia sertifikat SSL untuk &lt;em&gt;instance&lt;/em&gt; zimbra Anda.&lt;/p&gt;
+&lt;p&gt;Saya menulis artikel ini dengan asumsi bahwa Anda sudah bisa dan terbiasa menggunakan &lt;code&gt;certbot&lt;/code&gt; untuk merequest sertifikat SSL.&lt;/p&gt;
+&lt;h2 id=&#34;garis-besar&#34;&gt;Garis besar&lt;/h2&gt;
+&lt;p&gt;Secara garis besar, cara untuk menggunakan LE (LetsEncrypt) pada Zimbra adalah sebagai berikut:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun</title>
       <link>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</link>
       <pubDate>Sun, 22 May 2022 21:39:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</guid>
-      <description>Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.
-Pada dasarnya, perintah yang digunakan adalah:
-zmprov -l ga &amp;lt;nama akun&amp;gt; zimbraMailSieveScript Contoh output:
-# name user1@example.com zimbraMailSieveScript: require [&amp;#34;fileinto&amp;#34;, &amp;#34;copy&amp;#34;, &amp;#34;reject&amp;#34;, &amp;#34;tag&amp;#34;, &amp;#34;flag&amp;#34;, &amp;#34;variables&amp;#34;, &amp;#34;log&amp;#34;, &amp;#34;enotify&amp;#34;, &amp;#34;envelope&amp;#34;, &amp;#34;body&amp;#34;, &amp;#34;ereject&amp;#34;, &amp;#34;reject&amp;#34;, &amp;#34;relational&amp;#34;, &amp;#34;comparator-i;ascii- numeric&amp;#34;]; # forward if anyof (address :all :contains :comparator &amp;#34;i;ascii-casemap&amp;#34; [&amp;#34;to&amp;#34;] &amp;#34;user1@example.com&amp;#34;) { redirect &amp;#34;user2@example.com&amp;#34;; stop; } Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.&lt;/p&gt;
+&lt;p&gt;Pada dasarnya, perintah yang digunakan adalah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov -l ga &amp;lt;nama akun&amp;gt; zimbraMailSieveScript
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Contoh output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# name user1@example.com&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zimbraMailSieveScript: require &lt;span style=&#34;color:#fe8019&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;fileinto&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;copy&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;reject&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;tag&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;flag&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;variables&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;log&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;enotify&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;envelope&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;body&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;ereject&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;reject&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;relational&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;comparator-i;ascii- 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b8bb26&#34;&gt;numeric&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;]&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# forward&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;if&lt;/span&gt; anyof &lt;span style=&#34;color:#fe8019&#34;&gt;(&lt;/span&gt;address :all :contains :comparator &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;i;ascii-casemap&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#fe8019&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;to&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;user1@example.com&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#fe8019&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  redirect &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;user2@example.com&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  stop;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sehingga, untuk meng-&lt;em&gt;query&lt;/em&gt; keseluruhan akun, bisa menggunakan loop atau &lt;code&gt;xargs&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov -l gaa | xargs -n1 -I zmprov -l ga &lt;span style=&#34;color:#fe8019&#34;&gt;{}&lt;/span&gt; zimbraMailSieveScript
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# atau &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;for&lt;/span&gt; account in &lt;span style=&#34;color:#fe8019&#34;&gt;$(&lt;/span&gt;zmprov -l gaa&lt;span style=&#34;color:#fe8019&#34;&gt;)&lt;/span&gt;; &lt;span style=&#34;color:#fe8019&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    zmprov -l ga &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt; zimbraMailSieveScript
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# atau&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov -l gaa | &lt;span style=&#34;color:#fe8019&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#fabd2f&#34;&gt;read&lt;/span&gt; account; &lt;span style=&#34;color:#fe8019&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    zmprov -l ga &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt; zimbraMailSieveScript
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# atau&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#fabd2f&#34;&gt;read&lt;/span&gt; account; &lt;span style=&#34;color:#fe8019&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    zmprov -l ga &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt; zimbraMailSieveScript
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;done&lt;/span&gt; &amp;lt; &amp;lt;&lt;span style=&#34;color:#fe8019&#34;&gt;(&lt;/span&gt;zmprov -l gaa&lt;span style=&#34;color:#fe8019&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Semoga bermanfaat, &lt;em&gt;barakallahufiikum&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

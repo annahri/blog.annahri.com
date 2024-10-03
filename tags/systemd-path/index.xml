@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>systemd-path on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Systemd-Path on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/tags/systemd-path/</link>
-    <description>Recent content in systemd-path on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Systemd-Path on Linux &amp; Cloud | blog.annahri.com</description>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Sat, 12 Aug 2023 16:31:05 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/systemd-path/index.xml" rel="self" type="application/rss+xml" />
@@ -13,9 +13,12 @@
       <link>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</link>
       <pubDate>Sat, 12 Aug 2023 16:31:05 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</guid>
-      <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai salah satu fitur Systemd yang memungkinkan user untuk menjalankan suatu command/script atau bahkan mengeksekusi Systemd Service berdasarkan aktifitas suatu file/folder yang dimonitor. Baik ketika file terkait telah dimodifikasi, folder terkait terdapat file baru yang dibuat, dan sebagainya.
-Komponen systemd yang dimaksud adalah Systemd Path unit.
-Ringkasan Systemd unit Path Unit Path pada systemd ini memiliki file dengan akhiran .path yang didalamnya berisikan instruksi terkait file/folder apa yang dipantau dan apa yang akan dieksekusi ketika kondisi pemantauan terpenuhi.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai salah satu fitur Systemd yang memungkinkan user untuk menjalankan suatu &lt;em&gt;command&lt;/em&gt;/&lt;em&gt;script&lt;/em&gt; atau bahkan mengeksekusi Systemd Service berdasarkan aktifitas suatu file/folder yang dimonitor. Baik ketika file terkait telah dimodifikasi, folder terkait terdapat file baru yang dibuat, dan sebagainya.&lt;/p&gt;
+&lt;p&gt;Komponen systemd yang dimaksud adalah &lt;em&gt;Systemd &lt;strong&gt;Path&lt;/strong&gt; unit&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ringkasan-systemd-unit-path&#34;&gt;Ringkasan Systemd unit Path&lt;/h2&gt;
+&lt;p&gt;Unit &lt;code&gt;Path&lt;/code&gt; pada systemd ini memiliki file dengan akhiran &lt;code&gt;.path&lt;/code&gt; yang didalamnya berisikan instruksi terkait file/folder apa yang dipantau dan apa yang akan dieksekusi ketika kondisi pemantauan terpenuhi.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

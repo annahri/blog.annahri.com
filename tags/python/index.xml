@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>python on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Python on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/tags/python/</link>
-    <description>Recent content in python on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Python on Linux &amp; Cloud | blog.annahri.com</description>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Fri, 08 Apr 2022 09:25:02 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,11 @@
       <link>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</link>
       <pubDate>Fri, 08 Apr 2022 09:25:02 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</guid>
-      <description>Pada artikel ini saya akan memberikan contoh script Bash dan Python yang berfungsi untuk menampilkan jumlah antrian email (mail queue) keluar pada Postfix. Ini berguna sebagai metrics yang bisa digunakan untuk alerting. Baik alerting manual maupun terintegrasi seperti ServerDensity, dan sebagainya.
-Dasar Script Komponen utama utama untuk mengetahui mail queue adalah folder dimana queue tersebut singgah untuk sementara waktu. Untuk mengetahuinya, kita bisa memanggil command postconf -h queue_directory yang outputnya akan menunjukkan dimana direktori tersebut.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel ini saya akan memberikan contoh script Bash dan Python yang berfungsi untuk menampilkan jumlah antrian email (&lt;em&gt;mail queue&lt;/em&gt;) keluar pada Postfix. Ini berguna sebagai metrics yang bisa digunakan untuk alerting. Baik alerting manual maupun terintegrasi seperti ServerDensity, dan sebagainya.&lt;/p&gt;
+&lt;h3 id=&#34;dasar-script&#34;&gt;Dasar Script&lt;/h3&gt;
+&lt;p&gt;Komponen utama utama untuk mengetahui &lt;em&gt;mail queue&lt;/em&gt; adalah folder dimana &lt;em&gt;queue&lt;/em&gt; tersebut singgah untuk sementara waktu. Untuk mengetahuinya, kita bisa memanggil command &lt;code&gt;postconf -h queue_directory&lt;/code&gt; yang outputnya akan menunjukkan dimana direktori tersebut.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

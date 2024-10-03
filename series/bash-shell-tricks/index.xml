@@ -4,7 +4,7 @@
     <title>Bash Shell Tricks on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/series/bash-shell-tricks/</link>
     <description>Recent content in Bash Shell Tricks on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Thu, 04 Nov 2021 23:28:21 +0000</lastBuildDate>
     <atom:link href="https://blog.annahri.com/series/bash-shell-tricks/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,13 @@
       <link>https://blog.annahri.com/posts/trik-bash-shell-1/</link>
       <pubDate>Thu, 04 Nov 2021 23:28:21 +0000</pubDate>
       <guid>https://blog.annahri.com/posts/trik-bash-shell-1/</guid>
-      <description>Saya akan menjelaskan beberapa tips dan trik dalam menggunakan shell bash yang biasa saya gunakan sehari-hari.
-Reverse Search Sebagian orang biasa menggunakan history untuk melihat/mencari command-command sebelumnya yang sudah pernah diinputkan. Atau bahkan menggunakan arrow key atas untuk mencari command yang diinginkan.
-Sebenarnya hampir kebanyakan shell memiliki fitur reverse search. Sesuai namanya, fitur ini bisa melakukan pencarian terhadap command yang sebelumya pernah diinputkan.
-Bagaimana caranya? Cukup menekan CTRL+R pada terminal.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Saya akan menjelaskan beberapa tips dan trik dalam menggunakan &lt;em&gt;shell&lt;/em&gt; &lt;strong&gt;bash&lt;/strong&gt; yang biasa saya gunakan sehari-hari.&lt;/p&gt;
+&lt;h2 id=&#34;reverse-search&#34;&gt;Reverse Search&lt;/h2&gt;
+&lt;p&gt;Sebagian orang biasa menggunakan &lt;code&gt;history&lt;/code&gt; untuk melihat/mencari &lt;em&gt;command-command&lt;/em&gt; sebelumnya yang sudah pernah diinputkan. Atau bahkan menggunakan &lt;em&gt;arrow key&lt;/em&gt; atas untuk mencari &lt;em&gt;command&lt;/em&gt; yang diinginkan.&lt;/p&gt;
+&lt;p&gt;Sebenarnya hampir kebanyakan &lt;em&gt;shell&lt;/em&gt; memiliki fitur &lt;em&gt;reverse search&lt;/em&gt;. Sesuai namanya, fitur ini bisa melakukan pencarian terhadap &lt;em&gt;command&lt;/em&gt; yang sebelumya pernah diinputkan.&lt;/p&gt;
+&lt;p&gt;Bagaimana caranya? Cukup menekan &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;R&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; pada terminal. Dan ketikkan kata kunci untuk &lt;em&gt;command&lt;/em&gt; yang sedang dicari.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

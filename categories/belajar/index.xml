@@ -4,7 +4,7 @@
     <title>Belajar on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/categories/belajar/</link>
     <description>Recent content in Belajar on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Fri, 28 Jul 2023 19:40:22 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/categories/belajar/index.xml" rel="self" type="application/rss+xml" />
@@ -13,84 +13,151 @@
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</link>
       <pubDate>Fri, 28 Jul 2023 19:40:22 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</guid>
-      <description>Mukadimah Dalam menulis script, terkadang kita ingin menjalankan sekumpulan perintah berdasarkan data yang ada pada suatu file (baik raw file, csv, dsb). Kemudian juga terkadang, kita ingin menuliskan suatu script yang menghasilkan suatu file berupa log, atau data terstruktur seperti csv, dan sebagainya.
-Maka, pada seri tulisan &amp;ldquo;Belajar Bash Scripting&amp;rdquo; kali ini, saya akan membahas mengenai bagaimana cara membaca dan menghasilkan suatu file pada bash.
-Membaca File Secara umum, suatu file teks bisa dibaca menggunakan perintah cat:</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Dalam menulis script, terkadang kita ingin menjalankan sekumpulan perintah berdasarkan data yang ada pada suatu file (baik raw file, csv, dsb). Kemudian juga terkadang, kita ingin menuliskan suatu script yang menghasilkan suatu file berupa log, atau data terstruktur seperti csv, dan sebagainya.&lt;/p&gt;
+&lt;p&gt;Maka, pada seri tulisan &amp;ldquo;Belajar Bash Scripting&amp;rdquo; kali ini, saya akan membahas mengenai bagaimana cara membaca dan menghasilkan suatu file pada &lt;code&gt;bash&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;membaca-file&#34;&gt;Membaca File&lt;/h1&gt;
+&lt;p&gt;Secara umum, suatu file teks bisa dibaca menggunakan perintah &lt;code&gt;cat&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Signal Trapping</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</link>
       <pubDate>Tue, 22 Nov 2022 05:22:39 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</guid>
-      <description>Mukadimah Dalam menulis shell script, ada salah satu script yang dimana sebelum memulai fungsi utamanya, script tersebut menyiapkan/membuat file-file atau folder temporer yang nantinya akan dimanfaatkan. Setelah fungsi utama dijalankan, pada akhirnya nanti file-file temporer tersebut akan dihapus agar tidak &amp;ldquo;nyampah&amp;rdquo;.
-Bagaimana jika script terhenti ditengah jalan (atau terjadi suatu kondisi tertentu), sehingga eksekusi script belum sampai kepada baris yang mengisyaratkan untuk menghapus file-file temporer tadi?
-Hal yang semacam ini bisa diatasi dengan mengatur signal trapping menggunakan perintah trap.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Dalam menulis &lt;em&gt;shell script&lt;/em&gt;, ada salah satu &lt;em&gt;script&lt;/em&gt; yang dimana sebelum memulai fungsi utamanya, &lt;em&gt;script&lt;/em&gt; tersebut menyiapkan/membuat file-file atau folder temporer yang nantinya akan dimanfaatkan. Setelah fungsi utama dijalankan, pada akhirnya nanti file-file temporer tersebut akan dihapus agar tidak &amp;ldquo;nyampah&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Bagaimana jika script terhenti ditengah jalan (atau terjadi suatu kondisi tertentu), sehingga eksekusi &lt;em&gt;script&lt;/em&gt; belum sampai kepada baris yang mengisyaratkan untuk menghapus file-file temporer tadi?&lt;/p&gt;
+&lt;p&gt;Hal yang semacam ini bisa diatasi dengan mengatur &lt;em&gt;signal trapping&lt;/em&gt; menggunakan perintah &lt;code&gt;trap&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Argument Parsing</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</link>
       <pubDate>Wed, 24 Aug 2022 14:39:03 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</guid>
-      <description>Mukadimah Pada artikel kali ini, saya akan membahas mengenai Argument Parsing. Yakni adalah bagaimana cara agar setiap argumen yang diberikan pada suatu fungsi/script, bisa diinterpretasi sesuai posisinya (positional argument), atau sesuai ketentuan yang ditentukan nantinya.
-Ini akan sangat bermanfaat jika Anda hendak membuat CLI tool dari bash script. Misalnya membuat tool seperti berikut:
-./script.sh -u username -h host # or ./script.sh --username user --host hostname Telah dibahas pada artikel yang telah lalu (Belajar Bash Scripting: Arguments) bahwa bash akan menginterpretasi setiap argumen yang diberikan dengan variabel $1, $2 dan seterusnya.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai &lt;em&gt;Argument Parsing&lt;/em&gt;. Yakni adalah bagaimana cara agar setiap argumen yang diberikan pada suatu fungsi/script, bisa diinterpretasi sesuai posisinya (&lt;em&gt;positional argument&lt;/em&gt;), atau sesuai ketentuan yang ditentukan nantinya.&lt;/p&gt;
+&lt;p&gt;Ini akan sangat bermanfaat jika Anda hendak membuat CLI &lt;em&gt;tool&lt;/em&gt; dari bash script. Misalnya membuat tool seperti berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./script.sh -u username -h host 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# or&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./script.sh --username user --host hostname
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Telah dibahas pada artikel yang telah lalu (&lt;a href=&#34;https://blog.annahri.com/posts/belajar-bash-scripting-arguments/&#34;&gt;Belajar Bash Scripting: Arguments&lt;/a&gt;) bahwa bash akan menginterpretasi setiap argumen yang diberikan dengan variabel &lt;code&gt;$1&lt;/code&gt;, &lt;code&gt;$2&lt;/code&gt; dan seterusnya.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Arguments</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</link>
       <pubDate>Sat, 30 Jul 2022 21:38:09 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</guid>
-      <description>Pada artikel kali ini, saya akan membahas mengenai shell argumens, yaitu bagaimana agar kita dapat memasukkan parameter tertentu saat memanggil script yang telah kita tulis atau saat memanggul fungsi yang telah kita definisikan.
-Parameter/argumen Mari kita lihat pada command cp berikut ini:
-cp -f file1 file2 Command diatas bisa diartikan dengan &amp;ldquo;menyalin secara paksa file1 sebagai file2&amp;rdquo;.
-Paksaan yang dimaksud adalah jika file2 sebelumnya telah ada, maka langsung menimpa file2 tersebut dengan file1tanpa memberitahu user terlebih dahulu.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai shell argumens, yaitu bagaimana agar kita dapat memasukkan parameter tertentu saat memanggil script yang telah kita tulis atau saat memanggul fungsi yang telah kita definisikan.&lt;/p&gt;
+&lt;h1 id=&#34;parameterargumen&#34;&gt;Parameter/argumen&lt;/h1&gt;
+&lt;p&gt;Mari kita lihat pada &lt;em&gt;command&lt;/em&gt; &lt;code&gt;cp&lt;/code&gt; berikut ini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -f file1 file2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Command&lt;/em&gt; diatas bisa diartikan dengan &amp;ldquo;menyalin secara paksa &lt;code&gt;file1&lt;/code&gt; sebagai &lt;code&gt;file2&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Paksaan yang dimaksud adalah jika &lt;code&gt;file2&lt;/code&gt; sebelumnya telah ada, maka langsung menimpa &lt;code&gt;file2&lt;/code&gt; tersebut dengan &lt;code&gt;file1&lt;/code&gt;tanpa memberitahu user terlebih dahulu. Pada &lt;em&gt;command&lt;/em&gt; &lt;code&gt;cp&lt;/code&gt;, struktur dasar penggunaannya adalah:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Functions</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-functions/</link>
       <pubDate>Sun, 29 May 2022 08:09:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-functions/</guid>
-      <description>Pada artikel ini saya akan menjelaskan seputar shell functions, bagaimana cara mendefinisikan suatu fungsi pada Bash shell yang itu merupakan seperangkat perintah yang disusun sedemikian rupa agar bisa digunakan kembali pada bagian lain suatu script.
-Struktur dasar Sebuah fungsi dapat didefinisikan dengan susunan sebagai berikut:
-nama_fungsi() { ... command1 command2 ... } # atau function nama_fungsi() { ... } Kedua bentuk diatas tidak memiliki perbedaan, namun sebagian ahli mengatakan bahwa bentuk kedua tidaklah portabel.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel ini saya akan menjelaskan seputar &lt;em&gt;shell functions&lt;/em&gt;, bagaimana cara mendefinisikan suatu fungsi pada Bash &lt;em&gt;shell&lt;/em&gt; yang itu merupakan seperangkat perintah yang disusun sedemikian rupa agar bisa digunakan kembali pada bagian lain suatu &lt;em&gt;script&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;struktur-dasar&#34;&gt;Struktur dasar&lt;/h2&gt;
+&lt;p&gt;Sebuah fungsi dapat didefinisikan dengan susunan sebagai berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nama_fungsi&lt;span style=&#34;color:#fe8019&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#fe8019&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    command1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    command2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# atau&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;function&lt;/span&gt; nama_fungsi&lt;span style=&#34;color:#fe8019&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#fe8019&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kedua bentuk diatas tidak memiliki perbedaan, namun sebagian ahli mengatakan bahwa bentuk kedua tidaklah portabel. Alias, tidak kompatibel dengan Bash shell versi lama.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Menulis Script</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</link>
       <pubDate>Sat, 28 May 2022 16:25:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</guid>
-      <description>Setelah mempelajari mengenai elemen-elemen dasar pada suatu script, kali ini saya akan menjelaskan bagaimana membuat file script.
-Jika Anda ingin mempelajari ulang mengenai elemen-elemen yang dimaksud, bisa Anda pelajari melalui tautan-tautan dibawah ini:
-Konsep dasar Shell Variables Konsep dasar Shell Conditionals Konsep dasar Shell Loops Konsep dasar Shell Functions Pada dasarnya, shell script merupakan file yang berisi serangkaian instruksi shell yang disusun sedemikian rupa untuk tujuan tertentu.
-Diantara tujuan tersebut dapat berupa instruksi otomasi proses, CLI (command line interface) tool, program wrapper sebagai ekstensi suatu program lain yang sudah ada, dan semisalnya.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Setelah mempelajari mengenai elemen-elemen dasar pada suatu &lt;em&gt;script&lt;/em&gt;, kali ini saya akan menjelaskan bagaimana membuat file &lt;em&gt;script&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Jika Anda ingin mempelajari ulang mengenai elemen-elemen yang dimaksud, bisa Anda pelajari melalui tautan-tautan dibawah ini:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.annahri.com/posts/belajar-bash-scripting-variabel/&#34;&gt;Konsep dasar &lt;em&gt;Shell Variables&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.annahri.com/posts/belajar-bash-scripting-conditional/&#34;&gt;Konsep dasar &lt;em&gt;Shell Conditionals&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.annahri.com/posts/belajar-bash-scripting-loop/&#34;&gt;Konsep dasar &lt;em&gt;Shell Loops&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.annahri.com/posts/belajar-bash-scripting-functions/&#34;&gt;Konsep dasar &lt;em&gt;Shell Functions&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Pada dasarnya, shell script merupakan file yang berisi serangkaian instruksi shell yang disusun sedemikian rupa untuk tujuan tertentu.&lt;/p&gt;
+&lt;p&gt;Diantara tujuan tersebut dapat berupa instruksi otomasi proses, CLI (&lt;em&gt;command line interface&lt;/em&gt;) &lt;em&gt;tool&lt;/em&gt;, program &lt;em&gt;wrapper&lt;/em&gt; sebagai ekstensi suatu program lain yang sudah ada, dan semisalnya.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Loop</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</link>
       <pubDate>Sun, 08 May 2022 14:21:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</guid>
-      <description>Artikel ini akan menjelaskan mengenai bagaimana cara untuk melakukan LOOP alias menjalankan sekumpulan command secara berulang-ulang dengan kondisi tertentu.
-FOR loop FOR loop pada shell Bash sifatnya sama seperti foreach pada keumuman bahasa pemrograman. Yaitu melakukan perulangan tanpa adanya counter, alias suatu perulangan tidaklah diketahui ke-berapa perulangan tersebut sedang terjadi. Atau sederhananya tidak ada indeks pada setiap perulangan.
-Namun dengan pengecualian jika FOR loop tersebut dideklarasikan menggunakan indeks. Akan tiba contohnya pada penjelasan di bawah.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bss-loop.jpg&#34; alt=&#34;Cover&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Artikel ini akan menjelaskan mengenai bagaimana cara untuk melakukan LOOP alias menjalankan sekumpulan &lt;em&gt;command&lt;/em&gt; secara berulang-ulang dengan kondisi tertentu.&lt;/p&gt;
+&lt;h2 id=&#34;for-loop&#34;&gt;FOR loop&lt;/h2&gt;
+&lt;p&gt;FOR loop pada shell Bash sifatnya sama seperti &lt;em&gt;foreach&lt;/em&gt; pada keumuman bahasa pemrograman. Yaitu melakukan perulangan tanpa adanya &lt;em&gt;counter&lt;/em&gt;, alias suatu perulangan tidaklah diketahui ke-berapa perulangan tersebut sedang terjadi. Atau sederhananya tidak ada indeks pada setiap perulangan.&lt;/p&gt;
+&lt;p&gt;Namun dengan pengecualian jika FOR loop tersebut dideklarasikan menggunakan indeks. Akan tiba contohnya pada penjelasan di bawah.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Variabel (Update)</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</link>
       <pubDate>Mon, 28 Feb 2022 13:21:57 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</guid>
-      <description>Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.
-Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya Bashism.
-Aturan penamaan Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:
-Tidak diawali dengan angka. Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.&lt;/p&gt;
+&lt;p&gt;Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya &lt;em&gt;Bashism&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;aturan-penamaan&#34;&gt;Aturan penamaan&lt;/h2&gt;
+&lt;p&gt;Dalam membuat variabel atau array, ketentuan dalam pemberian nama adalah sebagai berikut:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Tidak diawali dengan angka.&lt;/li&gt;
+&lt;li&gt;Tidak mengandung tanda pentung, tanda @, tanda pagar # dan asterisk (*).&lt;/li&gt;
+&lt;li&gt;Variabel dengan huruf kapital seluruhnya, dikhususkan untuk variabel internal shell dan varibel &lt;em&gt;environment&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Contoh:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Conditional</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-conditional/</link>
       <pubDate>Sun, 27 Feb 2022 20:41:25 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-conditional/</guid>
-      <description>Pada artikel ini saya akan menjelaskan mengenai bagaimana cara melakukan macam-macam kondisional pada Bash scripting. Dan karena ini adalah seri khusus shell Bash, maka tentunya tidak POSIX-compliant.
-Kondisional IF Struktur dasar Struktur dasar kondisional if dalam Bash scripting hampir sama dengan keumuman bahasa pemrograman, yaitu seperti dibawah ini:
-if kondisi; then command command ... fi # atau if kondisi then command command ... fi Kondisi yang disebutkan diatas bisa berupa ekspresi perbandingan seperti contoh berikut:</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel ini saya akan menjelaskan mengenai bagaimana cara melakukan macam-macam kondisional pada Bash &lt;em&gt;scripting&lt;/em&gt;. Dan karena ini adalah seri khusus &lt;em&gt;shell&lt;/em&gt; Bash, maka tentunya tidak &lt;em&gt;POSIX-compliant&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;kondisional-if&#34;&gt;Kondisional IF&lt;/h2&gt;
+&lt;h3 id=&#34;struktur-dasar&#34;&gt;Struktur dasar&lt;/h3&gt;
+&lt;p&gt;Struktur dasar kondisional &lt;em&gt;if&lt;/em&gt; dalam Bash &lt;em&gt;scripting&lt;/em&gt; hampir sama dengan keumuman bahasa pemrograman, yaitu seperti dibawah ini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;if&lt;/span&gt; kondisi; &lt;span style=&#34;color:#fe8019&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;command&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;command&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# atau&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;if&lt;/span&gt; kondisi
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;command&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;command&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kondisi yang disebutkan diatas bisa berupa ekspresi perbandingan seperti contoh berikut:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

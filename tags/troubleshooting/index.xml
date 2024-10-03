@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>troubleshooting on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Troubleshooting on Linux &amp; Cloud | blog.annahri.com</title>
     <link>https://blog.annahri.com/tags/troubleshooting/</link>
-    <description>Recent content in troubleshooting on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Troubleshooting on Linux &amp; Cloud | blog.annahri.com</description>
+    <generator>Hugo -- 0.135.0</generator>
     <language>id-id</language>
     <lastBuildDate>Wed, 13 Sep 2023 17:07:35 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,15 @@
       <link>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</link>
       <pubDate>Wed, 13 Sep 2023 17:07:35 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</guid>
-      <description>Mukadimah Pada artikel kali ini, saya akan membagikan mengenai bagaimana cara membenahi VM Ubuntu yang macet pada saat booting. Salah satu diantara penyebab gagalnya booting ini adalah PARTUUID yang berbeda antara PARTUUID pada partisi terkait (root) dan PARTUUID yang dikenali oleh grub.
-Tampilan boot yang macet tersebut adalah seperti dibawah ini:
-Sistem tidak mampu meneruskan proses boot karena PARTUUID yang hendak di-boot tidak ditemukan.
-Pemecahan Masalah Boot sistem tersebut menggunakan media recovery apapun seperti SysrescCd, Ubuntu Live, dan lain-lain, yang terpenting bisa melakukan chroot kedalam sistem.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Pada artikel kali ini, saya akan membagikan mengenai bagaimana cara membenahi VM Ubuntu yang macet pada saat booting. Salah satu diantara penyebab gagalnya booting ini adalah &lt;code&gt;PARTUUID&lt;/code&gt; yang berbeda antara &lt;code&gt;PARTUUID&lt;/code&gt; pada partisi terkait (root) dan &lt;code&gt;PARTUUID&lt;/code&gt; yang dikenali oleh &lt;code&gt;grub&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Tampilan boot yang macet tersebut adalah seperti dibawah ini:&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./screenshot.jpg#center&#34; alt=&#34;Boot Macet&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Sistem tidak mampu meneruskan proses boot karena &lt;code&gt;PARTUUID&lt;/code&gt; yang hendak di-&lt;em&gt;boot&lt;/em&gt; tidak ditemukan.&lt;/p&gt;
+&lt;h2 id=&#34;pemecahan-masalah&#34;&gt;Pemecahan Masalah&lt;/h2&gt;
+&lt;p&gt;Boot sistem tersebut menggunakan media &lt;em&gt;recovery&lt;/em&gt; apapun seperti SysrescCd, Ubuntu Live, dan lain-lain, yang terpenting bisa melakukan &lt;code&gt;chroot&lt;/code&gt; kedalam sistem.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

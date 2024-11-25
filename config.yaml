@@ -1,7 +1,9 @@
 ---
 baseURL: "https://blog.annahri.com/"
-title: Linux & Cloud | blog.annahri.com
-paginate: 10
+title: Linux & Cloud | Blog An-Nahri
+
+pagination:
+  pagerSize: 10
 
 languageCode: 'id-id'
 defaultContentLanguage: 'id'
@@ -17,10 +19,6 @@ buildExpired: false
 minify:
   disableXML: true
   minifyOutput: true
-
-services:
-  disqus:
-    shortname: blog-annahri
 
 params:
   env: production
@@ -47,10 +45,10 @@ params:
   comments: true
   giscus:
     repo: "annahri/blog.annahri.com"
-    repoID: "423672062"
-    category: "Announcements"
-    categoryID: "DIC_kwDOGUC4_s4CdOMw"
-    mapping: "pathname"
+    repoID: "R_kgDOGUC4_g"
+    category: "General"
+    categoryID: "DIC_kwDOGUC4_s4CdOMx"
+    mapping: "og:title"
     reactionsEnabled: "0"
     emitMetadata: "0"
     inputPosition: "top"
@@ -127,12 +125,12 @@ menu:
 
 markup:
   highlight:
-    # anchorLineNos: true
+    anchorLineNos: false
     codeFences: true
     guessSyntax: true
     # noClasses: false
     pygmentsUseClasses: true
-    # lineNos: true
+    lineNos: true
     style: gruvbox
 
 taxonomies:

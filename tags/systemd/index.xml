@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Systemd on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Systemd on Linux &amp; Cloud | Blog An-Nahri</title>
     <link>https://blog.annahri.com/tags/systemd/</link>
-    <description>Recent content in Systemd on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- 0.135.0</generator>
+    <description>Recent content in Systemd on Linux &amp; Cloud | Blog An-Nahri</description>
+    <generator>Hugo -- 0.139.2</generator>
     <language>id-id</language>
     <lastBuildDate>Sat, 12 Aug 2023 17:00:37 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
@@ -13,18 +13,17 @@
       <link>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</link>
       <pubDate>Sat, 12 Aug 2023 17:00:37 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Systemd tidaklah sebatas software yang berfungsi sebagai init system saja tetapi memiliki sejumlah tool-set lain yang bermanfaat. Salah satunya adalah Systemd unit &lt;code&gt;Timer&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Unit &lt;code&gt;Timer&lt;/code&gt; berfungsi untuk memicu (&lt;em&gt;trigger&lt;/em&gt;) suatu unit systemd lain berdasarkan fungsi waktu. Secara sederhana bisa dipahami sebagai alternatif dari &lt;code&gt;cron&lt;/code&gt;. Fungsi waktu yang dimaksud bisa berupa, namun tidak terbatas pada, interval waktu (tiap menit, tiap jam atau tiap sekian waktu), penjadwalan eksekusi, dan sebagainya.&lt;/p&gt;</description>
+&lt;p&gt;Unit &lt;code&gt;Timer&lt;/code&gt; berfungsi untuk memicu (&lt;em&gt;trigger&lt;/em&gt;) suatu unit systemd lain berdasarkan fungsi waktu. Secara sederhana bisa dipahami sebagai alternatif dari &lt;code&gt;cron&lt;/code&gt;. Fungsi waktu yang dimaksud bisa berupa, namun tidak terbatas pada, interval waktu (tiap menit, tiap jam atau tiap sekian waktu), penjadwalan eksekusi, dan sebagainya.&lt;/p&gt;
+&lt;p&gt;Sama seperti kebanyakan unit systemd yang lainnya, unit &lt;code&gt;Timer&lt;/code&gt; ini juga memerlukan unit lain seperti unit &lt;code&gt;Service&lt;/code&gt; untuk mengeksekusi sesuatu berdasarkan konfigurasi waktu yang ditentukan. Ketika sistem memasuki waktu yang ditentukan, maka unit &lt;code&gt;Timer&lt;/code&gt; ini perlu dan akan mentrigger unit lain untuk menjalakan seperangkat perintah yang ditentukan.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memonitor File/Folder dengan Systemd Path Unit</title>
       <link>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</link>
       <pubDate>Sat, 12 Aug 2023 16:31:05 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai salah satu fitur Systemd yang memungkinkan user untuk menjalankan suatu &lt;em&gt;command&lt;/em&gt;/&lt;em&gt;script&lt;/em&gt; atau bahkan mengeksekusi Systemd Service berdasarkan aktifitas suatu file/folder yang dimonitor. Baik ketika file terkait telah dimodifikasi, folder terkait terdapat file baru yang dibuat, dan sebagainya.&lt;/p&gt;
 &lt;p&gt;Komponen systemd yang dimaksud adalah &lt;em&gt;Systemd &lt;strong&gt;Path&lt;/strong&gt; unit&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;ringkasan-systemd-unit-path&#34;&gt;Ringkasan Systemd unit Path&lt;/h2&gt;

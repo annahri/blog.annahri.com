@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Nginx on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Nginx on Linux &amp; Cloud | Blog An-Nahri</title>
     <link>https://blog.annahri.com/tags/nginx/</link>
-    <description>Recent content in Nginx on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- 0.135.0</generator>
+    <description>Recent content in Nginx on Linux &amp; Cloud | Blog An-Nahri</description>
+    <generator>Hugo -- 0.139.2</generator>
     <language>id-id</language>
     <lastBuildDate>Sat, 13 Nov 2021 22:09:50 +0000</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,7 @@
       <link>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</link>
       <pubDate>Sat, 13 Nov 2021 22:09:50 +0000</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam &lt;em&gt;source code&lt;/em&gt;-nya masih ter-&lt;em&gt;hardcoded&lt;/em&gt; beberapa &lt;em&gt;resource&lt;/em&gt; eksternal menggunakan protokol HTTP.&lt;/p&gt;
 &lt;p&gt;Hal ini membuat kebanyakan &lt;em&gt;web browser&lt;/em&gt; mengeluh dan enggan untuk memuat &lt;em&gt;resource&lt;/em&gt; yang dipanggil dari protokol HTTP tadi.&lt;/p&gt;
 &lt;p&gt;Maka solusinya ada 2:&lt;/p&gt;
@@ -22,24 +21,37 @@
 &lt;li&gt;Edit &lt;em&gt;source code&lt;/em&gt;-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS.&lt;/li&gt;
 &lt;li&gt;Dari sisi Reverse-Proxy, tinggal tambahkan header berikut:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx&lt;/p&gt;</description>
     </item>
     <item>
       <title>Instalasi LEMP Stack (Linux, Nginx, MariaDB, PHP) pada Ubuntu 20.04</title>
       <link>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</link>
       <pubDate>Thu, 27 May 2021 00:00:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx,
 (M)ysql atau Mariadb, dan (P)HP.&lt;/p&gt;
 &lt;p&gt;Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04.
 Untuk OS berbasis RPM menyusul.&lt;/p&gt;
 &lt;h3 id=&#34;konfigurasi-awal&#34;&gt;Konfigurasi Awal&lt;/h3&gt;
 &lt;p&gt;Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt update &lt;span style=&#34;color:#fe8019&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt update &lt;span style=&#34;color:#fe8019&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.
 Kalau anda menggunakan &lt;code&gt;ufw&lt;/code&gt; maka perintahnya adalah:&lt;/p&gt;</description>
     </item>
   </channel>

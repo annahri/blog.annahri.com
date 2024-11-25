@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Series on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Series on Linux &amp; Cloud | Blog An-Nahri</title>
     <link>https://blog.annahri.com/series/</link>
-    <description>Recent content in Series on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- 0.135.0</generator>
+    <description>Recent content in Series on Linux &amp; Cloud | Blog An-Nahri</description>
+    <generator>Hugo -- 0.139.2</generator>
     <language>id-id</language>
     <lastBuildDate>Thu, 04 Nov 2021 23:28:21 +0000</lastBuildDate>
     <atom:link href="https://blog.annahri.com/series/index.xml" rel="self" type="application/rss+xml" />

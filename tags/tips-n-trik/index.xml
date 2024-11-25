@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tips-N-Trik on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Tips-N-Trik on Linux &amp; Cloud | Blog An-Nahri</title>
     <link>https://blog.annahri.com/tags/tips-n-trik/</link>
-    <description>Recent content in Tips-N-Trik on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- 0.135.0</generator>
+    <description>Recent content in Tips-N-Trik on Linux &amp; Cloud | Blog An-Nahri</description>
+    <generator>Hugo -- 0.139.2</generator>
     <language>id-id</language>
     <lastBuildDate>Thu, 04 Nov 2021 23:28:21 +0000</lastBuildDate>
     <atom:link href="https://blog.annahri.com/tags/tips-n-trik/index.xml" rel="self" type="application/rss+xml" />
@@ -13,13 +13,12 @@
       <link>https://blog.annahri.com/posts/trik-bash-shell-1/</link>
       <pubDate>Thu, 04 Nov 2021 23:28:21 +0000</pubDate>
       <guid>https://blog.annahri.com/posts/trik-bash-shell-1/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Saya akan menjelaskan beberapa tips dan trik dalam menggunakan &lt;em&gt;shell&lt;/em&gt; &lt;strong&gt;bash&lt;/strong&gt; yang biasa saya gunakan sehari-hari.&lt;/p&gt;
 &lt;h2 id=&#34;reverse-search&#34;&gt;Reverse Search&lt;/h2&gt;
 &lt;p&gt;Sebagian orang biasa menggunakan &lt;code&gt;history&lt;/code&gt; untuk melihat/mencari &lt;em&gt;command-command&lt;/em&gt; sebelumnya yang sudah pernah diinputkan. Atau bahkan menggunakan &lt;em&gt;arrow key&lt;/em&gt; atas untuk mencari &lt;em&gt;command&lt;/em&gt; yang diinginkan.&lt;/p&gt;
 &lt;p&gt;Sebenarnya hampir kebanyakan &lt;em&gt;shell&lt;/em&gt; memiliki fitur &lt;em&gt;reverse search&lt;/em&gt;. Sesuai namanya, fitur ini bisa melakukan pencarian terhadap &lt;em&gt;command&lt;/em&gt; yang sebelumya pernah diinputkan.&lt;/p&gt;
-&lt;p&gt;Bagaimana caranya? Cukup menekan &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;R&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; pada terminal. Dan ketikkan kata kunci untuk &lt;em&gt;command&lt;/em&gt; yang sedang dicari.&lt;/p&gt;</description>
+&lt;p&gt;Bagaimana caranya? Cukup menekan &lt;kbd&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt;&lt;/kbd&gt; pada terminal. Dan ketikkan kata kunci untuk &lt;em&gt;command&lt;/em&gt; yang sedang dicari.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

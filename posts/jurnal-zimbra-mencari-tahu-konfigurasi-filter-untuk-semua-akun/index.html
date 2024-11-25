@@ -1,10 +1,29 @@
-<!doctype html><html lang=id dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun | Linux & Cloud | blog.annahri.com</title>
+<!doctype html><html lang=id dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun | Linux & Cloud | Blog An-Nahri</title>
 <meta name=keywords content="zimbra"><meta name=description content='
-
 Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.
 Pada dasarnya, perintah yang digunakan adalah:
+
+
+1
+
+
 zmprov -l ga <nama akun> zimbraMailSieveScript
+
+
 Contoh output:
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
 # name user1@example.com
 zimbraMailSieveScript: require ["fileinto", "copy", "reject", "tag", "flag", "variables", "log", "enotify", "envelope", "body", "ereject", "reject", "relational", "comparator-i;ascii- 
 numeric"];
@@ -14,33 +33,37 @@ if anyof (address :all :contains :comparator "i;ascii-casemap" ["to"] "user1@exa
   redirect "user2@example.com";
   stop;
 }
-Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:
-zmprov -l gaa | xargs -n1 -I zmprov -l ga {} zimbraMailSieveScript
 
-# atau 
 
-for account in $(zmprov -l gaa); do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done
-
-# atau
-zmprov -l gaa | while read account; do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done
-
-# atau
-while read account; do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done < <(zmprov -l gaa)
-Semoga bermanfaat, barakallahufiikum.'><meta name=author content="Muhammad Ahfas An Nahri"><link rel=canonical href=https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/><link crossorigin=anonymous href=/assets/css/stylesheet.4d148c9804ddecb2970ce60ae056824dd84fa3dc796e721e5a82d7353d5b2ff8.css integrity="sha256-TRSMmATd7LKXDOYK4FaCTdhPo9x5bnIeWoLXNT1bL/g=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.annahri.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.annahri.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.annahri.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.annahri.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.annahri.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=id href=https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><link rel=stylesheet href=https://blog.annahri.com/css/custom_papermod.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-CY69EEKCTJ"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CY69EEKCTJ")}</script><meta property="og:title" content="Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun"><meta property="og:description" content='
-
+Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:'><meta name=author content="Muhammad Ahfas An Nahri"><link rel=canonical href=https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/><link crossorigin=anonymous href=/assets/css/stylesheet.13f755722324cf8e264349d656091daf6050df39254ee701eab199fdc10f1c5a.css integrity="sha256-E/dVciMkz44mQ0nWVgkdr2BQ3zklTucB6rGZ/cEPHFo=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.annahri.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.annahri.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.annahri.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.annahri.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.annahri.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=id href=https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><link rel=stylesheet href=https://blog.annahri.com/css/custom_papermod.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-CY69EEKCTJ"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CY69EEKCTJ")}</script><meta property="og:url" content="https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/"><meta property="og:site_name" content="Linux & Cloud | Blog An-Nahri"><meta property="og:title" content="Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun"><meta property="og:description" content='
 Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.
 Pada dasarnya, perintah yang digunakan adalah:
+1 zmprov -l ga <nama akun> zimbraMailSieveScript Contoh output:
+1 2 3 4 5 6 7 8 9 # name user1@example.com zimbraMailSieveScript: require ["fileinto", "copy", "reject", "tag", "flag", "variables", "log", "enotify", "envelope", "body", "ereject", "reject", "relational", "comparator-i;ascii- numeric"]; # forward if anyof (address :all :contains :comparator "i;ascii-casemap" ["to"] "user1@example.com") { redirect "user2@example.com"; stop; } Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:'><meta property="og:locale" content="id-id"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-05-22T21:39:00+07:00"><meta property="article:modified_time" content="2022-05-22T21:39:00+07:00"><meta property="article:tag" content="Zimbra"><meta name=twitter:card content="summary"><meta name=twitter:title content="Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun"><meta name=twitter:description content='
+Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.
+Pada dasarnya, perintah yang digunakan adalah:
+
+
+1
+
+
 zmprov -l ga <nama akun> zimbraMailSieveScript
+
+
 Contoh output:
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
 # name user1@example.com
 zimbraMailSieveScript: require ["fileinto", "copy", "reject", "tag", "flag", "variables", "log", "enotify", "envelope", "body", "ereject", "reject", "relational", "comparator-i;ascii- 
 numeric"];
@@ -50,65 +73,20 @@ if anyof (address :all :contains :comparator "i;ascii-casemap" ["to"] "user1@exa
   redirect "user2@example.com";
   stop;
 }
-Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:
-zmprov -l gaa | xargs -n1 -I zmprov -l ga {} zimbraMailSieveScript
 
-# atau 
 
-for account in $(zmprov -l gaa); do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done
-
-# atau
-zmprov -l gaa | while read account; do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done
-
-# atau
-while read account; do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done < <(zmprov -l gaa)
-Semoga bermanfaat, barakallahufiikum.'><meta property="og:type" content="article"><meta property="og:url" content="https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-05-22T21:39:00+07:00"><meta property="article:modified_time" content="2022-05-22T21:39:00+07:00"><meta property="og:site_name" content="Linux & Cloud | blog.annahri.com"><meta name=twitter:card content="summary"><meta name=twitter:title content="Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun"><meta name=twitter:description content='
-
-Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.
-Pada dasarnya, perintah yang digunakan adalah:
-zmprov -l ga <nama akun> zimbraMailSieveScript
-Contoh output:
-# name user1@example.com
-zimbraMailSieveScript: require ["fileinto", "copy", "reject", "tag", "flag", "variables", "log", "enotify", "envelope", "body", "ereject", "reject", "relational", "comparator-i;ascii- 
-numeric"];
- 
-# forward
-if anyof (address :all :contains :comparator "i;ascii-casemap" ["to"] "user1@example.com") {
-  redirect "user2@example.com";
-  stop;
-}
-Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:
-zmprov -l gaa | xargs -n1 -I zmprov -l ga {} zimbraMailSieveScript
-
-# atau 
-
-for account in $(zmprov -l gaa); do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done
-
-# atau
-zmprov -l gaa | while read account; do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done
-
-# atau
-while read account; do
-    echo "$account"
-    zmprov -l ga "$account" zimbraMailSieveScript
-done < <(zmprov -l gaa)
-Semoga bermanfaat, barakallahufiikum.'><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.annahri.com/posts/"},{"@type":"ListItem","position":2,"name":"Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun","item":"https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun","name":"Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun","description":" Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.\nPada dasarnya, perintah yang digunakan adalah:\nzmprov -l ga \u0026lt;nama akun\u0026gt; zimbraMailSieveScript Contoh output:\n# name user1@example.com zimbraMailSieveScript: require [\u0026#34;fileinto\u0026#34;, \u0026#34;copy\u0026#34;, \u0026#34;reject\u0026#34;, \u0026#34;tag\u0026#34;, \u0026#34;flag\u0026#34;, \u0026#34;variables\u0026#34;, \u0026#34;log\u0026#34;, \u0026#34;enotify\u0026#34;, \u0026#34;envelope\u0026#34;, \u0026#34;body\u0026#34;, \u0026#34;ereject\u0026#34;, \u0026#34;reject\u0026#34;, \u0026#34;relational\u0026#34;, \u0026#34;comparator-i;ascii- numeric\u0026#34;]; # forward if anyof (address :all :contains :comparator \u0026#34;i;ascii-casemap\u0026#34; [\u0026#34;to\u0026#34;] \u0026#34;user1@example.com\u0026#34;) { redirect \u0026#34;user2@example.com\u0026#34;; stop; } Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:\nzmprov -l gaa | xargs -n1 -I zmprov -l ga {} zimbraMailSieveScript # atau for account in $(zmprov -l gaa); do echo \u0026#34;$account\u0026#34; zmprov -l ga \u0026#34;$account\u0026#34; zimbraMailSieveScript done # atau zmprov -l gaa | while read account; do echo \u0026#34;$account\u0026#34; zmprov -l ga \u0026#34;$account\u0026#34; zimbraMailSieveScript done # atau while read account; do echo \u0026#34;$account\u0026#34; zmprov -l ga \u0026#34;$account\u0026#34; zimbraMailSieveScript done \u0026lt; \u0026lt;(zmprov -l gaa) Semoga bermanfaat, barakallahufiikum.\n","keywords":["zimbra"],"articleBody":" Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.\nPada dasarnya, perintah yang digunakan adalah:\nzmprov -l ga zimbraMailSieveScript Contoh output:\n# name user1@example.com zimbraMailSieveScript: require [\"fileinto\", \"copy\", \"reject\", \"tag\", \"flag\", \"variables\", \"log\", \"enotify\", \"envelope\", \"body\", \"ereject\", \"reject\", \"relational\", \"comparator-i;ascii- numeric\"]; # forward if anyof (address :all :contains :comparator \"i;ascii-casemap\" [\"to\"] \"user1@example.com\") { redirect \"user2@example.com\"; stop; } Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:\nzmprov -l gaa | xargs -n1 -I zmprov -l ga {} zimbraMailSieveScript # atau for account in $(zmprov -l gaa); do echo \"$account\" zmprov -l ga \"$account\" zimbraMailSieveScript done # atau zmprov -l gaa | while read account; do echo \"$account\" zmprov -l ga \"$account\" zimbraMailSieveScript done # atau while read account; do echo \"$account\" zmprov -l ga \"$account\" zimbraMailSieveScript done \u003c \u003c(zmprov -l gaa) Semoga bermanfaat, barakallahufiikum.\nReferensi: Steps to get filters of all accounts\n","wordCount":"156","inLanguage":"id","datePublished":"2022-05-22T21:39:00+07:00","dateModified":"2022-05-22T21:39:00+07:00","author":[{"@type":"Person","name":"Muhammad Ahfas An Nahri"}],"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/"},"publisher":{"@type":"Organization","name":"Linux \u0026 Cloud | blog.annahri.com","logo":{"@type":"ImageObject","url":"https://blog.annahri.com/favicon.ico"}}}</script></head><body class=dark id=top><header class=header><nav class=nav><div class=logo><a href=https://blog.annahri.com/ accesskey=h title="Linux & Cloud | blog.annahri.com (Alt + H)">Linux & Cloud | blog.annahri.com</a><div class=logo-switches></div></div><ul id=menu><li><a href=https://blog.annahri.com/arsip/ title=Arsip><span>Arsip</span></a></li><li><a href=https://blog.annahri.com/categories/ title=Kategori><span>Kategori</span></a></li><li><a href=https://blog.annahri.com/tags/ title=Tagar><span>Tagar</span></a></li><li><a href=https://blog.annahri.com/cari/ title=Pencarian><span>Pencarian</span></a></li><li><a href=https://blog.annahri.com/tentang/ title=Tentang><span>Tentang</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://blog.annahri.com/>Beranda</a>&nbsp;»&nbsp;<a href=https://blog.annahri.com/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun</h1><div class=post-meta><span class=post-date date-time='2022-05-22 21:39:00 +0700 +0700'>22 Mei 2022</span>&nbsp;·&nbsp;1 menit&nbsp;·&nbsp;Muhammad Ahfas An Nahri&nbsp;|&nbsp;<a href=https://github.com/annahri/blog.annahri.com/tree/main/content/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun.md rel="noopener noreferrer" target=_blank>Sarankan Pengubahan</a></div></header><div class=post-content><p><img loading=lazy src=/images/bismillah-2.png#center alt=Bismillah></p><p>Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.</p><p>Pada dasarnya, perintah yang digunakan adalah:</p><div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>zmprov -l ga &lt;nama akun&gt; zimbraMailSieveScript
-</span></span></code></pre></div><p>Contoh output:</p><div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#928374;font-style:italic># name user1@example.com</span>
+Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:'><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.annahri.com/posts/"},{"@type":"ListItem","position":2,"name":"Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun","item":"https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun","name":"Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun","description":"\nIni adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.\nPada dasarnya, perintah yang digunakan adalah:\n1 zmprov -l ga \u0026lt;nama akun\u0026gt; zimbraMailSieveScript Contoh output:\n1 2 3 4 5 6 7 8 9 # name user1@example.com zimbraMailSieveScript: require [\u0026#34;fileinto\u0026#34;, \u0026#34;copy\u0026#34;, \u0026#34;reject\u0026#34;, \u0026#34;tag\u0026#34;, \u0026#34;flag\u0026#34;, \u0026#34;variables\u0026#34;, \u0026#34;log\u0026#34;, \u0026#34;enotify\u0026#34;, \u0026#34;envelope\u0026#34;, \u0026#34;body\u0026#34;, \u0026#34;ereject\u0026#34;, \u0026#34;reject\u0026#34;, \u0026#34;relational\u0026#34;, \u0026#34;comparator-i;ascii- numeric\u0026#34;]; # forward if anyof (address :all :contains :comparator \u0026#34;i;ascii-casemap\u0026#34; [\u0026#34;to\u0026#34;] \u0026#34;user1@example.com\u0026#34;) { redirect \u0026#34;user2@example.com\u0026#34;; stop; } Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:\n","keywords":["zimbra"],"articleBody":"\nIni adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.\nPada dasarnya, perintah yang digunakan adalah:\n1 zmprov -l ga zimbraMailSieveScript Contoh output:\n1 2 3 4 5 6 7 8 9 # name user1@example.com zimbraMailSieveScript: require [\"fileinto\", \"copy\", \"reject\", \"tag\", \"flag\", \"variables\", \"log\", \"enotify\", \"envelope\", \"body\", \"ereject\", \"reject\", \"relational\", \"comparator-i;ascii- numeric\"]; # forward if anyof (address :all :contains :comparator \"i;ascii-casemap\" [\"to\"] \"user1@example.com\") { redirect \"user2@example.com\"; stop; } Sehingga, untuk meng-query keseluruhan akun, bisa menggunakan loop atau xargs:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 zmprov -l gaa | xargs -n1 -I zmprov -l ga {} zimbraMailSieveScript # atau for account in $(zmprov -l gaa); do echo \"$account\" zmprov -l ga \"$account\" zimbraMailSieveScript done # atau zmprov -l gaa | while read account; do echo \"$account\" zmprov -l ga \"$account\" zimbraMailSieveScript done # atau while read account; do echo \"$account\" zmprov -l ga \"$account\" zimbraMailSieveScript done \u003c \u003c(zmprov -l gaa) Semoga bermanfaat, barakallahufiikum.\nReferensi: Steps to get filters of all accounts\n","wordCount":"186","inLanguage":"id","datePublished":"2022-05-22T21:39:00+07:00","dateModified":"2022-05-22T21:39:00+07:00","author":[{"@type":"Person","name":"Muhammad Ahfas An Nahri"}],"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/"},"publisher":{"@type":"Organization","name":"Linux \u0026 Cloud | Blog An-Nahri","logo":{"@type":"ImageObject","url":"https://blog.annahri.com/favicon.ico"}}}</script></head><body class=dark id=top><header class=header><nav class=nav><div class=logo><a href=https://blog.annahri.com/ accesskey=h title="Linux & Cloud | Blog An-Nahri (Alt + H)">Linux & Cloud | Blog An-Nahri</a><div class=logo-switches></div></div><ul id=menu><li><a href=https://blog.annahri.com/arsip/ title=Arsip><span>Arsip</span></a></li><li><a href=https://blog.annahri.com/categories/ title=Kategori><span>Kategori</span></a></li><li><a href=https://blog.annahri.com/tags/ title=Tagar><span>Tagar</span></a></li><li><a href=https://blog.annahri.com/cari/ title=Pencarian><span>Pencarian</span></a></li><li><a href=https://blog.annahri.com/tentang/ title=Tentang><span>Tentang</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://blog.annahri.com/>Beranda</a>&nbsp;»&nbsp;<a href=https://blog.annahri.com/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">Jurnal: Zimbra - Mencari Tahu Konfigurasi Filter Untuk Semua Akun</h1><div class=post-meta><span class=post-date date-time='2022-05-22 21:39:00 +0700 +0700'>22 Mei 2022</span>&nbsp;·&nbsp;1 menit&nbsp;·&nbsp;Muhammad Ahfas An Nahri&nbsp;|&nbsp;<a href=https://github.com/annahri/blog.annahri.com/tree/main/content/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun.md rel="noopener noreferrer" target=_blank>Sarankan Pengubahan</a></div></header><div class=post-content><p><img alt=Bismillah loading=lazy src=/images/bismillah-2.png#center></p><p>Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.</p><p>Pada dasarnya, perintah yang digunakan adalah:</p><div class=highlight><div style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">1
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>zmprov -l ga &lt;nama akun&gt; zimbraMailSieveScript
+</span></span></code></pre></td></tr></table></div></div><p>Contoh output:</p><div class=highlight><div style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">9
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#928374;font-style:italic># name user1@example.com</span>
 </span></span><span style=display:flex><span>zimbraMailSieveScript: require <span style=color:#fe8019>[</span><span style=color:#b8bb26>&#34;fileinto&#34;</span>, <span style=color:#b8bb26>&#34;copy&#34;</span>, <span style=color:#b8bb26>&#34;reject&#34;</span>, <span style=color:#b8bb26>&#34;tag&#34;</span>, <span style=color:#b8bb26>&#34;flag&#34;</span>, <span style=color:#b8bb26>&#34;variables&#34;</span>, <span style=color:#b8bb26>&#34;log&#34;</span>, <span style=color:#b8bb26>&#34;enotify&#34;</span>, <span style=color:#b8bb26>&#34;envelope&#34;</span>, <span style=color:#b8bb26>&#34;body&#34;</span>, <span style=color:#b8bb26>&#34;ereject&#34;</span>, <span style=color:#b8bb26>&#34;reject&#34;</span>, <span style=color:#b8bb26>&#34;relational&#34;</span>, <span style=color:#b8bb26>&#34;comparator-i;ascii- 
 </span></span></span><span style=display:flex><span><span style=color:#b8bb26>numeric&#34;</span><span style=color:#fe8019>]</span>;
 </span></span><span style=display:flex><span> 
@@ -117,7 +95,27 @@ Semoga bermanfaat, barakallahufiikum.'><script type=application/ld+json>{"@conte
 </span></span><span style=display:flex><span>  redirect <span style=color:#b8bb26>&#34;user2@example.com&#34;</span>;
 </span></span><span style=display:flex><span>  stop;
 </span></span><span style=display:flex><span><span style=color:#fe8019>}</span>
-</span></span></code></pre></div><p>Sehingga, untuk meng-<em>query</em> keseluruhan akun, bisa menggunakan loop atau <code>xargs</code>:</p><div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>zmprov -l gaa | xargs -n1 -I zmprov -l ga <span style=color:#fe8019>{}</span> zimbraMailSieveScript
+</span></span></code></pre></td></tr></table></div></div><p>Sehingga, untuk meng-<em>query</em> keseluruhan akun, bisa menggunakan loop atau <code>xargs</code>:</p><div class=highlight><div style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">20
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>zmprov -l gaa | xargs -n1 -I zmprov -l ga <span style=color:#fe8019>{}</span> zimbraMailSieveScript
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#928374;font-style:italic># atau </span>
 </span></span><span style=display:flex><span>
@@ -137,8 +135,8 @@ Semoga bermanfaat, barakallahufiikum.'><script type=application/ld+json>{"@conte
 </span></span><span style=display:flex><span>    <span style=color:#fabd2f>echo</span> <span style=color:#b8bb26>&#34;</span>$account<span style=color:#b8bb26>&#34;</span>
 </span></span><span style=display:flex><span>    zmprov -l ga <span style=color:#b8bb26>&#34;</span>$account<span style=color:#b8bb26>&#34;</span> zimbraMailSieveScript
 </span></span><span style=display:flex><span><span style=color:#fe8019>done</span> &lt; &lt;<span style=color:#fe8019>(</span>zmprov -l gaa<span style=color:#fe8019>)</span>
-</span></span></code></pre></div><p>Semoga bermanfaat, <em>barakallahufiikum</em>.</p><hr><p>Referensi: <a href=https://wiki.zimbra.com/wiki/Steps_to_get_filters_of_all_accounts>Steps to get filters of all accounts</a></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.annahri.com/tags/zimbra/>Zimbra</a></li></ul><nav class=paginav><a class=prev href=https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/><span class=title>« Sebelumnya</span><br><span>Belajar Bash Scripting: Menulis Script</span>
-</a><a class=next href=https://blog.annahri.com/posts/belajar-bash-scripting-loop/><span class=title>Selanjutnya »</span><br><span>Belajar Bash Scripting: Loop</span></a></nav></footer><script src=https://giscus.app/client.js data-repo=annahri/blog.annahri.com data-repo-id=423672062 data-category=Announcements data-category-id=DIC_kwDOGUC4_s4CdOMw data-mapping=pathname data-reactions-enabled=0 data-emit-metadata=0 data-input-position=top data-theme=dark_dimmed data-lang=id data-loading=lazy crossorigin=anonymous async></script></article></main><footer class=footer><span>&copy; 2024 <a href=https://blog.annahri.com/>Linux & Cloud | blog.annahri.com</a></span> ·
+</span></span></code></pre></td></tr></table></div></div><p>Semoga bermanfaat, <em>barakallahufiikum</em>.</p><hr><p>Referensi: <a href=https://wiki.zimbra.com/wiki/Steps_to_get_filters_of_all_accounts>Steps to get filters of all accounts</a></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.annahri.com/tags/zimbra/>Zimbra</a></li></ul><nav class=paginav><a class=prev href=https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/><span class=title>« Sebelumnya</span><br><span>Belajar Bash Scripting: Menulis Script</span>
+</a><a class=next href=https://blog.annahri.com/posts/belajar-bash-scripting-loop/><span class=title>Selanjutnya »</span><br><span>Belajar Bash Scripting: Loop</span></a></nav></footer><script src=https://giscus.app/client.js data-repo=annahri/blog.annahri.com data-repo-id=R_kgDOGUC4_g data-category=General data-category-id=DIC_kwDOGUC4_s4CdOMx data-mapping=og:title data-reactions-enabled=0 data-emit-metadata=0 data-input-position=top data-theme=dark_dimmed data-lang=id data-loading=lazy crossorigin=anonymous async></script></article></main><footer class=footer><span>&copy; 2024 <a href=https://blog.annahri.com/>Linux & Cloud | Blog An-Nahri</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

@@ -1,25 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Linux &amp; Cloud | blog.annahri.com</title>
+    <title>Posts on Linux &amp; Cloud | Blog An-Nahri</title>
     <link>https://blog.annahri.com/posts/</link>
-    <description>Recent content in Posts on Linux &amp; Cloud | blog.annahri.com</description>
-    <generator>Hugo -- 0.135.0</generator>
+    <description>Recent content in Posts on Linux &amp; Cloud | Blog An-Nahri</description>
+    <generator>Hugo -- 0.139.2</generator>
     <language>id-id</language>
-    <lastBuildDate>Tue, 13 Feb 2024 20:09:11 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 25 Nov 2024 19:21:16 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membuat Entri Sudoers untuk Eksekusi Sebagai User Lain</title>
+      <link>https://blog.annahri.com/posts/sudo-permission-untuk-eksekusi-sebagai-user-lain/</link>
+      <pubDate>Mon, 25 Nov 2024 19:21:16 +0700</pubDate>
+      <guid>https://blog.annahri.com/posts/sudo-permission-untuk-eksekusi-sebagai-user-lain/</guid>
+      <description>Belajar bagaimana membuat entri sudoers untuk memungkinkan suatu pengguna untuk mengeksekusi perintah sebagai pengguna lain. Panduan step-by-step untuk System Adminstrator/DevOps.</description>
+    </item>
     <item>
       <title>Zimbra: Delegated Admin untuk Manajemen Quota</title>
       <link>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</link>
       <pubDate>Tue, 13 Feb 2024 20:09:11 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/zimbra-delegated-admin-untuk-manajemen-quota/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai cara membuat &lt;em&gt;Delegate Admin&lt;/em&gt; dengan &lt;em&gt;permission&lt;/em&gt; yang sangat terbatas. Dalam kasus ini, hanya sebagai manajemen quota saja. Seperti menambah atau mengurangi mailbox quota user.&lt;/p&gt;
 &lt;p&gt;Solusi ini bisa diterapkan jika ingin membuat satu akun yang didelegasikan untuk orang tertentu namun tidak ingin memberikan akses admin zimbra standar.&lt;/p&gt;
 &lt;h1 id=&#34;sintaks&#34;&gt;Sintaks&lt;/h1&gt;
 &lt;p&gt;Sebagai user &lt;code&gt;zimbra&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Jika user belum dibuat&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;18
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;19
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Jika user belum dibuat&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov ca user@domain.tld &amp;lt;password&amp;gt; zimbraIsAdminAccount TRUE
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Jika user sudah dibuat&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov ma user@domain.tld zimbraIsAdminAccount TRUE
@@ -38,7 +67,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# Agar bisa memodifikasi quota mailbox&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov grr domain domain.tld usr user@domain.tld set.account.zimbraMailQuota
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;penutup&#34;&gt;Penutup&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;penutup&#34;&gt;Penutup&lt;/h1&gt;
 &lt;p&gt;Dengan demikian, user yang didelegasikan akan bisa login sebagai &amp;ldquo;admin&amp;rdquo; dengan akses yang sangat terbatas. Kolom-kolom yang muncul di dalam menu &lt;code&gt;Edit&lt;/code&gt; seluruhnya bersifat &lt;code&gt;read-only&lt;/code&gt; kecuali bagian &lt;em&gt;Quota Mailbox&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
@@ -46,12 +77,10 @@
       <link>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</link>
       <pubDate>Wed, 13 Sep 2023 17:07:35 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel kali ini, saya akan membagikan mengenai bagaimana cara membenahi VM Ubuntu yang macet pada saat booting. Salah satu diantara penyebab gagalnya booting ini adalah &lt;code&gt;PARTUUID&lt;/code&gt; yang berbeda antara &lt;code&gt;PARTUUID&lt;/code&gt; pada partisi terkait (root) dan &lt;code&gt;PARTUUID&lt;/code&gt; yang dikenali oleh &lt;code&gt;grub&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Tampilan boot yang macet tersebut adalah seperti dibawah ini:&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./screenshot.jpg#center&#34; alt=&#34;Boot Macet&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Boot Macet&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/posts/membenahi-kendala-boot-macet-pada-ubuntu/screenshot.jpg#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sistem tidak mampu meneruskan proses boot karena &lt;code&gt;PARTUUID&lt;/code&gt; yang hendak di-&lt;em&gt;boot&lt;/em&gt; tidak ditemukan.&lt;/p&gt;
 &lt;h2 id=&#34;pemecahan-masalah&#34;&gt;Pemecahan Masalah&lt;/h2&gt;
 &lt;p&gt;Boot sistem tersebut menggunakan media &lt;em&gt;recovery&lt;/em&gt; apapun seperti SysrescCd, Ubuntu Live, dan lain-lain, yang terpenting bisa melakukan &lt;code&gt;chroot&lt;/code&gt; kedalam sistem.&lt;/p&gt;</description>
@@ -61,18 +90,17 @@
       <link>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</link>
       <pubDate>Sat, 12 Aug 2023 17:00:37 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/alternatif-cronjob-dengan-systemd-timer-unit/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Systemd tidaklah sebatas software yang berfungsi sebagai init system saja tetapi memiliki sejumlah tool-set lain yang bermanfaat. Salah satunya adalah Systemd unit &lt;code&gt;Timer&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Unit &lt;code&gt;Timer&lt;/code&gt; berfungsi untuk memicu (&lt;em&gt;trigger&lt;/em&gt;) suatu unit systemd lain berdasarkan fungsi waktu. Secara sederhana bisa dipahami sebagai alternatif dari &lt;code&gt;cron&lt;/code&gt;. Fungsi waktu yang dimaksud bisa berupa, namun tidak terbatas pada, interval waktu (tiap menit, tiap jam atau tiap sekian waktu), penjadwalan eksekusi, dan sebagainya.&lt;/p&gt;</description>
+&lt;p&gt;Unit &lt;code&gt;Timer&lt;/code&gt; berfungsi untuk memicu (&lt;em&gt;trigger&lt;/em&gt;) suatu unit systemd lain berdasarkan fungsi waktu. Secara sederhana bisa dipahami sebagai alternatif dari &lt;code&gt;cron&lt;/code&gt;. Fungsi waktu yang dimaksud bisa berupa, namun tidak terbatas pada, interval waktu (tiap menit, tiap jam atau tiap sekian waktu), penjadwalan eksekusi, dan sebagainya.&lt;/p&gt;
+&lt;p&gt;Sama seperti kebanyakan unit systemd yang lainnya, unit &lt;code&gt;Timer&lt;/code&gt; ini juga memerlukan unit lain seperti unit &lt;code&gt;Service&lt;/code&gt; untuk mengeksekusi sesuatu berdasarkan konfigurasi waktu yang ditentukan. Ketika sistem memasuki waktu yang ditentukan, maka unit &lt;code&gt;Timer&lt;/code&gt; ini perlu dan akan mentrigger unit lain untuk menjalakan seperangkat perintah yang ditentukan.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memonitor File/Folder dengan Systemd Path Unit</title>
       <link>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</link>
       <pubDate>Sat, 12 Aug 2023 16:31:05 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/memonitor-file-folder-dengan-systemd-path/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai salah satu fitur Systemd yang memungkinkan user untuk menjalankan suatu &lt;em&gt;command&lt;/em&gt;/&lt;em&gt;script&lt;/em&gt; atau bahkan mengeksekusi Systemd Service berdasarkan aktifitas suatu file/folder yang dimonitor. Baik ketika file terkait telah dimodifikasi, folder terkait terdapat file baru yang dibuat, dan sebagainya.&lt;/p&gt;
 &lt;p&gt;Komponen systemd yang dimaksud adalah &lt;em&gt;Systemd &lt;strong&gt;Path&lt;/strong&gt; unit&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;ringkasan-systemd-unit-path&#34;&gt;Ringkasan Systemd unit Path&lt;/h2&gt;
@@ -83,8 +111,7 @@
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</link>
       <pubDate>Fri, 28 Jul 2023 19:40:22 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-membaca-file-dan-membaca-tiap-barisnya/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Dalam menulis script, terkadang kita ingin menjalankan sekumpulan perintah berdasarkan data yang ada pada suatu file (baik raw file, csv, dsb). Kemudian juga terkadang, kita ingin menuliskan suatu script yang menghasilkan suatu file berupa log, atau data terstruktur seperti csv, dan sebagainya.&lt;/p&gt;
 &lt;p&gt;Maka, pada seri tulisan &amp;ldquo;Belajar Bash Scripting&amp;rdquo; kali ini, saya akan membahas mengenai bagaimana cara membaca dan menghasilkan suatu file pada &lt;code&gt;bash&lt;/code&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;membaca-file&#34;&gt;Membaca File&lt;/h1&gt;
@@ -95,8 +122,7 @@
       <link>https://blog.annahri.com/posts/docker-mengupdate-restart-policy-container/</link>
       <pubDate>Tue, 11 Jul 2023 11:12:38 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/docker-mengupdate-restart-policy-container/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ketika kita membuat/menjalankan suatu container, terkadang kita lupa untuk mengatur &lt;em&gt;restart policy&lt;/em&gt; terkait. Sehingga, ketika ada &lt;em&gt;crash&lt;/em&gt;, container tersebut tidak langsung &lt;em&gt;restart&lt;/em&gt; secara otomatis.&lt;/p&gt;
 &lt;p&gt;Berikut ini cara melakukan update &lt;em&gt;restart policy&lt;/em&gt; untuk container yang sudah dibuat (sedang berjalan/stop):&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker update --restart=&amp;lt;policy&amp;gt; &amp;lt;container-id&amp;gt;
@@ -113,27 +139,35 @@
       <link>https://blog.annahri.com/posts/solusi-jika-hasil-df-berbeda-dengan-du/</link>
       <pubDate>Mon, 10 Apr 2023 19:08:37 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/solusi-jika-hasil-df-berbeda-dengan-du/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel kali ini saya akan membahas mengenai fenomena dimana hasil output dari &lt;code&gt;df&lt;/code&gt; berbeda dari &lt;code&gt;du&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Contohnya adalah berikut ini:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@host:~# df -h /
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@host:~# df -h /
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Filesystem                         Size  Used Avail Use% Mounted on
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/dev/mapper/ubuntu--vg-ubuntu--lv   19G   18G     0 100% /
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@host:~# du -shx /
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;5.2G    /
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Bisa diperhatikan bahwa keduanya menunjukkan hasil yang sangat berbeda sama sekali. Kok bisa begitu? Jawabannya &lt;a href=&#34;#penjelasan-ringkas&#34;&gt;disini&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;solusi&#34;&gt;Solusi&lt;/h2&gt;
-&lt;p&gt;Pada contoh diatas, &lt;code&gt;df&lt;/code&gt; melaporkan &lt;em&gt;size&lt;/em&gt; yang tersedia adalah 0. Sedangkan pada &lt;code&gt;du&lt;/code&gt;, penggunaan &lt;em&gt;disk&lt;/em&gt; pada partisi &lt;code&gt;/&lt;/code&gt; hanyalah sekitar &lt;strong&gt;5.2G&lt;/strong&gt; saja.&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Bisa diperhatikan bahwa keduanya menunjukkan hasil yang sangat berbeda sama sekali. Kok bisa begitu? Jawabannya &lt;a href=&#34;#penjelasan-ringkas&#34;&gt;disini&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zimbra: Menggunakan SSL Certificate dari LetsEncrypt</title>
       <link>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</link>
       <pubDate>Tue, 14 Feb 2023 08:08:21 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/zimbra-menggunakan-ssl-certificate-dari-letsencrypt/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;LetsEncrypt merupakan salah satu penyedia sertifikat SSL gratis yang banyak sekali digunakan.&lt;/p&gt;
 &lt;p&gt;Pemanfaatan sertifikat SSL dari LetsEncrypt pada Zimbra bisa dilakukan tetapi caranya tidak &lt;em&gt;out-of-the-box&lt;/em&gt;.
 Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan LetsEncrypt sebagai penyedia sertifikat SSL untuk &lt;em&gt;instance&lt;/em&gt; zimbra Anda.&lt;/p&gt;
@@ -146,8 +180,7 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</link>
       <pubDate>Tue, 22 Nov 2022 05:22:39 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-signal-trapping/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Dalam menulis &lt;em&gt;shell script&lt;/em&gt;, ada salah satu &lt;em&gt;script&lt;/em&gt; yang dimana sebelum memulai fungsi utamanya, &lt;em&gt;script&lt;/em&gt; tersebut menyiapkan/membuat file-file atau folder temporer yang nantinya akan dimanfaatkan. Setelah fungsi utama dijalankan, pada akhirnya nanti file-file temporer tersebut akan dihapus agar tidak &amp;ldquo;nyampah&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Bagaimana jika script terhenti ditengah jalan (atau terjadi suatu kondisi tertentu), sehingga eksekusi &lt;em&gt;script&lt;/em&gt; belum sampai kepada baris yang mengisyaratkan untuk menghapus file-file temporer tadi?&lt;/p&gt;
 &lt;p&gt;Hal yang semacam ini bisa diatasi dengan mengatur &lt;em&gt;signal trapping&lt;/em&gt; menggunakan perintah &lt;code&gt;trap&lt;/code&gt;.&lt;/p&gt;</description>
@@ -157,8 +190,7 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
       <link>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</link>
       <pubDate>Thu, 22 Sep 2022 21:59:32 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-menyelamatkan-partisi-lvm-yang-rusak/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel ini, saya akan menceritakan bagaimana saya berhasil menyelamankan dan mengembalikan paritisi LVM yang hilang metadatanya karena tertimpa oleh metadata SWAP.&lt;/p&gt;
 &lt;p&gt;Hal ini terjadi diduga karena sang &amp;ldquo;user&amp;rdquo; nampaknya ingin membesar kapasitas RAM dengan menambah ukuran SWAP. Alih-alih membuatnya pada suatu file atau partisi baru, si &amp;ldquo;user&amp;rdquo; tersebut membuatnya di partisi dimana &lt;em&gt;root disk&lt;/em&gt; berada.&lt;/p&gt;
 &lt;p&gt;Sejurus kemudian, muncullah permintaan &lt;em&gt;reboot&lt;/em&gt; VM yang dimaksud. Tanpa pikir panjang, rekan saya melakukan &lt;em&gt;reboot&lt;/em&gt;. Ditunggu beberapa saat kok tidak kunjung &lt;em&gt;UP&lt;/em&gt;, diintiplah via console, dan &lt;em&gt;jeng-jeng-jeng&lt;/em&gt;, sistem gagal booting dan &lt;em&gt;fallback&lt;/em&gt; ke initramfs dengan pesan error bahwa &lt;em&gt;logical volume&lt;/em&gt; untuk root partition tidak ditemukan.&lt;/p&gt;</description>
@@ -168,27 +200,41 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</link>
       <pubDate>Wed, 24 Aug 2022 14:39:03 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-argument-parsing/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai &lt;em&gt;Argument Parsing&lt;/em&gt;. Yakni adalah bagaimana cara agar setiap argumen yang diberikan pada suatu fungsi/script, bisa diinterpretasi sesuai posisinya (&lt;em&gt;positional argument&lt;/em&gt;), atau sesuai ketentuan yang ditentukan nantinya.&lt;/p&gt;
 &lt;p&gt;Ini akan sangat bermanfaat jika Anda hendak membuat CLI &lt;em&gt;tool&lt;/em&gt; dari bash script. Misalnya membuat tool seperti berikut:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./script.sh -u username -h host 
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./script.sh -u username -h host 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# or&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./script.sh --username user --host hostname
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Telah dibahas pada artikel yang telah lalu (&lt;a href=&#34;https://blog.annahri.com/posts/belajar-bash-scripting-arguments/&#34;&gt;Belajar Bash Scripting: Arguments&lt;/a&gt;) bahwa bash akan menginterpretasi setiap argumen yang diberikan dengan variabel &lt;code&gt;$1&lt;/code&gt;, &lt;code&gt;$2&lt;/code&gt; dan seterusnya.&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Telah dibahas pada artikel yang telah lalu (&lt;a href=&#34;https://blog.annahri.com/posts/belajar-bash-scripting-arguments/&#34;&gt;Belajar Bash Scripting: Arguments&lt;/a&gt;) bahwa bash akan menginterpretasi setiap argumen yang diberikan dengan variabel &lt;code&gt;$1&lt;/code&gt;, &lt;code&gt;$2&lt;/code&gt; dan seterusnya.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Arguments</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</link>
       <pubDate>Sat, 30 Jul 2022 21:38:09 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-arguments/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel kali ini, saya akan membahas mengenai shell argumens, yaitu bagaimana agar kita dapat memasukkan parameter tertentu saat memanggil script yang telah kita tulis atau saat memanggul fungsi yang telah kita definisikan.&lt;/p&gt;
 &lt;h1 id=&#34;parameterargumen&#34;&gt;Parameter/argumen&lt;/h1&gt;
 &lt;p&gt;Mari kita lihat pada &lt;em&gt;command&lt;/em&gt; &lt;code&gt;cp&lt;/code&gt; berikut ini:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -f file1 file2
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Command&lt;/em&gt; diatas bisa diartikan dengan &amp;ldquo;menyalin secara paksa &lt;code&gt;file1&lt;/code&gt; sebagai &lt;code&gt;file2&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -f file1 file2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;em&gt;Command&lt;/em&gt; diatas bisa diartikan dengan &amp;ldquo;menyalin secara paksa &lt;code&gt;file1&lt;/code&gt; sebagai &lt;code&gt;file2&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Paksaan yang dimaksud adalah jika &lt;code&gt;file2&lt;/code&gt; sebelumnya telah ada, maka langsung menimpa &lt;code&gt;file2&lt;/code&gt; tersebut dengan &lt;code&gt;file1&lt;/code&gt;tanpa memberitahu user terlebih dahulu. Pada &lt;em&gt;command&lt;/em&gt; &lt;code&gt;cp&lt;/code&gt;, struktur dasar penggunaannya adalah:&lt;/p&gt;</description>
     </item>
     <item>
@@ -196,12 +242,26 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-functions/</link>
       <pubDate>Sun, 29 May 2022 08:09:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-functions/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel ini saya akan menjelaskan seputar &lt;em&gt;shell functions&lt;/em&gt;, bagaimana cara mendefinisikan suatu fungsi pada Bash &lt;em&gt;shell&lt;/em&gt; yang itu merupakan seperangkat perintah yang disusun sedemikian rupa agar bisa digunakan kembali pada bagian lain suatu &lt;em&gt;script&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;struktur-dasar&#34;&gt;Struktur dasar&lt;/h2&gt;
 &lt;p&gt;Sebuah fungsi dapat didefinisikan dengan susunan sebagai berikut:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nama_fungsi&lt;span style=&#34;color:#fe8019&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#fe8019&#34;&gt;{&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nama_fungsi&lt;span style=&#34;color:#fe8019&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#fe8019&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    command1
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    command2
@@ -212,15 +272,16 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;function&lt;/span&gt; nama_fungsi&lt;span style=&#34;color:#fe8019&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#fe8019&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kedua bentuk diatas tidak memiliki perbedaan, namun sebagian ahli mengatakan bahwa bentuk kedua tidaklah portabel. Alias, tidak kompatibel dengan Bash shell versi lama.&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Kedua bentuk diatas tidak memiliki perbedaan, namun sebagian ahli mengatakan bahwa bentuk kedua tidaklah portabel. Alias, tidak kompatibel dengan Bash shell versi lama.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Menulis Script</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</link>
       <pubDate>Sat, 28 May 2022 16:25:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-menulis-script/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Setelah mempelajari mengenai elemen-elemen dasar pada suatu &lt;em&gt;script&lt;/em&gt;, kali ini saya akan menjelaskan bagaimana membuat file &lt;em&gt;script&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Jika Anda ingin mempelajari ulang mengenai elemen-elemen yang dimaksud, bisa Anda pelajari melalui tautan-tautan dibawah ini:&lt;/p&gt;
 &lt;ol&gt;
@@ -237,13 +298,32 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
       <link>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</link>
       <pubDate>Sun, 22 May 2022 21:39:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-zimbra-mencari-tahu-konfigurasi-filter-untuk-semua-akun/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ini adalah artikel ringkas yang membahas tentang cara untuk mencari tahu seluruh konfigurasi filter yang diatur oleh tiap akun email.&lt;/p&gt;
 &lt;p&gt;Pada dasarnya, perintah yang digunakan adalah:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov -l ga &amp;lt;nama akun&amp;gt; zimbraMailSieveScript
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Contoh output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# name user1@example.com&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov -l ga &amp;lt;nama akun&amp;gt; zimbraMailSieveScript
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Contoh output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# name user1@example.com&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zimbraMailSieveScript: require &lt;span style=&#34;color:#fe8019&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;fileinto&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;copy&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;reject&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;tag&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;flag&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;variables&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;log&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;enotify&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;envelope&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;body&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;ereject&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;reject&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;relational&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;comparator-i;ascii- 
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b8bb26&#34;&gt;numeric&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;]&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 
@@ -252,38 +332,17 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  redirect &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;user2@example.com&amp;#34;&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  stop;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sehingga, untuk meng-&lt;em&gt;query&lt;/em&gt; keseluruhan akun, bisa menggunakan loop atau &lt;code&gt;xargs&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov -l gaa | xargs -n1 -I zmprov -l ga &lt;span style=&#34;color:#fe8019&#34;&gt;{}&lt;/span&gt; zimbraMailSieveScript
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# atau &lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;for&lt;/span&gt; account in &lt;span style=&#34;color:#fe8019&#34;&gt;$(&lt;/span&gt;zmprov -l gaa&lt;span style=&#34;color:#fe8019&#34;&gt;)&lt;/span&gt;; &lt;span style=&#34;color:#fe8019&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    zmprov -l ga &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt; zimbraMailSieveScript
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# atau&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zmprov -l gaa | &lt;span style=&#34;color:#fe8019&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#fabd2f&#34;&gt;read&lt;/span&gt; account; &lt;span style=&#34;color:#fe8019&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    zmprov -l ga &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt; zimbraMailSieveScript
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;# atau&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#fabd2f&#34;&gt;read&lt;/span&gt; account; &lt;span style=&#34;color:#fe8019&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    zmprov -l ga &lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt;$account&lt;span style=&#34;color:#b8bb26&#34;&gt;&amp;#34;&lt;/span&gt; zimbraMailSieveScript
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;done&lt;/span&gt; &amp;lt; &amp;lt;&lt;span style=&#34;color:#fe8019&#34;&gt;(&lt;/span&gt;zmprov -l gaa&lt;span style=&#34;color:#fe8019&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Semoga bermanfaat, &lt;em&gt;barakallahufiikum&lt;/em&gt;.&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Sehingga, untuk meng-&lt;em&gt;query&lt;/em&gt; keseluruhan akun, bisa menggunakan loop atau &lt;code&gt;xargs&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Belajar Bash Scripting: Loop</title>
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</link>
       <pubDate>Sun, 08 May 2022 14:21:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-loop/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bss-loop.jpg&#34; alt=&#34;Cover&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Cover&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bss-loop.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Artikel ini akan menjelaskan mengenai bagaimana cara untuk melakukan LOOP alias menjalankan sekumpulan &lt;em&gt;command&lt;/em&gt; secara berulang-ulang dengan kondisi tertentu.&lt;/p&gt;
 &lt;h2 id=&#34;for-loop&#34;&gt;FOR loop&lt;/h2&gt;
 &lt;p&gt;FOR loop pada shell Bash sifatnya sama seperti &lt;em&gt;foreach&lt;/em&gt; pada keumuman bahasa pemrograman. Yaitu melakukan perulangan tanpa adanya &lt;em&gt;counter&lt;/em&gt;, alias suatu perulangan tidaklah diketahui ke-berapa perulangan tersebut sedang terjadi. Atau sederhananya tidak ada indeks pada setiap perulangan.&lt;/p&gt;
@@ -294,8 +353,7 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
       <link>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</link>
       <pubDate>Fri, 08 Apr 2022 09:25:02 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-script-rincian-mail-queue-postfix/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel ini saya akan memberikan contoh script Bash dan Python yang berfungsi untuk menampilkan jumlah antrian email (&lt;em&gt;mail queue&lt;/em&gt;) keluar pada Postfix. Ini berguna sebagai metrics yang bisa digunakan untuk alerting. Baik alerting manual maupun terintegrasi seperti ServerDensity, dan sebagainya.&lt;/p&gt;
 &lt;h3 id=&#34;dasar-script&#34;&gt;Dasar Script&lt;/h3&gt;
 &lt;p&gt;Komponen utama utama untuk mengetahui &lt;em&gt;mail queue&lt;/em&gt; adalah folder dimana &lt;em&gt;queue&lt;/em&gt; tersebut singgah untuk sementara waktu. Untuk mengetahuinya, kita bisa memanggil command &lt;code&gt;postconf -h queue_directory&lt;/code&gt; yang outputnya akan menunjukkan dimana direktori tersebut.&lt;/p&gt;</description>
@@ -305,8 +363,7 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</link>
       <pubDate>Mon, 28 Feb 2022 13:21:57 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-variabel/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel ini, saya akan menjelaskan bagaimana cara membuat variabel, array, dan lain-lain yang berkaitan, pada shell Bash.&lt;/p&gt;
 &lt;p&gt;Seperti yang sudah pernah dibahas pada artikel Belajar Bash Scripting lain, bahwa tentunya Bash Scripting yang dibahas ini tidaklah POSIX-compliant atau istilahnya &lt;em&gt;Bashism&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;aturan-penamaan&#34;&gt;Aturan penamaan&lt;/h2&gt;
@@ -323,13 +380,30 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
       <link>https://blog.annahri.com/posts/belajar-bash-scripting-conditional/</link>
       <pubDate>Sun, 27 Feb 2022 20:41:25 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/belajar-bash-scripting-conditional/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pada artikel ini saya akan menjelaskan mengenai bagaimana cara melakukan macam-macam kondisional pada Bash &lt;em&gt;scripting&lt;/em&gt;. Dan karena ini adalah seri khusus &lt;em&gt;shell&lt;/em&gt; Bash, maka tentunya tidak &lt;em&gt;POSIX-compliant&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;kondisional-if&#34;&gt;Kondisional IF&lt;/h2&gt;
 &lt;h3 id=&#34;struktur-dasar&#34;&gt;Struktur dasar&lt;/h3&gt;
 &lt;p&gt;Struktur dasar kondisional &lt;em&gt;if&lt;/em&gt; dalam Bash &lt;em&gt;scripting&lt;/em&gt; hampir sama dengan keumuman bahasa pemrograman, yaitu seperti dibawah ini:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;if&lt;/span&gt; kondisi; &lt;span style=&#34;color:#fe8019&#34;&gt;then&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;if&lt;/span&gt; kondisi; &lt;span style=&#34;color:#fe8019&#34;&gt;then&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;command&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;command&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
@@ -343,15 +417,16 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fabd2f&#34;&gt;command&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fe8019&#34;&gt;fi&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kondisi yang disebutkan diatas bisa berupa ekspresi perbandingan seperti contoh berikut:&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Kondisi yang disebutkan diatas bisa berupa ekspresi perbandingan seperti contoh berikut:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jurnal: Membenahi kendala mixed-content pada Nginx Reverse-Proxy</title>
       <link>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</link>
       <pubDate>Sat, 13 Nov 2021 22:09:50 +0000</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-nginx-reverse-proxy-mixed-content/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sekedar dokumentasi dari permasalahan yang pernah saya jumpai. Terkadang dari sisi aplikasi tidak siap untuk dipublikasi secara HTTPS karena di dalam &lt;em&gt;source code&lt;/em&gt;-nya masih ter-&lt;em&gt;hardcoded&lt;/em&gt; beberapa &lt;em&gt;resource&lt;/em&gt; eksternal menggunakan protokol HTTP.&lt;/p&gt;
 &lt;p&gt;Hal ini membuat kebanyakan &lt;em&gt;web browser&lt;/em&gt; mengeluh dan enggan untuk memuat &lt;em&gt;resource&lt;/em&gt; yang dipanggil dari protokol HTTP tadi.&lt;/p&gt;
 &lt;p&gt;Maka solusinya ada 2:&lt;/p&gt;
@@ -359,52 +434,69 @@ Sehingga pada artikel kali ini saya akan menjelaskan bagaimana cara menggunakan 
 &lt;li&gt;Edit &lt;em&gt;source code&lt;/em&gt;-nya, ganti semua kode yang memanggil resource dari HTTP menjadi HTTPS.&lt;/li&gt;
 &lt;li&gt;Dari sisi Reverse-Proxy, tinggal tambahkan header berikut:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Kali ini saya akan membahas solusi untuk Reverse-Proxy Nginx&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trik Bash Shell #1</title>
       <link>https://blog.annahri.com/posts/trik-bash-shell-1/</link>
       <pubDate>Thu, 04 Nov 2021 23:28:21 +0000</pubDate>
       <guid>https://blog.annahri.com/posts/trik-bash-shell-1/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Saya akan menjelaskan beberapa tips dan trik dalam menggunakan &lt;em&gt;shell&lt;/em&gt; &lt;strong&gt;bash&lt;/strong&gt; yang biasa saya gunakan sehari-hari.&lt;/p&gt;
 &lt;h2 id=&#34;reverse-search&#34;&gt;Reverse Search&lt;/h2&gt;
 &lt;p&gt;Sebagian orang biasa menggunakan &lt;code&gt;history&lt;/code&gt; untuk melihat/mencari &lt;em&gt;command-command&lt;/em&gt; sebelumnya yang sudah pernah diinputkan. Atau bahkan menggunakan &lt;em&gt;arrow key&lt;/em&gt; atas untuk mencari &lt;em&gt;command&lt;/em&gt; yang diinginkan.&lt;/p&gt;
 &lt;p&gt;Sebenarnya hampir kebanyakan &lt;em&gt;shell&lt;/em&gt; memiliki fitur &lt;em&gt;reverse search&lt;/em&gt;. Sesuai namanya, fitur ini bisa melakukan pencarian terhadap &lt;em&gt;command&lt;/em&gt; yang sebelumya pernah diinputkan.&lt;/p&gt;
-&lt;p&gt;Bagaimana caranya? Cukup menekan &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;R&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; pada terminal. Dan ketikkan kata kunci untuk &lt;em&gt;command&lt;/em&gt; yang sedang dicari.&lt;/p&gt;</description>
+&lt;p&gt;Bagaimana caranya? Cukup menekan &lt;kbd&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt;&lt;/kbd&gt; pada terminal. Dan ketikkan kata kunci untuk &lt;em&gt;command&lt;/em&gt; yang sedang dicari.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jurnal: Cara Extend VM Disk untuk LVM</title>
       <link>https://blog.annahri.com/posts/jurnal-cara-extend-vm-disk-lvm/</link>
       <pubDate>Tue, 02 Nov 2021 18:58:41 +0000</pubDate>
       <guid>https://blog.annahri.com/posts/jurnal-cara-extend-vm-disk-lvm/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Saya akan menjelaskan cara mudah untuk resize disk suatu VM dengan konfigurasi LVM. Asumsinya, disk sudah diextend dari sisi HVnya (PVE, ESXi, dll).&lt;/p&gt;
 &lt;p&gt;Pastikan penambahan space sudah terdeteksi dari VM melalui &lt;code&gt;dmesg&lt;/code&gt; dan Anda akan mendapati informasi seperti ini:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[262733.527587] sd 0:0:2:0: [abc] 4096-byte physical blocks
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[262733.527587] sd 0:0:2:0: [abc] 4096-byte physical blocks
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[262733.528263] abc: detected capacity change from 214748364800 to 429496729600
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kalau ternyata belum terdeteksi, bisa dicoba untuk menjalankan perintah ini&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fabd2f&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#d3869b&#34;&gt;1&lt;/span&gt; &amp;gt; /sys/class/block/&amp;lt;disk&amp;gt;/device/rescan
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lalu coba cek kembali di &lt;code&gt;dmesg&lt;/code&gt;. Kalau sudah muncul bisa langsung jalankan perintah berikut:&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Kalau ternyata belum terdeteksi, bisa dicoba untuk menjalankan perintah ini&lt;/p&gt;</description>
     </item>
     <item>
       <title>Instalasi LEMP Stack (Linux, Nginx, MariaDB, PHP) pada Ubuntu 20.04</title>
       <link>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</link>
       <pubDate>Thu, 27 May 2021 00:00:00 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/lemp-stack-ubuntu20-04-focal/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34; alt=&#34;Bismillah&#34;  /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Bismillah&#34; loading=&#34;lazy&#34; src=&#34;https://blog.annahri.com/images/bismillah-2.png#center&#34;&gt;&lt;/p&gt;
 &lt;p&gt;LEMP stack adalah software stack yang terdiri dari (L)inux, (E)gin-x alias Nginx,
 (M)ysql atau Mariadb, dan (P)HP.&lt;/p&gt;
 &lt;p&gt;Di sini, saya akan menjelaskan bagaimana cara instalasi LEMP stack pada Ubuntu 20.04.
 Untuk OS berbasis RPM menyusul.&lt;/p&gt;
 &lt;h3 id=&#34;konfigurasi-awal&#34;&gt;Konfigurasi Awal&lt;/h3&gt;
 &lt;p&gt;Pastikan repositori Anda sudah pada kondisi terbaru dan package pada sistem anda terupgrade.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt update &lt;span style=&#34;color:#fe8019&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt update &lt;span style=&#34;color:#fe8019&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Jika menggunakan firewall, pastikan port 80 (HTTP) dan 443 (HTTPS) terbuka.
 Kalau anda menggunakan &lt;code&gt;ufw&lt;/code&gt; maka perintahnya adalah:&lt;/p&gt;</description>
     </item>
   </channel>

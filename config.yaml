@@ -132,6 +132,9 @@ markup:
     pygmentsUseClasses: true
     lineNos: true
     style: gruvbox
+  goldmark:
+    renderer:
+      unsafe: true
 
 taxonomies:
   category: categories

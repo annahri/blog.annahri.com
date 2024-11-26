@@ -85,10 +85,10 @@ params:
     - name: github
       url: "https://github.com/annahri"
 
-  cover:
-    hidden: true          # hide everywhere but not in structured data
-    hiddenInList: true    # hide on list pages and home
-    hiddenInSingle: true  # hide on single page
+  # cover:
+  #   hidden: false         # hide everywhere but not in structured data
+  #   hiddenInList: true    # hide on list pages and home
+  #   hiddenInSingle: true  # hide on single page
 
   editPost:
     URL: "https://github.com/annahri/blog.annahri.com/tree/main/content"
@@ -104,8 +104,14 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 
+  footer:
+    text: "Semua hak cipta dilindungi. Konten di blog ini tidak dapat digunakan, disalin, atau didistribusikan tanpa izin tertulis dari pemilik hak cipta"
+
 menu:
   main:
+    - name: Tentang
+      url: about/
+      weight: 1
     - identifier: archives
       name: Arsip
       url: /arsip/

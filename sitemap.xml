@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.annahri.com/tentang/</loc>
-    <lastmod>2024-02-14T20:53:21+07:00</lastmod>
-  </url><url>
     <loc>https://blog.annahri.com/categories/</loc>
     <lastmod>2024-11-25T19:21:16+07:00</lastmod>
   </url><url>
@@ -28,6 +25,9 @@
   </url><url>
     <loc>https://blog.annahri.com/tags/</loc>
     <lastmod>2024-11-25T19:21:16+07:00</lastmod>
+  </url><url>
+    <loc>https://blog.annahri.com/about/</loc>
+    <lastmod>2024-02-14T20:53:21+07:00</lastmod>
   </url><url>
     <loc>https://blog.annahri.com/tags/zimbra/</loc>
     <lastmod>2024-02-13T20:09:11+07:00</lastmod>

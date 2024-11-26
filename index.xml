@@ -9,21 +9,18 @@
     <lastBuildDate>Mon, 25 Nov 2024 19:21:16 +0700</lastBuildDate>
     <atom:link href="https://blog.annahri.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tentang</title>
-      <link>https://blog.annahri.com/tentang/</link>
-      <pubDate>Wed, 14 Feb 2024 20:53:21 +0700</pubDate>
-      <guid>https://blog.annahri.com/tentang/</guid>
-      <description>&lt;p&gt;﷽&lt;/p&gt;
-&lt;p&gt;Saya adalah seorang pegiat IT yang sehari-harinya menggunakan Linux. Manjaro pada laptop pribadi, dan untuk pekerjaan saya sering berkutat dengan distro-distro berbasis Debian, dan yang berbasis RHEL, seperti CentOS, Almalinux dan Rocky. Sedangkan untuk Lab personal, saya sering menggunakan Alpine Linux karena ukurannya yang sangat ramping.&lt;/p&gt;
-&lt;p&gt;Selain itu, saya bermain-main pula pada &lt;em&gt;public cloud&lt;/em&gt; seperti AWS, GCP dan beberapa penyedia lokal lainnya.&lt;/p&gt;
-&lt;p&gt;Saya juga menyempatkan diri untuk belajar sedikit mengenai &lt;em&gt;programming&lt;/em&gt; (Python) dan secuil &lt;em&gt;web programming&lt;/em&gt; dengan teknologi yang sama (untuk mengejar ketertinggalan), yang mungkin saja, &lt;em&gt;insyaAllah&lt;/em&gt; saya akan bagikan juga mengenai apa yang sudah saya pelajari.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Membuat Entri Sudoers untuk Eksekusi Sebagai User Lain</title>
       <link>https://blog.annahri.com/posts/sudo-permission-untuk-eksekusi-sebagai-user-lain/</link>
       <pubDate>Mon, 25 Nov 2024 19:21:16 +0700</pubDate>
       <guid>https://blog.annahri.com/posts/sudo-permission-untuk-eksekusi-sebagai-user-lain/</guid>
       <description>Belajar bagaimana membuat entri sudoers untuk memungkinkan suatu pengguna untuk mengeksekusi perintah sebagai pengguna lain. Panduan step-by-step untuk System Adminstrator/DevOps.</description>
+    </item>
+    <item>
+      <title>Tentang</title>
+      <link>https://blog.annahri.com/about/</link>
+      <pubDate>Wed, 14 Feb 2024 20:53:21 +0700</pubDate>
+      <guid>https://blog.annahri.com/about/</guid>
+      <description>about</description>
     </item>
     <item>
       <title>Zimbra: Delegated Admin untuk Manajemen Quota</title>

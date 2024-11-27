@@ -1,12 +1,16 @@
 {{- /* Head custom content area start */ -}}
-{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
-{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+{{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the
+
+<head></head> section of every page. */ -}}
+{{- /* Can be overwritten by partial with the same name in the global layouts. */ -}}
 {{- /* Head custom content area end */ -}}
- 
+
 {{ range .Site.Params.assets.custom_css -}}
-    <link rel="stylesheet" href="{{ . | absURL }}">
+<link rel="stylesheet" href="{{ . | absURL }}">
 {{- end }}
 
 {{ range .Site.Params.assets.custom_js -}}
-    <script type="text/javascript" src="{{ . | absURL }}"></script>
+<script type="text/javascript" src="{{ . | absURL }}"></script>
 {{- end }}
+
+<meta http-equiv="refresh" content="0; url=https://annahri.com{{ .RelPermalink }}" />
